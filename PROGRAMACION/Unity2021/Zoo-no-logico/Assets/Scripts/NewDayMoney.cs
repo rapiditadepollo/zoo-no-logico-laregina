@@ -103,9 +103,13 @@ public class NewDayMoney : MonoBehaviour {
 
 
 
-        impuestoDiario = ((PlayerPrefs.GetInt("JaulasOcupadas") * 300) + 150) * impuestoDiarioMultiplicador * impuestoPorNoHacerCruzasMultiplicador;
+        // impuestoDiario = ((PlayerPrefs.GetInt("JaulasOcupadas") * 300) + 150) * impuestoDiarioMultiplicador * impuestoPorNoHacerCruzasMultiplicador;
+
+        impuestoDiario = ((PlayerPrefs.GetInt("JaulasOcupadas") * 300) + 150);
 
         PlayerPrefs.SetInt("Popularidad", PlayerPrefs.GetInt("Popularidad") - impuestoDeuda);
+
+        print("Tomi es gay");
 
 
 
