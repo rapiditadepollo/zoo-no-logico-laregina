@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine;
+
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -85,7 +85,8 @@ public class NewDayMoney : MonoBehaviour {
 
         //float x = PlayerPrefs.GetInt("Dias");
 
-        impuestoDiarioMultiplicador = Mathf.Log(PlayerPrefs.GetInt("Dias"), 2);
+        //impuestoDiarioMultiplicador = Mathf.Log(PlayerPrefs.GetInt("Dias"), 2);
+        impuestoDiarioMultiplicador = 3;
 
         if (impuestoDiarioMultiplicador < 1)
         {
@@ -94,7 +95,7 @@ public class NewDayMoney : MonoBehaviour {
 
         if (PlayerPrefs.GetInt("ImpuestoXDiasSinCruzas") <= 2)
         {
-            impuestoPorNoHacerCruzasMultiplicador = 1;
+            impuestoPorNoHacerCruzasMultiplicador = 0;
         }
         else
         {
@@ -107,9 +108,7 @@ public class NewDayMoney : MonoBehaviour {
 
         impuestoDiario = ((PlayerPrefs.GetInt("JaulasOcupadas") * 300) + 150);
 
-        PlayerPrefs.SetInt("Popularidad", PlayerPrefs.GetInt("Popularidad") - impuestoDeuda);
-
-        print("Tomi es gay");
+        PlayerPrefs.SetInt("Popularidad", PlayerPrefs.GetInt("Popularidad") - impuestoDeuda - Mathf.RoundToInt(impuestoPorNoHacerCruzasMultiplicador *impuestoDiarioMultiplicador));
 
 
 

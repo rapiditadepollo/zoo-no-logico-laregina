@@ -1,4 +1,0 @@
-sceneSetups:
-- path: "Assets/Scenes/Selecci\xF3n.unity"
-  isLoaded: 1
-  isActive: 1
