@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class JsonCalculatePercent : MonoBehaviour {
 
     public TextAsset Cruzas;
-    public Text porcentaje;
+    public Text Porcentaje;
     public Text costo;
     public int index;
 
@@ -85,7 +85,7 @@ public class JsonCalculatePercent : MonoBehaviour {
                 //print(myCruzaList.cruza[i].nombre.ToUpper().Replace(" ", ""));
 
             }
-            porcentaje.text = myCruzaList.cruza[index].porcentaje.ToString();
+            Porcentaje.text = "%" + myCruzaList.cruza[index].porcentaje.ToString() + " %";
             PlayerPrefs.SetInt("costoCruza", myCruzaList.cruza[index].dinero);
             costo.text = "- " + myCruzaList.cruza[index].dinero.ToString();
         }
