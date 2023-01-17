@@ -39,9 +39,15 @@ public class NewDayMoneyDetail : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         PlayerPrefs.SetInt("cageDivisor", 2);
         print(PlayerPrefs.GetInt("cage1Money") / PlayerPrefs.GetInt("cageDivisor"));
-        jaula1.text = (PlayerPrefs.GetInt("cage1Money")/PlayerPrefs.GetInt("cageDivisor")).ToString();
+        jaula1.text = (PlayerPrefs.GetInt("cage1Money") / PlayerPrefs.GetInt("cageDivisor")).ToString();
         jaula2.text = (PlayerPrefs.GetInt("cage2Money") / PlayerPrefs.GetInt("cageDivisor")).ToString();
         jaula3.text = (PlayerPrefs.GetInt("cage3Money") / PlayerPrefs.GetInt("cageDivisor")).ToString();
         jaula4.text = (PlayerPrefs.GetInt("cage4Money") / PlayerPrefs.GetInt("cageDivisor")).ToString();
@@ -64,18 +70,12 @@ public class NewDayMoneyDetail : MonoBehaviour
 
 
 
-        multiplicador.text ="X " + PlayerPrefs.GetFloat("popularityMultipliyer").ToString();
+        multiplicador.text = "X " + PlayerPrefs.GetFloat("popularityMultipliyer").ToString();
         impuesto.text = PlayerPrefs.GetFloat("impuestoDiario").ToString();
         popularidad.text = PlayerPrefs.GetInt("impuestoDeuda").ToString();
 
         monedasTotales.text = PlayerPrefs.GetInt("newMoneyInt").ToString();
         popularidadTotal.text = PlayerPrefs.GetInt("Popularidad").ToString();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void CerrarDetalle()
