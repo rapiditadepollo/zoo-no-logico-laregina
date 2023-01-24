@@ -7,7 +7,7 @@ using System;
 
 public class Comentarios : MonoBehaviour {
 
-    private string[] Comentariosuwu = new string[] { "¡Me saqué una selfie con una ave secretaria!", "Los zorros estaban acurrucados durmiendo una siesta ¡súper tiernos!", "¡La Serpiente se tragó mi brazalete!", "¡La serpiente-cocodrilo-ave secretaria quebró un coco sólo con su pico!¡Fue asombroso!", "¡Serpiente-ave secretaria-murciélago se abalanzó contra el vidrio de su jaula apenas nos vio! Mi gorra roja lo atrajo.", "El murciélago-ave secretaria-zorro es realmente molesto, su cacareo puede volver loco a cualquiera.", "¡La araña-zorro-murciélago no hace nada más que comer!", "La cola del zorro-cocodrilo-murciélago es muy fuerte, me intimida.", "El zorro-ave secretaría-araña es realmente majestuoso, pero dicen que hace trizas a sus presas esparciendo su sangre por todas partes.", "El ave secretaría-carpincho-araña tiene unos colores tan bonitos.", "No pudimos ver bien al zorro-serpiente-ave secretaria, estaba enroscado en sí mismo.", "¡El carpincho-zorro-araña es tan tierno, pero cuando tiembla hace un ruido muy raro que lastima los oídos!", "¡El ave secretaria- murciélago-araña me saludo con tres de sus patas!", "¡El zorro-cocodrilo-ave secretaria dejó de bailar! ¡Todos los cuidadores están muy preocupados!", "El zorro-serpiente-carpincho parecía estar tratando de comunicarse con una mariposa, eso, o estaba asustado de que lo atacará.", "A pesar de que el observatorio estaba lleno, el ave secretaria-carpincho-murciélago seguía haciéndose el muerto", "La serpiente-murciélago-carpincho arrinconó a los niños y no dejaba que los cuidadores se les acercaran, parece que quería quedárselos como reemplazo de sus crías.", "¡El zorro-serpiente-murciélago estaba llorando! Parece que se estresó por la cantidad de gente que lo observaba.", "¡Hoy, el cocodrilo-carpincho-ave secretaria robó un huevo de un pájaro y se puso a incubarlo!", "¡Hoy por fin pude dar una vuelta en el lomo del cocodrilo-murciélago-carpincho!¡Fue tan divertido!",  }; //Agregar los comentarios acá
+    private string[] Comentariosuwu; 
     private string[] Comentariosuwu2 = new string[] { "Unas arañas se metieron en los pantalones de un cuidador", "Una niña le dio algodón de azúcar a un cocodrilo", "¡voy a volver la próxima semana!", "¡Un carpincho estaba tomando mate!", "La serpiente - carpincho - araña es realmente aterradora, jugó con su comida y luego la despedazó frente a nosotros", "¡La Araña-carpincho-murciélago le arranco un brazo a un cuidador con sus pinzas!", "¡La Serpiente-zorro-cocodrilo se robó mi brazalete!", "¡El Zorro-serpiente-araña se enredó en su propia telaraña!", "¡El Ave secretaria-cocodrilo-araña estaba haciendo un baile súper extraño frente a su estanque!", "¡El zorro-ave secretaria-carpincho es tan lindo! Si pudiera, me lo llevaría a casa", "¡La serpiente-ave secretaria-araña engañó a los guardias y se escapó de su jaula! Por suerte la atraparon a tiempo", "¡El carpincho-zorro-murciélago enamoró a mis hijos!¡No podían dejar de hablar de lo tierno que era!", "¡Pudimos ver cómo la cola de la serpiente-murciélago-araña florecía!¡Fue un espectáculo increíble!", "¡El Zorro-cocodrilo-araña tiene mucha fuerza, el vidrio de su jaula tiene marcas de sus dientes!", "No pude ver a la araña-carpincho-cocodrilo, ¡nunca salió de su madriguera!", "La serpiente-cocodrilo-carpincho es enorme, no creí que hubiera suficientes insectos para que comiera", "¡El zorro-cocodrilo-carpincho se descontroló y le arrancó una pierna a uno de los cuidadores! Fue desagradable, pero no podía dejar de mirar.", "¡La araña-murciélago-cocodrilo está loca, estaba tratando de pelear con una roca!", "Es increíble como la serpiente-carpincho-ave secretaria se mueve usando su cola, ¡es tan rápida!", "¡La escoliosis de la serpiente-cocodrilo-araña del zoo empeoró otra vez! Espero que mejore", }; //Agregar los comentarios acá
      int ComentarioRandom;
     int ComentarioRandom2;
@@ -26,6 +26,7 @@ public class Comentarios : MonoBehaviour {
     public Sprite avatar10;
     public Sprite avatar11;
     public Sprite avatar12;
+    string nombreLastCruza;
 
     public Image avatar;
     public Image Avatarfoto2;
@@ -52,16 +53,41 @@ public class Comentarios : MonoBehaviour {
        
        
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update() {
+
+        nombreLastCruza = PlayerPrefs.GetString("nombreCurrentCruza");
+
+        Comentariosuwu = new string[] { "¡Me saqué una selfie con una ave secretaria!", "Los zorros estaban acurrucados durmiendo una siesta ¡súper tiernos!", "¡La Serpiente se tragó mi brazalete!", "¡La " + nombreLastCruza + "  quebró un coco sólo con su pico!¡Fue asombroso!", "¡" + nombreLastCruza + " se abalanzó contra el vidrio de su jaula apenas nos vio! Mi gorra roja lo atrajo.", "El " + nombreLastCruza + " es realmente molesto, su cacareo puede volver loco a cualquiera.", "¡La " + nombreLastCruza + " no hace nada más que comer!", "La cola del zorro-cocodrilo-murciélago es muy fuerte, me intimida.", "El " + nombreLastCruza + " es realmente majestuoso, pero dicen que hace trizas a sus presas esparciendo su sangre por todas partes.", "El ave secretaría-carpincho-araña tiene unos colores tan bonitos.", "No pudimos ver bien al zorro-serpiente-ave secretaria, estaba enroscado en sí mismo.", "¡El carpincho-zorro-araña es tan tierno, pero cuando tiembla hace un ruido muy raro que lastima los oídos!", "¡El " + nombreLastCruza + " me saludo con tres de sus patas!", "¡El " + nombreLastCruza + " dejó de bailar! ¡Todos los cuidadores están muy preocupados!", "El " + nombreLastCruza + " parecía estar tratando de comunicarse con una mariposa, eso, o estaba asustado de que lo atacará.", "A pesar de que el observatorio estaba lleno, el " + nombreLastCruza + " seguía haciéndose el muerto", "La " + nombreLastCruza + " arrinconó a los niños y no dejaba que los cuidadores se les acercaran, parece que quería quedárselos como reemplazo de sus crías.", "¡El " + nombreLastCruza + " estaba llorando! Parece que se estresó por la cantidad de gente que lo observaba.", "¡Hoy, el " + nombreLastCruza + " robó un huevo de un pájaro y se puso a incubarlo!", "¡Hoy por fin pude dar una vuelta en el lomo del " + nombreLastCruza + "!¡Fue tan divertido!", }; //Agregar los comentarios acá
+
+
+
+
         ComentarioRandom = PlayerPrefs.GetInt("comentarioRandom1");
         ComentarioRandom2 = PlayerPrefs.GetInt("comentarioRandom2");
-		AvatarRandom1 = PlayerPrefs.GetInt("avatarRandom");
+        AvatarRandom1 = PlayerPrefs.GetInt("avatarRandom");
 
-
-        Comentario.text = Comentariosuwu[ComentarioRandom];
-        Comentario2.text = Comentariosuwu2[ComentarioRandom2];
+        if (PlayerPrefs.GetInt("ImpuestoXDiasSinCruzas") > 2)
+        {
+            string dias = PlayerPrefs.GetInt("ImpuestoXDiasSinCruzas").ToString();
+            var texto = "Hace " + dias + " días que no veo una cruza nueva, ¡qué aburrido!";
+            Comentario.text = texto;
+            Comentario2.text = Comentariosuwu2[ComentarioRandom2];
+        }
+        else if (nombreLastCruza.Length<2)
+        {
+            Comentario.text = "Este zoológico es una basura, ¡no tiene animales!";
+            Comentario2.text = "Los baños estaban relativamente limpios, es todo lo que puedo decir.";
+        }
+        else if(PlayerPrefs.GetInt("Jaulitas")<3) {
+            Comentario.text = Comentariosuwu[ComentarioRandom];
+            Comentario2.text = "Hay muchas jaulas pero muy pocas están ocupadas.";
+        }
+        else {
+            Comentario.text = Comentariosuwu[ComentarioRandom];
+            Comentario2.text = Comentariosuwu2[ComentarioRandom2];
+        }
 
         switch (AvatarRandom1)
         {

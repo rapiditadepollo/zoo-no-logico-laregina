@@ -75,7 +75,6 @@ public class NewDayMoneyDetail : MonoBehaviour
         popularidad.text = PlayerPrefs.GetInt("impuestoDeuda").ToString();
 
         monedasTotales.text = PlayerPrefs.GetInt("newMoneyInt").ToString();
-        popularidadTotal.text = PlayerPrefs.GetInt("Popularidad").ToString();
     }
 
     public void CerrarDetalle()
