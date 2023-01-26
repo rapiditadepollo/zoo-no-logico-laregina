@@ -65,5 +65,6 @@ public class CodexCruzas : MonoBehaviour {
     {
 		detalle.SetActive(true);
 		sobrecuadro.SetActive(false);
+		PlayerPrefs.SetInt("codexCruzaNro", cruzaNro);
     }
 }
