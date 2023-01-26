@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class CodexCruzas : MonoBehaviour {
 
 	public GameObject[] CruzasArray;
+	public GameObject detalle;
+	public GameObject sobrecuadro;
 
 	void Awake ()
     {
@@ -58,4 +60,10 @@ public class CodexCruzas : MonoBehaviour {
 	{
 		return Int16.Parse(x.name).CompareTo(Int16.Parse(y.name));
 	}
+
+	public void OpenCodexDetail(int cruzaNro)
+    {
+		detalle.SetActive(true);
+		sobrecuadro.SetActive(false);
+    }
 }
