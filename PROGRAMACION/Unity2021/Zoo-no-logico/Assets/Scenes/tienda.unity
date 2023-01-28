@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 33450662}
   - component: {fileID: 33450661}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: BotonComprar_Muricelago
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -247,7 +247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 313.3, y: -152.03252}
+  m_AnchoredPosition: {x: 314.5, y: -152.03252}
   m_SizeDelta: {x: 83.35, y: 23.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &33450661
@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 72906121}
   - component: {fileID: 72906120}
   m_Layer: 0
-  m_Name: Slot3_Tienda_0 (4)
+  m_Name: Slot_Cocodrilo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -421,7 +421,7 @@ SpriteRenderer:
   m_SortingLayerID: -1700042939
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 654365647609370408b53fdd545c8b21, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b1a7ae3de6283a4ebe3f1343517e304, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -440,8 +440,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72906119}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.38, y: -1.9099998, z: 0}
-  m_LocalScale: {x: 0.22895999, y: 0.22895999, z: 0.22895999}
+  m_LocalPosition: {x: 4.38, y: -1.84, z: 0}
+  m_LocalScale: {x: 0.4559987, y: 0.4559987, z: 0.4559987}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1103,7 +1103,7 @@ GameObject:
   - component: {fileID: 191452530}
   - component: {fileID: 191452529}
   m_Layer: 5
-  m_Name: "Ara\xF1a Boton"
+  m_Name: "BotonComprar_Ara\xF1a"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1128,7 +1128,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -85.4, y: -184.45001}
+  m_AnchoredPosition: {x: -81.9, y: -117.6}
   m_SizeDelta: {x: 144.24, y: 37.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &191452529
@@ -1258,7 +1258,7 @@ GameObject:
   - component: {fileID: 193233197}
   - component: {fileID: 193233196}
   m_Layer: 5
-  m_Name: Ave Boton
+  m_Name: BotonComprar_Ave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1283,7 +1283,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -295, y: -184.45001}
+  m_AnchoredPosition: {x: -295, y: -116.3}
   m_SizeDelta: {x: 144.24, y: 37.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &193233196
@@ -1861,7 +1861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &299303019
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2223,7 +2223,7 @@ GameObject:
   - component: {fileID: 339755239}
   - component: {fileID: 339755240}
   m_Layer: 0
-  m_Name: Murci
+  m_Name: Murcielago
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2321,8 +2321,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358278300}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 198.1, y: 96.2, z: -4050}
-  m_LocalScale: {x: 8, y: 8, z: 8}
+  m_LocalPosition: {x: 197.8, y: 94.7, z: -4050}
+  m_LocalScale: {x: 9.436544, y: 9.436544, z: 9.436544}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 653819671}
@@ -2785,7 +2785,7 @@ GameObject:
   - component: {fileID: 451869563}
   - component: {fileID: 451869564}
   m_Layer: 0
-  m_Name: Ave secretaria (1)
+  m_Name: AveIcono
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3257,7 +3257,7 @@ GameObject:
   - component: {fileID: 561450232}
   - component: {fileID: 561450231}
   m_Layer: 0
-  m_Name: Slot3_Tienda_0 (1)
+  m_Name: Slot_Serpiente
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3304,7 +3304,7 @@ SpriteRenderer:
   m_SortingLayerID: -1700042939
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 654365647609370408b53fdd545c8b21, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4a770aba468b03e4bbda1a2eae4d9dd5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3323,8 +3323,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561450230}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.38, y: 1.44, z: 0}
-  m_LocalScale: {x: 0.22895999, y: 0.22895999, z: 0.22895999}
+  m_LocalPosition: {x: 4.38, y: 1.55, z: 0}
+  m_LocalScale: {x: 0.4559987, y: 0.4559987, z: 0.4559987}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3426,7 +3426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &585504259
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3586,7 +3586,7 @@ GameObject:
   - component: {fileID: 628564373}
   - component: {fileID: 628564374}
   m_Layer: 0
-  m_Name: Cocodrilo (1)
+  m_Name: CocodriloIcono
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3675,7 +3675,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &630030394
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3755,7 +3755,7 @@ GameObject:
   - component: {fileID: 630102891}
   - component: {fileID: 630102890}
   m_Layer: 0
-  m_Name: "Bot\xF3n_tienda_0"
+  m_Name: "Bot\xF3n_tienda"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4471,7 +4471,7 @@ GameObject:
   - component: {fileID: 795757735}
   - component: {fileID: 795757734}
   m_Layer: 0
-  m_Name: Slot3_Tienda_0
+  m_Name: Slot_Carpincho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4518,7 +4518,7 @@ SpriteRenderer:
   m_SortingLayerID: -1700042939
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 654365647609370408b53fdd545c8b21, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86dd1375a3f01e7408ca5756f8ee1116, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4537,8 +4537,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795757733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.75, y: 1.4300001, z: 0}
-  m_LocalScale: {x: 0.22895999, y: 0.22895999, z: 0.22895999}
+  m_LocalPosition: {x: 1.79, y: 1.56, z: 0}
+  m_LocalScale: {x: 0.4559987, y: 0.4559987, z: 0.4559987}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4710,7 +4710,7 @@ GameObject:
   - component: {fileID: 801153929}
   - component: {fileID: 801153930}
   m_Layer: 0
-  m_Name: Zorro (1)
+  m_Name: ZorroIcono
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5289,8 +5289,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901880544}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -292, y: 71, z: -4050}
-  m_LocalScale: {x: 20.285376, y: 20.285376, z: 20.285376}
+  m_LocalPosition: {x: -288, y: 54, z: -4050}
+  m_LocalScale: {x: 16.966688, y: 16.966688, z: 16.966688}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 653819671}
@@ -6506,8 +6506,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -291.86, y: -20.37}
-  m_SizeDelta: {x: 200.6, y: 365.65}
+  m_AnchoredPosition: {x: -291.86, y: 3.26}
+  m_SizeDelta: {x: 200.6, y: 239.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1058717682
 MonoBehaviour:
@@ -6838,7 +6838,7 @@ GameObject:
   - component: {fileID: 1068893827}
   - component: {fileID: 1068893826}
   m_Layer: 5
-  m_Name: Button (5)
+  m_Name: BotonComprar_Carpincho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7154,7 +7154,7 @@ GameObject:
   - component: {fileID: 1087141209}
   - component: {fileID: 1087141208}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: BotonComprar_Zorro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7560,7 +7560,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1222471318
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7720,7 +7720,7 @@ GameObject:
   - component: {fileID: 1245066168}
   - component: {fileID: 1245066169}
   m_Layer: 0
-  m_Name: Carpincho (1)
+  m_Name: CarpinchoIcono
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7888,7 +7888,7 @@ GameObject:
   - component: {fileID: 1254217603}
   - component: {fileID: 1254217602}
   m_Layer: 0
-  m_Name: Slot3_Tienda_0 (2)
+  m_Name: Slot_SignoPregunta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7954,7 +7954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254217601}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.01, y: 1.44, z: 0}
+  m_LocalPosition: {x: 7.01, y: 1.53, z: 0}
   m_LocalScale: {x: 0.22895999, y: 0.22895999, z: 0.22895999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8120,7 +8120,7 @@ GameObject:
   - component: {fileID: 1340723307}
   - component: {fileID: 1340723306}
   m_Layer: 0
-  m_Name: Criatura sin descubrir-recorte
+  m_Name: SignoDePregunta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8204,7 +8204,7 @@ GameObject:
   - component: {fileID: 1345343345}
   - component: {fileID: 1345343346}
   m_Layer: 0
-  m_Name: Murci (1)
+  m_Name: MurcielagoIcono
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8374,7 +8374,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1415163126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9075,7 +9075,7 @@ GameObject:
   - component: {fileID: 1503232047}
   - component: {fileID: 1503232046}
   m_Layer: 0
-  m_Name: Slot2_Tienda_0
+  m_Name: Slot_AveSecretaria
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9122,7 +9122,7 @@ SpriteRenderer:
   m_SortingLayerID: -1700042939
   m_SortingLayer: 1
   m_SortingOrder: -5
-  m_Sprite: {fileID: 21300000, guid: b0f59240f73e34540a0b6bbed0899141, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ffa75dbd26bad8b44ae9480944c8f000, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9141,8 +9141,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503232045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.483, y: -0.37281758, z: 0}
-  m_LocalScale: {x: 0.22884789, y: 0.22541519, z: 0.22884789}
+  m_LocalPosition: {x: -6.5, y: 0.05, z: 0}
+  m_LocalScale: {x: 0.8183549, y: 0.8060797, z: 0.8183549}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -9162,7 +9162,7 @@ GameObject:
   - component: {fileID: 1508144208}
   - component: {fileID: 1508144207}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: BotonComprar_Cocodrilo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9560,7 +9560,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1562618315
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10058,7 +10058,7 @@ GameObject:
   - component: {fileID: 1631508322}
   - component: {fileID: 1631508323}
   m_Layer: 0
-  m_Name: "Ara\xF1a (1)"
+  m_Name: "Ara\xF1aIcono"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10227,7 +10227,7 @@ GameObject:
   - component: {fileID: 1642618815}
   - component: {fileID: 1642618814}
   m_Layer: 0
-  m_Name: Slot3_Tienda_0 (3)
+  m_Name: Slot_Zorro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10274,7 +10274,7 @@ SpriteRenderer:
   m_SortingLayerID: -1700042939
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 654365647609370408b53fdd545c8b21, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 52d74c4c2822cff428b3ebf4996b9289, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10293,8 +10293,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642618813}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.75, y: -1.9099998, z: 0}
-  m_LocalScale: {x: 0.22895999, y: 0.22895999, z: 0.22895999}
+  m_LocalPosition: {x: 1.75, y: -1.84, z: 0}
+  m_LocalScale: {x: 0.4559987, y: 0.4559987, z: 0.4559987}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -10316,7 +10316,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1651237332
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10476,7 +10476,7 @@ GameObject:
   - component: {fileID: 1702603173}
   - component: {fileID: 1702603172}
   m_Layer: 0
-  m_Name: Slot3_Tienda_0 (5)
+  m_Name: Slot_Murcielago
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10523,7 +10523,7 @@ SpriteRenderer:
   m_SortingLayerID: -1700042939
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 654365647609370408b53fdd545c8b21, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f56204d98a6f8646aff90ed9a691988, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10542,8 +10542,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702603171}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: -1.9099998, z: 0}
-  m_LocalScale: {x: 0.22895999, y: 0.22895999, z: 0.22895999}
+  m_LocalPosition: {x: 7, y: -1.83, z: 0}
+  m_LocalScale: {x: 0.4559987, y: 0.4559987, z: 0.4559987}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -11670,7 +11670,7 @@ GameObject:
   - component: {fileID: 2111386320}
   - component: {fileID: 2111386321}
   m_Layer: 0
-  m_Name: Serpi (1)
+  m_Name: SerpienteIcono
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11754,7 +11754,7 @@ GameObject:
   - component: {fileID: 2114776617}
   - component: {fileID: 2114776616}
   m_Layer: 0
-  m_Name: Slot2_Tienda_0 (1)
+  m_Name: "Slot_Ara\xF1a"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11801,7 +11801,7 @@ SpriteRenderer:
   m_SortingLayerID: -1700042939
   m_SortingLayer: 1
   m_SortingOrder: -5
-  m_Sprite: {fileID: 21300000, guid: b0f59240f73e34540a0b6bbed0899141, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7b53eed8e734b4344b15cd428f32b42e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11820,8 +11820,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114776615}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.84, y: -0.37281758, z: 0}
-  m_LocalScale: {x: 0.22884789, y: 0.22541519, z: 0.22884789}
+  m_LocalPosition: {x: -1.84, y: 0.012, z: 0}
+  m_LocalScale: {x: 0.8183549, y: 0.8060797, z: 0.8183549}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -11841,7 +11841,7 @@ GameObject:
   - component: {fileID: 2125038298}
   - component: {fileID: 2125038297}
   m_Layer: 5
-  m_Name: Serpiente Boton
+  m_Name: BotonComprar_Serpiente
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
