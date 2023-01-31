@@ -52,6 +52,7 @@ TagManager:
   - avatar
   - avatar2
   - ANALYTICS
+  - Continuar
   layers:
   - Default
   - TransparentFX
