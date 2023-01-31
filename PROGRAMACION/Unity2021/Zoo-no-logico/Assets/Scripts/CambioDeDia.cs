@@ -100,7 +100,20 @@ public class CambioDeDia : MonoBehaviour {
             PopularidadBarra.SetActive(false);
         }
 
+
+        if (PlayerPrefs.GetInt("Ganaste") == 1)
+        {
+            PlayerPrefs.SetInt("CantidadCarpincho", 99);
+            PlayerPrefs.SetInt("CantidadArana", 99);
+            PlayerPrefs.SetInt("CantidadAve", 99);
+            PlayerPrefs.SetInt("CantidadZorro", 99);
+            PlayerPrefs.SetInt("CantidadCocodrilo", 99);
+            PlayerPrefs.SetInt("CantidadSerpiente", 99);
+            PlayerPrefs.SetInt("Moneditas", 999999999);
+        }
+
         ANALYTICS.SendMessage("fin_del_turno");
+
 
     }
 
