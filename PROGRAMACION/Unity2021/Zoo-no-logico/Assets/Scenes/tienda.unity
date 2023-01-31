@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 72906121}
   - component: {fileID: 72906120}
   m_Layer: 0
-  m_Name: Slot_Cocodrilo
+  m_Name: Slot_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3175,7 +3175,7 @@ GameObject:
   - component: {fileID: 561450232}
   - component: {fileID: 561450231}
   m_Layer: 0
-  m_Name: Slot_Serpiente
+  m_Name: Slot_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4107,7 +4107,7 @@ GameObject:
   - component: {fileID: 795757735}
   - component: {fileID: 795757734}
   m_Layer: 0
-  m_Name: Slot_Carpincho
+  m_Name: Slot_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6996,7 +6996,7 @@ GameObject:
   - component: {fileID: 1254217603}
   - component: {fileID: 1254217602}
   m_Layer: 0
-  m_Name: Slot_SignoPregunta
+  m_Name: Slot_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7980,7 +7980,7 @@ GameObject:
   - component: {fileID: 1503232047}
   - component: {fileID: 1503232046}
   m_Layer: 0
-  m_Name: Slot_AveSecretaria
+  m_Name: Slot_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9010,7 +9010,7 @@ GameObject:
   - component: {fileID: 1642618815}
   - component: {fileID: 1642618814}
   m_Layer: 0
-  m_Name: Slot_Zorro
+  m_Name: Slot_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9179,7 +9179,7 @@ GameObject:
   - component: {fileID: 1702603173}
   - component: {fileID: 1702603172}
   m_Layer: 0
-  m_Name: Slot_Murcielago
+  m_Name: Slot_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10333,7 +10333,7 @@ GameObject:
   - component: {fileID: 2114776617}
   - component: {fileID: 2114776616}
   m_Layer: 0
-  m_Name: "Slot_Ara\xF1a"
+  m_Name: Slot_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

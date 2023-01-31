@@ -84,7 +84,7 @@ public class MonedasTotales : MonoBehaviour {
 
     //COMPRAR ANIMALES :)
 
-    public void ComprarCarpincho(int gastarPlata) // este método está recibiendo un int. Si nosotros llamamos este objeto con el botón, en el inspector deberia de aparecer un campo para rellenar
+    public void Comprar1(int gastarPlata) // este método está recibiendo un int. Si nosotros llamamos este objeto con el botón, en el inspector deberia de aparecer un campo para rellenar
     {
         if (Monedas > gastarPlata)
         {
@@ -92,16 +92,15 @@ public class MonedasTotales : MonoBehaviour {
             PlayerPrefs.SetInt("Moneditas", Monedas);
 
             PlayerPrefs.SetInt("vezCompra", PlayerPrefs.GetInt("vezCompra") + 1);
-            PlayerPrefs.SetString("animalCompra", "Carpincho");
+            PlayerPrefs.SetString("animalCompra", PlayerPrefs.GetString("animal1Tienda"));
 
-            PlayerPrefs.SetInt("carpinchosTotales", PlayerPrefs.GetInt("carpinchosTotales") + 1);
-
-            Cosoprueba.SendMessage("SumarCantidadCarpincho");
+            PlayerPrefs.SetInt(PlayerPrefs.GetString("animal1Tienda") + "sTotales", PlayerPrefs.GetInt(PlayerPrefs.GetString("animal1Tienda") + "sTotales") + 1);
+            Cosoprueba.SendMessage("SumarCantidad" + PlayerPrefs.GetString("animal1Tienda"));
             ANALYTICS.SendMessage("comprar");
         }
     }
 
-    public void ComprarArana(int gastarPlata) // este método está recibiendo un int. Si nosotros llamamos este objeto con el botón, en el inspector deberia de aparecer un campo para rellenar
+    public void Comprar2(int gastarPlata) // este método está recibiendo un int. Si nosotros llamamos este objeto con el botón, en el inspector deberia de aparecer un campo para rellenar
     {
         if (Monedas > gastarPlata)
         {
@@ -109,15 +108,15 @@ public class MonedasTotales : MonoBehaviour {
             PlayerPrefs.SetInt("Moneditas", Monedas);
 
             PlayerPrefs.SetInt("vezCompra", PlayerPrefs.GetInt("vezCompra") + 1);
-            PlayerPrefs.SetString("animalCompra", "Arana");
+            PlayerPrefs.SetString("animalCompra", PlayerPrefs.GetString("animal2Tienda"));
 
-            PlayerPrefs.SetInt("aranasTotales", PlayerPrefs.GetInt("aranasTotales") + 1);
-            Cosoprueba.SendMessage("SumarCantidadArana");
+            PlayerPrefs.SetInt(PlayerPrefs.GetString("animal2Tienda") + "sTotales", PlayerPrefs.GetInt(PlayerPrefs.GetString("animal2Tienda") + "sTotales") + 1);
+            Cosoprueba.SendMessage("SumarCantidad" + PlayerPrefs.GetString("animal2Tienda"));
             ANALYTICS.SendMessage("comprar");
         }
     }
 
-    public void ComprarCocodrilo(int gastarPlata) // este método está recibiendo un int. Si nosotros llamamos este objeto con el botón, en el inspector deberia de aparecer un campo para rellenar
+    public void Comprar3(int gastarPlata) // este método está recibiendo un int. Si nosotros llamamos este objeto con el botón, en el inspector deberia de aparecer un campo para rellenar
     {
         if (Monedas > gastarPlata)
         {
@@ -125,15 +124,15 @@ public class MonedasTotales : MonoBehaviour {
             PlayerPrefs.SetInt("Moneditas", Monedas);
 
             PlayerPrefs.SetInt("vezCompra", PlayerPrefs.GetInt("vezCompra") + 1);
-            PlayerPrefs.SetString("animalCompra", "Cocodrilo");
+            PlayerPrefs.SetString("animalCompra", PlayerPrefs.GetString("animal3Tienda"));
 
-            PlayerPrefs.SetInt("cocodrilosTotales", PlayerPrefs.GetInt("cocodrilosTotales") + 1);
-            Cosoprueba.SendMessage("SumarCantidadCocodrilo");
+            PlayerPrefs.SetInt(PlayerPrefs.GetString("animal3Tienda") + "sTotales", PlayerPrefs.GetInt(PlayerPrefs.GetString("animal3Tienda") + "sTotales") + 1);
+            Cosoprueba.SendMessage("SumarCantidad" + PlayerPrefs.GetString("animal3Tienda"));
             ANALYTICS.SendMessage("comprar");
         }
     }
 
-    public void ComprarZorro(int gastarPlata) // este método está recibiendo un int. Si nosotros llamamos este objeto con el botón, en el inspector deberia de aparecer un campo para rellenar
+    public void Comprar4(int gastarPlata) // este método está recibiendo un int. Si nosotros llamamos este objeto con el botón, en el inspector deberia de aparecer un campo para rellenar
     {
         if (Monedas > gastarPlata)
         {
@@ -141,15 +140,15 @@ public class MonedasTotales : MonoBehaviour {
             PlayerPrefs.SetInt("Moneditas", Monedas);
 
             PlayerPrefs.SetInt("vezCompra", PlayerPrefs.GetInt("vezCompra") + 1);
-            PlayerPrefs.SetString("animalCompra", "Zorro");
+            PlayerPrefs.SetString("animalCompra", PlayerPrefs.GetString("animal4Tienda"));
 
-            PlayerPrefs.SetInt("zorrosTotales", PlayerPrefs.GetInt("zorrosTotales") + 1);
-            Cosoprueba.SendMessage("SumarCantidadZorro");
+            PlayerPrefs.SetInt(PlayerPrefs.GetString("animal4Tienda") + "sTotales", PlayerPrefs.GetInt(PlayerPrefs.GetString("animal4Tienda") + "sTotales") + 1);
+            Cosoprueba.SendMessage("SumarCantidad" + PlayerPrefs.GetString("animal4Tienda"));
             ANALYTICS.SendMessage("comprar");
         }
     }
 
-    public void ComprarMurcielago(int gastarPlata) // este método está recibiendo un int. Si nosotros llamamos este objeto con el botón, en el inspector deberia de aparecer un campo para rellenar
+    public void Comprar5(int gastarPlata) // este método está recibiendo un int. Si nosotros llamamos este objeto con el botón, en el inspector deberia de aparecer un campo para rellenar
     {
         if (Monedas > gastarPlata)
         {
@@ -157,15 +156,15 @@ public class MonedasTotales : MonoBehaviour {
             PlayerPrefs.SetInt("Moneditas", Monedas);
 
             PlayerPrefs.SetInt("vezCompra", PlayerPrefs.GetInt("vezCompra") + 1);
-            PlayerPrefs.SetString("animalCompra", "Murcielago");
+            PlayerPrefs.SetString("animalCompra", PlayerPrefs.GetString("animal5Tienda"));
 
-            PlayerPrefs.SetInt("murcielagosTotales", PlayerPrefs.GetInt("murcielagosTotales") + 1);
-            Cosoprueba.SendMessage("SumarCantidadMurcielago");
+            PlayerPrefs.SetInt(PlayerPrefs.GetString("animal5Tienda") + "sTotales", PlayerPrefs.GetInt(PlayerPrefs.GetString("animal5Tienda") + "sTotales") + 1);
+            Cosoprueba.SendMessage("SumarCantidad" + PlayerPrefs.GetString("animal5Tienda"));
             ANALYTICS.SendMessage("comprar");
         }
     }
 
-    public void ComprarSerpiente(int gastarPlata) // este método está recibiendo un int. Si nosotros llamamos este objeto con el botón, en el inspector deberia de aparecer un campo para rellenar
+    public void Comprar6(int gastarPlata) // este método está recibiendo un int. Si nosotros llamamos este objeto con el botón, en el inspector deberia de aparecer un campo para rellenar
     {
         if (Monedas > gastarPlata)
         {
@@ -173,26 +172,27 @@ public class MonedasTotales : MonoBehaviour {
             PlayerPrefs.SetInt("Moneditas", Monedas);
 
             PlayerPrefs.SetInt("vezCompra", PlayerPrefs.GetInt("vezCompra") + 1);
-            PlayerPrefs.SetString("animalCompra", "Serpiente");
+            PlayerPrefs.SetString("animalCompra", PlayerPrefs.GetString("animal6Tienda"));
 
-            PlayerPrefs.SetInt("serpientesTotales", PlayerPrefs.GetInt("serpientesTotales") + 1);
-            Cosoprueba.SendMessage("SumarCantidadSerpiente");
+            PlayerPrefs.SetInt(PlayerPrefs.GetString("animal6Tienda") + "sTotales", PlayerPrefs.GetInt(PlayerPrefs.GetString("animal6Tienda") + "sTotales") + 1);
+            Cosoprueba.SendMessage("SumarCantidad" + PlayerPrefs.GetString("animal6Tienda"));
             ANALYTICS.SendMessage("comprar");
         }
     }
 
-    public void ComprarAve(int gastarPlata) // este método está recibiendo un int. Si nosotros llamamos este objeto con el botón, en el inspector deberia de aparecer un campo para rellenar
+    public void Comprar7(int gastarPlata) // este método está recibiendo un int. Si nosotros llamamos este objeto con el botón, en el inspector deberia de aparecer un campo para rellenar
     {
         if (Monedas > gastarPlata)
         {
             Monedas -= gastarPlata; // Al int con mis monedas le voy a restar el dato que recibe desde el botón
+            Monedas -= gastarPlata; // Al int con mis monedas le voy a restar el dato que recibe desde el botón
             PlayerPrefs.SetInt("Moneditas", Monedas);
 
             PlayerPrefs.SetInt("vezCompra", PlayerPrefs.GetInt("vezCompra") + 1);
-            PlayerPrefs.SetString("animalCompra", "Ave");
+            PlayerPrefs.SetString("animalCompra", PlayerPrefs.GetString("animal7Tienda"));
 
-            PlayerPrefs.SetInt("avesTotales", PlayerPrefs.GetInt("avesTotales") + 1);
-            Cosoprueba.SendMessage("SumarCantidadAve");
+            PlayerPrefs.SetInt(PlayerPrefs.GetString("animal7Tienda") + "sTotales", PlayerPrefs.GetInt(PlayerPrefs.GetString("animal7Tienda") + "sTotales") + 1);
+            Cosoprueba.SendMessage("SumarCantidad" + PlayerPrefs.GetString("animal7Tienda"));
             ANALYTICS.SendMessage("comprar");
         }
     }
