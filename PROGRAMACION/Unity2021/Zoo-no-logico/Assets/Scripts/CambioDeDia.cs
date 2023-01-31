@@ -14,6 +14,8 @@ public class CambioDeDia : MonoBehaviour {
     public GameObject PantallaGanar;
     public int Popularidad;
     public GameObject PopularidadBarra;
+    private string[] listaAnimales = new string[] { "Carpincho", "Cocodrilo", "Arana", "Ave", "Serpiente", "Zorro", "Murcielago" };
+    private string tempGO;
 
     [SerializeField] private GameObject ANALYTICS;
 
@@ -75,6 +77,26 @@ public class CambioDeDia : MonoBehaviour {
         int Random1= new System.Random().Next(0, 20);
         int Random2 = new System.Random().Next(0, 20);
         int Random3 = new System.Random().Next(1, 13);
+        //listaAnimales
+        print(listaAnimales[0]);
+        for (int i = 0; i < listaAnimales.Length; i++)
+        {
+            int rnd = Random.Range(0, listaAnimales.Length);
+            tempGO = listaAnimales[rnd];
+            listaAnimales[rnd] = listaAnimales[i];
+            listaAnimales[i] = tempGO;
+        }
+        print (listaAnimales[0]);
+
+        PlayerPrefs.SetString("animal1Tienda", listaAnimales[0]);
+        PlayerPrefs.SetString("animal2Tienda", listaAnimales[1]);
+        PlayerPrefs.SetString("animal3Tienda", listaAnimales[2]);
+        PlayerPrefs.SetString("animal4Tienda", listaAnimales[3]);
+        PlayerPrefs.SetString("animal5Tienda", listaAnimales[4]);
+        PlayerPrefs.SetString("animal6Tienda", listaAnimales[5]);
+        PlayerPrefs.SetString("animal7Tienda", listaAnimales[6]);
+
+        print(PlayerPrefs.GetString("animal7Tienda"));
 
         PlayerPrefs.SetInt("comentarioRandom1", Random1);
         PlayerPrefs.SetInt("comentarioRandom2", Random2);
