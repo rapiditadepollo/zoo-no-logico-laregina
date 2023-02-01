@@ -440,6 +440,7 @@
 "Assets/Scripts/TogglePerdida.cs"
 "Assets/Scripts/UIZoomImage.cs"
 "Assets/Scripts/UnlockStoreAnimals.cs"
+"Assets/TiendaSlot.cs"
 -langversion:9.0
 
 /deterministic

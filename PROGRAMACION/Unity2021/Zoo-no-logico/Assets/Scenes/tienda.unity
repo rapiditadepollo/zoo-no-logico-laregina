@@ -3679,6 +3679,7 @@ GameObject:
   - component: {fileID: 653819669}
   - component: {fileID: 653819668}
   - component: {fileID: 653819672}
+  - component: {fileID: 653819674}
   - component: {fileID: 653819673}
   m_Layer: 5
   m_Name: Canvas
@@ -3856,6 +3857,46 @@ MonoBehaviour:
   aveMiniImg: {fileID: 451869562}
   aranaMiniImg: {fileID: 1631508321}
   serpienteMiniImg: {fileID: 2111386319}
+--- !u!114 &653819674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653819667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23e3501bd18758942a3ef40833ad24a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slotCarpincho: {fileID: 21300000, guid: 86dd1375a3f01e7408ca5756f8ee1116, type: 3}
+  slotZorro: {fileID: 21300000, guid: 52d74c4c2822cff428b3ebf4996b9289, type: 3}
+  slotCocodrilo: {fileID: 21300000, guid: 6b1a7ae3de6283a4ebe3f1343517e304, type: 3}
+  slotMurcielago: {fileID: 21300000, guid: 1f56204d98a6f8646aff90ed9a691988, type: 3}
+  slotAve: {fileID: 21300000, guid: ffa75dbd26bad8b44ae9480944c8f000, type: 3}
+  slotSerpiente: {fileID: 21300000, guid: 4a770aba468b03e4bbda1a2eae4d9dd5, type: 3}
+  slotArana: {fileID: 21300000, guid: 1f56204d98a6f8646aff90ed9a691988, type: 3}
+  Carpincho: {fileID: 21300000, guid: 316415be1ec44e543a749ce9e162f0de, type: 3}
+  Zorro: {fileID: 21300000, guid: c86a3b356b60d894f84049e97a581e35, type: 3}
+  Cocodrilo: {fileID: 21300000, guid: 093b1f119c2d16f43a8a7dacb77bfee5, type: 3}
+  Murcielago: {fileID: 21300000, guid: f5002ecb483a2e44a864e5bbe1db3d4d, type: 3}
+  Ave: {fileID: 21300000, guid: 937fad170686aca4a8d8aad0f56ac71b, type: 3}
+  Serpiente: {fileID: 21300000, guid: 06f0ee39cfc86304eaddca8b631948bf, type: 3}
+  Arana: {fileID: 21300000, guid: d3fdde2dfaeeab64fa700d7d19c7ac8e, type: 3}
+  boton1: {fileID: 901880545}
+  boton2: {fileID: 1251705566}
+  boton3: {fileID: 202007171}
+  boton4: {fileID: 358278302}
+  boton5: {fileID: 1605444611}
+  boton6: {fileID: 1160901139}
+  boton7: {fileID: 339755240}
+  slot1: {fileID: 1503232046}
+  slot2: {fileID: 2114776616}
+  slot3: {fileID: 795757734}
+  slot4: {fileID: 561450231}
+  slot5: {fileID: 1642618814}
+  slot6: {fileID: 72906120}
+  slot7: {fileID: 1702603172}
 --- !u!1 &680555916
 GameObject:
   m_ObjectHideFlags: 0
@@ -4924,8 +4965,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901880544}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -288, y: 54, z: -4050}
-  m_LocalScale: {x: 16.966688, y: 16.966688, z: 16.966688}
+  m_LocalPosition: {x: -287.5, y: 51.35, z: -4050}
+  m_LocalScale: {x: 15.916247, y: 15.916247, z: 15.916247}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 653819671}
@@ -6926,8 +6967,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1251705564}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -79, y: 56, z: -4050}
-  m_LocalScale: {x: 19.17, y: 19.17, z: 19.17}
+  m_LocalPosition: {x: -79.95, y: 53.7, z: -4050}
+  m_LocalScale: {x: 19.3617, y: 19.17, z: 19.17}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 653819671}
