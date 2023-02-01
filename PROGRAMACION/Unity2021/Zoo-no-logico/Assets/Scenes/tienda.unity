@@ -3875,7 +3875,7 @@ MonoBehaviour:
   slotMurcielago: {fileID: 21300000, guid: 1f56204d98a6f8646aff90ed9a691988, type: 3}
   slotAve: {fileID: 21300000, guid: ffa75dbd26bad8b44ae9480944c8f000, type: 3}
   slotSerpiente: {fileID: 21300000, guid: 4a770aba468b03e4bbda1a2eae4d9dd5, type: 3}
-  slotArana: {fileID: 21300000, guid: 1f56204d98a6f8646aff90ed9a691988, type: 3}
+  slotArana: {fileID: 21300000, guid: 7b53eed8e734b4344b15cd428f32b42e, type: 3}
   Carpincho: {fileID: 21300000, guid: 316415be1ec44e543a749ce9e162f0de, type: 3}
   Zorro: {fileID: 21300000, guid: c86a3b356b60d894f84049e97a581e35, type: 3}
   Cocodrilo: {fileID: 21300000, guid: 093b1f119c2d16f43a8a7dacb77bfee5, type: 3}
