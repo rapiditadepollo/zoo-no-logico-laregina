@@ -314,8 +314,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 193233196}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ComprarMurcielago
+        m_TargetAssemblyTypeName: MonedasTotales, Assembly-CSharp
+        m_MethodName: Comprar7
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1039,8 +1039,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 193233196}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ComprarCocodrilo
+        m_TargetAssemblyTypeName: MonedasTotales, Assembly-CSharp
+        m_MethodName: Comprar6
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1194,8 +1194,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 193233196}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ComprarArana
+        m_TargetAssemblyTypeName: MonedasTotales, Assembly-CSharp
+        m_MethodName: Comprar1
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1349,8 +1349,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 193233196}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ComprarAve
+        m_TargetAssemblyTypeName: MonedasTotales, Assembly-CSharp
+        m_MethodName: Comprar1
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2643,8 +2643,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 193233196}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ComprarMurcielago
+        m_TargetAssemblyTypeName: MonedasTotales, Assembly-CSharp
+        m_MethodName: Comprar7
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4326,8 +4326,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 193233196}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ComprarCarpincho
+        m_TargetAssemblyTypeName: MonedasTotales, Assembly-CSharp
+        m_MethodName: Comprar3
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5924,8 +5924,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1058717682}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ComprarAve
+        m_TargetAssemblyTypeName: MonedasTotales, Assembly-CSharp
+        m_MethodName: Comprar1
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6159,8 +6159,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 193233196}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ComprarCarpincho
+        m_TargetAssemblyTypeName: MonedasTotales, Assembly-CSharp
+        m_MethodName: Comprar3
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6475,8 +6475,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 193233196}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ComprarZorro
+        m_TargetAssemblyTypeName: MonedasTotales, Assembly-CSharp
+        m_MethodName: Comprar5
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7961,8 +7961,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 193233196}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ComprarSerpiente
+        m_TargetAssemblyTypeName: MonedasTotales, Assembly-CSharp
+        m_MethodName: Comprar4
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8200,8 +8200,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 193233196}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ComprarCocodrilo
+        m_TargetAssemblyTypeName: MonedasTotales, Assembly-CSharp
+        m_MethodName: Comprar6
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9398,8 +9398,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 193233196}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ComprarArana
+        m_TargetAssemblyTypeName: MonedasTotales, Assembly-CSharp
+        m_MethodName: Comprar2
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9635,8 +9635,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 193233196}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ComprarZorro
+        m_TargetAssemblyTypeName: MonedasTotales, Assembly-CSharp
+        m_MethodName: Comprar4
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10553,8 +10553,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 193233196}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ComprarSerpiente
+        m_TargetAssemblyTypeName: MonedasTotales, Assembly-CSharp
+        m_MethodName: Comprar4
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
