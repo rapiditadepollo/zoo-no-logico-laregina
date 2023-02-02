@@ -37,38 +37,110 @@ public class TiendaSlot : MonoBehaviour
     public SpriteRenderer slot6;
     public SpriteRenderer slot7;
 
+    public Button botonC1;
+    public Button botonC2;
+    public Button botonC3;
+    public Button botonC4;
+    public Button botonC5;
+    public Button botonC6;
+    public Button botonC7;
+    public Button bbotonC1;
+    public Button bbotonC2;
+    public Button bbotonC3;
+    public Button bbotonC4;
+    public Button bbotonC5;
+    public Button bbotonC6;
+    public Button bbotonC7;
+
+    public GameObject a1;
+    public GameObject a2;
+    public GameObject a3;
+    public GameObject a4;
+    public GameObject a5;
+    public GameObject a6;
+    public GameObject a7;
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
+        Color gris = new Color(0.1f, 0.1f, 0.1f, 1.0f);
         switch (PlayerPrefs.GetString("animal1Tienda"))
         {
             case "Carpincho":
                 slot1.sprite = slotCarpincho;
                 boton1.sprite = Carpincho;
+                a1.SetActive(false);
                 break;
             case "Cocodrilo":
                 slot1.sprite = slotCocodrilo;
                 boton1.sprite = Cocodrilo;
+                a1.SetActive(false);
                 break;
             case "Ave":
                 slot1.sprite = slotAve;
                 boton1.sprite = Ave;
+                if (PlayerPrefs.GetInt("aveDesbloqueada") == 1)
+                {
+                    botonC1.interactable = true;
+                    bbotonC1.interactable = true;
+                    a1.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot1.color = Color.white;
+                }
+                else
+                {
+                    botonC1.interactable = false;
+                    bbotonC1.interactable = false;
+                    a1.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot1.color = gris;
+                }
                 break;
             case "Serpiente":
                 slot1.sprite = slotSerpiente;
                 boton1.sprite = Serpiente;
+                if (PlayerPrefs.GetInt("serpienteDesbloqueada") == 1)
+                {
+                    botonC1.interactable = true;
+
+                    a1.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot1.color = Color.white;
+                }
+                else
+                {
+                    botonC1.interactable = false;
+                    bbotonC1.interactable = false;
+                    a1.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot1.color = gris;
+                }
                 break;
             case "Murcielago":
                 slot1.sprite = slotMurcielago;
                 boton1.sprite = Murcielago;
+                a1.SetActive(false);
                 break;
             case "Zorro":
                 slot1.sprite = slotZorro;
                 boton1.sprite = Zorro;
+                a1.SetActive(false);
                 break;
             case "Arana":
                 slot1.sprite = slotArana;
                 boton1.sprite = Arana;
+                if (PlayerPrefs.GetInt("aranaDesbloqueada") == 1)
+                {
+                    botonC1.interactable = true;
+                    a1.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot1.color = Color.white;
+                }
+                else
+                {
+                    botonC1.interactable = false;
+                    bbotonC1.interactable = false;
+                    a1.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot1.color = gris;
+                }
                 break;
             default:
                 print("Incorrect intelligence level.");
@@ -80,18 +152,48 @@ public class TiendaSlot : MonoBehaviour
             case "Carpincho":
                 slot2.sprite = slotCarpincho;
                 boton2.sprite = Carpincho;
+                a2.SetActive(false);
                 break;
             case "Cocodrilo":
                 slot2.sprite = slotCocodrilo;
                 boton2.sprite = Cocodrilo;
+                a2.SetActive(false);
                 break;
             case "Ave":
                 slot2.sprite = slotAve;
                 boton2.sprite = Ave;
-                break;
+                if (PlayerPrefs.GetInt("aveDesbloqueada") == 1)
+                {
+                    botonC2.interactable = true;
+                    a2.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot2.color = Color.white;
+                }
+                else
+                {
+                    botonC2.interactable = false;
+                    bbotonC2.interactable = false;
+                    a2.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot2.color = gris;
+                }
+
+                    break;
             case "Serpiente":
                 slot2.sprite = slotSerpiente;
                 boton2.sprite = Serpiente;
+                if (PlayerPrefs.GetInt("serpienteDesbloqueada") == 1)
+                {
+                    botonC2.interactable = true;
+                    a2.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot2.color = Color.white;
+                }
+                else
+                {
+                    bbotonC2.interactable = false;
+                    botonC2.interactable = false;
+                    a2.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot2.color = gris;
+                }
+
                 break;
             case "Murcielago":
                 slot2.sprite = slotMurcielago;
@@ -104,6 +206,20 @@ public class TiendaSlot : MonoBehaviour
             case "Arana":
                 slot2.sprite = slotArana;
                 boton1.sprite = Arana;
+                if (PlayerPrefs.GetInt("aranaDesbloqueada") == 1)
+                {
+                    botonC2.interactable = true;
+                    a2.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot2.color = Color.white;
+                }
+                else
+                {
+                    bbotonC2.interactable = false;
+                    botonC2.interactable = false;
+                    a2.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot2.color = gris;
+                }
+
                 break;
             default:
                 print("Incorrect intelligence level.");
@@ -123,10 +239,37 @@ public class TiendaSlot : MonoBehaviour
             case "Ave":
                 slot3.sprite = slotAve;
                 boton3.sprite = Ave;
-                break;
+                if (PlayerPrefs.GetInt("aveDesbloqueada") == 1)
+                {
+                    botonC3.interactable = true;
+                    a3.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot3.color = Color.white;
+                }
+                else
+                {
+                    bbotonC3.interactable = false;
+                    botonC3.interactable = false;
+                    a3.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot3.color = gris;
+                }
+
+                    break;
             case "Serpiente":
                 slot3.sprite = slotSerpiente;
                 boton3.sprite = Serpiente;
+                if (PlayerPrefs.GetInt("serpienteDesbloqueada") == 1)
+                {
+                    botonC3.interactable = true;
+                    a3.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot3.color = Color.white;
+                }
+                else
+                {
+                    bbotonC3.interactable = false;
+                    botonC3.interactable = false;
+                    a3.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot3.color = gris;
+                }
                 break;
             case "Murcielago":
                 slot3.sprite = slotMurcielago;
@@ -139,6 +282,19 @@ public class TiendaSlot : MonoBehaviour
             case "Arana":
                 slot3.sprite = slotArana;
                 boton3.sprite = Arana;
+                if (PlayerPrefs.GetInt("aranaDesbloqueada") == 1)
+                {
+                    botonC3.interactable = true;
+                    a3.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot3.color = Color.white;
+                }
+                else
+                {
+                    bbotonC3.interactable = false;
+                    botonC3.interactable = false;
+                    a3.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot3.color = gris;
+                }
                 break;
             default:
                 print("Incorrect intelligence level.");
@@ -158,10 +314,37 @@ public class TiendaSlot : MonoBehaviour
             case "Ave":
                 slot4.sprite = slotAve;
                 boton4.sprite = Ave;
-                break;
+                if (PlayerPrefs.GetInt("aveDesbloqueada") == 1)
+                {
+                    botonC4.interactable = true;
+                    a4.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot4.color = Color.white;
+                }
+                else
+                {
+                    bbotonC4.interactable = false;
+                    botonC4.interactable = false;
+                    a4.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot4.color = gris;
+                }
+
+                    break;
             case "Serpiente":
                 slot4.sprite = slotSerpiente;
                 boton4.sprite = Serpiente;
+                if (PlayerPrefs.GetInt("serpienteDesbloqueada") == 1)
+                {
+                    botonC4.interactable = true;
+                    a4.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot4.color = Color.white;
+                }
+                else
+                {
+                    bbotonC4.interactable = false;
+                    botonC4.interactable = false;
+                    a4.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot4.color = gris;
+                }
                 break;
             case "Murcielago":
                 slot4.sprite = slotMurcielago;
@@ -174,6 +357,19 @@ public class TiendaSlot : MonoBehaviour
             case "Arana":
                 slot4.sprite = slotArana;
                 boton4.sprite = Arana;
+                if (PlayerPrefs.GetInt("aranaDesbloqueada") == 1)
+                {
+                    botonC4.interactable = true;
+                    a4.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot4.color = Color.white;
+                }
+                else
+                {
+                    bbotonC4.interactable = false;
+                    botonC4.interactable = false;
+                    a4.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot4.color = gris;
+                }
                 break;
             default:
                 print("Incorrect intelligence level.");
@@ -193,10 +389,37 @@ public class TiendaSlot : MonoBehaviour
             case "Ave":
                 slot5.sprite = slotAve;
                 boton5.sprite = Ave;
-                break;
+                if (PlayerPrefs.GetInt("aveDesbloqueada") == 1)
+                {
+                    botonC5.interactable = true;
+                    a5.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot5.color = Color.white;
+                }
+                else
+                {
+                    bbotonC5.interactable = false;
+                    botonC5.interactable = false;
+                    a5.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot5.color = gris;
+                }
+
+                    break;
             case "Serpiente":
                 slot5.sprite = slotSerpiente;
                 boton5.sprite = Serpiente;
+                if (PlayerPrefs.GetInt("serpienteDesbloqueada") == 1)
+                {
+                    botonC5.interactable = true;
+                    a5.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot5.color = Color.white;
+                }
+                else
+                {
+                    bbotonC5.interactable = false;
+                    botonC5.interactable = false;
+                    a5.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot5.color = gris;
+                }
                 break;
             case "Murcielago":
                 slot5.sprite = slotMurcielago;
@@ -209,6 +432,19 @@ public class TiendaSlot : MonoBehaviour
             case "Arana":
                 slot5.sprite = slotArana;
                 boton5.sprite = Arana;
+                if (PlayerPrefs.GetInt("aranaDesbloqueada") == 1)
+                {
+                    botonC5.interactable = true;
+                    a5.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot5.color = Color.white;
+                }
+                else
+                {
+                    bbotonC5.interactable = false;
+                    botonC5.interactable = false;
+                    a5.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot5.color = gris;
+                }
                 break;
             default:
                 print("Incorrect intelligence level.");
@@ -228,10 +464,37 @@ public class TiendaSlot : MonoBehaviour
             case "Ave":
                 slot6.sprite = slotAve;
                 boton6.sprite = Ave;
-                break;
+                if (PlayerPrefs.GetInt("aveDesbloqueada") == 1)
+                {
+                    botonC6.interactable = true;
+                    a6.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot6.color = Color.white;
+                }
+                else
+                {
+                    bbotonC6.interactable = false;
+                    botonC6.interactable = false;
+                    a6.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot6.color = gris;
+                }
+
+                    break;
             case "Serpiente":
                 slot6.sprite = slotSerpiente;
                 boton6.sprite = Serpiente;
+                if (PlayerPrefs.GetInt("serpienteDesbloqueada") == 1)
+                {
+                    botonC6.interactable = true;
+                    a6.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot6.color = Color.white;
+                }
+                else
+                {
+                    bbotonC6.interactable = false;
+                    botonC6.interactable = false;
+                    a6.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot6.color = gris;
+                }
                 break;
             case "Murcielago":
                 slot6.sprite = slotMurcielago;
@@ -244,6 +507,19 @@ public class TiendaSlot : MonoBehaviour
             case "Arana":
                 slot6.sprite = slotArana;
                 boton6.sprite = Arana;
+                if (PlayerPrefs.GetInt("aranaDesbloqueada") == 1)
+                {
+                    botonC6.interactable = true;
+                    a6.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot6.color = Color.white;
+                }
+                else
+                {
+                    bbotonC6.interactable = false;
+                    botonC6.interactable = false;
+                    a6.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot6.color = gris;
+                }
                 break;
             default:
                 print("Incorrect intelligence level.");
@@ -255,30 +531,73 @@ public class TiendaSlot : MonoBehaviour
             case "Carpincho":
                 slot7.sprite = slotCarpincho;
                 boton7.sprite = Carpincho;
+                a7.SetActive(false);
                 break;
             case "Cocodrilo":
                 slot7.sprite = slotCocodrilo;
                 boton7.sprite = Cocodrilo;
+                a7.SetActive(false);
                 break;
             case "Ave":
                 slot7.sprite = slotAve;
                 boton7.sprite = Ave;
+                if (PlayerPrefs.GetInt("aveDesbloqueada") == 1)
+                {
+                    botonC7.interactable = true;
+                    a7.GetComponent<SpriteRenderer>().color = Color.white;
+                    slot7.color = Color.white;
+                }
+                else
+                {
+                    bbotonC7.interactable = false;
+                    botonC7.interactable = false;
+                    a7.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot7.color = gris;
+                }
                 break;
             case "Serpiente":
                 slot7.sprite = slotSerpiente;
                 boton7.sprite = Serpiente;
+                if (PlayerPrefs.GetInt("serpienteDesbloqueada") == 1)
+                {
+                    botonC7.interactable = true;
+                    a7.SetActive(false);
+                    slot7.color = Color.white;
+                }
+                else
+                {
+                    bbotonC7.interactable = false;
+                    botonC7.interactable = false;
+                    a7.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot7.color = gris;
+                }
                 break;
             case "Murcielago":
                 slot7.sprite = slotMurcielago;
                 boton7.sprite = Murcielago;
+                a7.SetActive(false);
                 break;
             case "Zorro":
                 slot7.sprite = slotZorro;
                 boton7.sprite = Zorro;
+                a7.SetActive(false);
                 break;
             case "Arana":
                 slot7.sprite = slotArana;
                 boton7.sprite = Arana;
+                if (PlayerPrefs.GetInt("aranaDesbloqueada") == 1)
+                {
+                    botonC7.interactable = true;
+                    a7.SetActive(false);
+                    slot7.color = Color.white;
+                }
+                else
+                {
+                    bbotonC7.interactable = false;
+                    botonC7.interactable = false;
+                    a7.GetComponent<SpriteRenderer>().color = Color.black;
+                    slot7.color = gris;
+                }
                 break;
             default:
                 print("Incorrect intelligence level.");

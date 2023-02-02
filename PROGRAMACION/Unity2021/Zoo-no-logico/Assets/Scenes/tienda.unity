@@ -1188,7 +1188,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Highlighted
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 191452531}
   m_OnClick:
     m_PersistentCalls:
@@ -1343,7 +1343,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Highlighted
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 193233198}
   m_OnClick:
     m_PersistentCalls:
@@ -1414,7 +1414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &202007170
 Transform:
   m_ObjectHideFlags: 0
@@ -2147,7 +2147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &339755239
 Transform:
   m_ObjectHideFlags: 0
@@ -2156,8 +2156,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339755238}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 318.9, y: -53.5, z: -4050}
-  m_LocalScale: {x: 9, y: 9, z: 89}
+  m_LocalPosition: {x: 320, y: -53.7, z: -4050}
+  m_LocalScale: {x: 11.25, y: 11.25, z: 111.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 653819671}
@@ -2231,7 +2231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &358278301
 Transform:
   m_ObjectHideFlags: 0
@@ -2289,7 +2289,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 06f0ee39cfc86304eaddca8b631948bf, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3877,7 +3877,7 @@ MonoBehaviour:
   slotSerpiente: {fileID: 21300000, guid: 4a770aba468b03e4bbda1a2eae4d9dd5, type: 3}
   slotArana: {fileID: 21300000, guid: 7b53eed8e734b4344b15cd428f32b42e, type: 3}
   Carpincho: {fileID: 21300000, guid: 316415be1ec44e543a749ce9e162f0de, type: 3}
-  Zorro: {fileID: 21300000, guid: c86a3b356b60d894f84049e97a581e35, type: 3}
+  Zorro: {fileID: 21300000, guid: bb6555c6df35131409605feda3ae01dc, type: 3}
   Cocodrilo: {fileID: 21300000, guid: 093b1f119c2d16f43a8a7dacb77bfee5, type: 3}
   Murcielago: {fileID: 21300000, guid: f5002ecb483a2e44a864e5bbe1db3d4d, type: 3}
   Ave: {fileID: 21300000, guid: 937fad170686aca4a8d8aad0f56ac71b, type: 3}
@@ -3897,6 +3897,27 @@ MonoBehaviour:
   slot5: {fileID: 1642618814}
   slot6: {fileID: 72906120}
   slot7: {fileID: 1702603172}
+  botonC1: {fileID: 193233197}
+  botonC2: {fileID: 191452530}
+  botonC3: {fileID: 1068893827}
+  botonC4: {fileID: 2125038298}
+  botonC5: {fileID: 1087141209}
+  botonC6: {fileID: 1508144208}
+  botonC7: {fileID: 33450662}
+  bbotonC1: {fileID: 1058717683}
+  bbotonC2: {fileID: 1707595609}
+  bbotonC3: {fileID: 799526155}
+  bbotonC4: {fileID: 1486397129}
+  bbotonC5: {fileID: 1863400365}
+  bbotonC6: {fileID: 187599295}
+  bbotonC7: {fileID: 443199478}
+  a1: {fileID: 901880544}
+  a2: {fileID: 1251705564}
+  a3: {fileID: 202007169}
+  a4: {fileID: 358278300}
+  a5: {fileID: 1605444609}
+  a6: {fileID: 1160901137}
+  a7: {fileID: 339755238}
 --- !u!1 &680555916
 GameObject:
   m_ObjectHideFlags: 0
@@ -4904,7 +4925,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &901880545
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4947,7 +4968,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 937fad170686aca4a8d8aad0f56ac71b, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5857,8 +5878,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -291.86, y: 3.26}
-  m_SizeDelta: {x: 200.6, y: 239.27}
+  m_AnchoredPosition: {x: -291.86, y: -6.727502}
+  m_SizeDelta: {x: 200.6, y: 259.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1058717682
 MonoBehaviour:
@@ -6705,7 +6726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1160901138
 Transform:
   m_ObjectHideFlags: 0
@@ -6714,8 +6735,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160901137}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 198, y: -57.6, z: -4050}
-  m_LocalScale: {x: 9, y: 9, z: 9}
+  m_LocalPosition: {x: 196.71, y: -57.7, z: -4050}
+  m_LocalScale: {x: 9.309669, y: 9.309669, z: 9.309669}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 653819671}
@@ -6958,7 +6979,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1251705565
 Transform:
   m_ObjectHideFlags: 0
@@ -7016,7 +7037,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: d3fdde2dfaeeab64fa700d7d19c7ac8e, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8719,7 +8740,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1605444610
 Transform:
   m_ObjectHideFlags: 0
@@ -8728,8 +8749,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605444609}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 77.3, y: -55.5, z: -4050}
-  m_LocalScale: {x: 2.3906243, y: 2.3906243, z: 2.3906243}
+  m_LocalPosition: {x: 81.1, y: -56.9, z: -1}
+  m_LocalScale: {x: 9.190669, y: 9.190669, z: 9.190669}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 653819671}
@@ -8776,7 +8797,7 @@ SpriteRenderer:
   m_SortingLayerID: -1700042939
   m_SortingLayer: 1
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: c86a3b356b60d894f84049e97a581e35, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bb6555c6df35131409605feda3ae01dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9331,8 +9352,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -82.89, y: -20.373}
-  m_SizeDelta: {x: 199.35, y: 365.64}
+  m_AnchoredPosition: {x: -82.89, y: -6.0781}
+  m_SizeDelta: {x: 199.35, y: 257.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1707595608
 MonoBehaviour:
@@ -10547,7 +10568,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Highlighted
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 2125038299}
   m_OnClick:
     m_PersistentCalls:
