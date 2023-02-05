@@ -70,7 +70,7 @@ public class NewDayMoneyDetail : MonoBehaviour
 
 
 
-        multiplicador.text = "X " + PlayerPrefs.GetFloat("popularityMultipliyer").ToString();
+        multiplicador.text = "x" + PlayerPrefs.GetFloat("popularityMultipliyer").ToString();
         impuesto.text = PlayerPrefs.GetFloat("impuestoDiario").ToString();
         popularidad.text = PlayerPrefs.GetInt("impuestoDeuda").ToString();
 

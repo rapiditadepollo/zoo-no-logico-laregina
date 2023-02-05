@@ -31,7 +31,7 @@ public class NewDayMoney : MonoBehaviour {
     private int newMoneyInt;
     float Monedas;
     private int impuestoDeuda = 0;
-    float  impuestoDiario = 0;
+    float impuestoDiario = 0;
 
     float impuestoDiarioMultiplicador;
     float impuestoPorNoHacerCruzasMultiplicador;
@@ -45,19 +45,33 @@ public class NewDayMoney : MonoBehaviour {
     public CruzaList myCruzaList = new CruzaList();
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
 
         myCruzaList = JsonUtility.FromJson<CruzaList>(Cruzas.text);
         PlayerPrefs.SetFloat("cageDivisor", cageDivisor);
 
-        
 
-        for (int i = 0; i<20; i++){
-            if (PlayerPrefs.GetInt("Jaula" + i) != 89) { PlayerPrefs.SetInt("cage"+ i+"Money", myCruzaList.cruza[PlayerPrefs.GetInt("Jaula" + i)].dinero);}
+        for (int i = 0; i < 20; i++)
+        {
+            if (PlayerPrefs.GetString("Jaula" + i).Length > 0)
+            {
+                int jaul = int.Parse(PlayerPrefs.GetString("Jaula" + i));
+                print(PlayerPrefs.GetInt("Jaula" + i));
+                print(jaul);
+                if (int.Parse(PlayerPrefs.GetString("Jaula" + i)) != 89)
+                {
+                    PlayerPrefs.SetInt("cage" + i + "Money", myCruzaList.cruza[int.Parse(PlayerPrefs.GetString("Jaula" + i))].dinero);
+                    print(PlayerPrefs.GetString("Jaula" + i));
+                }
+
+            }
         }
-
-
     }
+
+
+
+    
 
     private void Update()
     {

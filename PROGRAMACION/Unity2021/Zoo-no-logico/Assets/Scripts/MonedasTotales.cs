@@ -21,7 +21,7 @@ public class MonedasTotales : MonoBehaviour {
     void Start()
     {
         textoMonedas = GameObject.FindGameObjectWithTag("TextoMonedas").GetComponent<Text>(); // Busca el objeto por su tag y le da el componente Text
-        Monedas = PlayerPrefs.GetInt("Moneditas");
+        
         ANALYTICS = GameObject.FindGameObjectWithTag("ANALYTICS");
     }
 
@@ -29,7 +29,7 @@ public class MonedasTotales : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
+        Monedas = PlayerPrefs.GetInt("Moneditas");
         textoMonedas.text = PlayerPrefs.GetInt("Moneditas").ToString();     
     }
 
@@ -97,6 +97,7 @@ public class MonedasTotales : MonoBehaviour {
             PlayerPrefs.SetInt(PlayerPrefs.GetString("animal1Tienda") + "sTotales", PlayerPrefs.GetInt(PlayerPrefs.GetString("animal1Tienda") + "sTotales") + 1);
             Cosoprueba.SendMessage("SumarCantidad" + PlayerPrefs.GetString("animal1Tienda"));
             ANALYTICS.SendMessage("comprar");
+            print("compre 1" + PlayerPrefs.GetString("animal1Tienda"));
         }
     }
 
@@ -104,6 +105,7 @@ public class MonedasTotales : MonoBehaviour {
     {
         if (Monedas > gastarPlata)
         {
+            print(gastarPlata);
             Monedas -= gastarPlata; // Al int con mis monedas le voy a restar el dato que recibe desde el botón
             PlayerPrefs.SetInt("Moneditas", Monedas);
 
