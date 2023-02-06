@@ -17,7 +17,7 @@ public class JsonReader : MonoBehaviour {
     private int peligrosidad;
     public int index;
     public Image foto;
-    public string nombreAnimal = "miNombre";
+    public string nombreAnimal = "animal";
 
     public Sprite foto0;
     public Sprite foto1;
@@ -139,6 +139,8 @@ public class JsonReader : MonoBehaviour {
         {
             index = PlayerPrefs.GetInt("indexCurrentCruza");
         }
+
+        nombreAnimal = myCruzaList.cruza[index].nombre.ToLower();
 
         PlayerPrefs.SetInt("indexCurrentCruza", index);
         PlayerPrefs.SetInt("Cruza" + index, 1);

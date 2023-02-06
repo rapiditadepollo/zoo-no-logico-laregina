@@ -17,6 +17,13 @@ public class CambioDeDia : MonoBehaviour {
     private string[] listaAnimales = new string[] { "Carpincho", "Cocodrilo", "Arana", "Ave", "Serpiente", "Zorro", "Murcielago" };
     private string tempGO;
 
+    public GameObject aranaDesbloqueada;
+    public GameObject aveDesbloqueada;
+    public GameObject serpienteDesbloqueada;
+
+    public float speed = 10.0f;
+
+
     [SerializeField] private GameObject ANALYTICS;
 
     // Use this for initialization
@@ -35,17 +42,25 @@ public class CambioDeDia : MonoBehaviour {
         {
             PlayerPrefs.SetInt("aranaDesbloqueada", 1);
             PlayerPrefs.SetInt("CantidadArana", PlayerPrefs.GetInt("CantidadArana") + 1);
-
+            print(aranaDesbloqueada.transform.position);
+            aranaDesbloqueada.SetActive(true);
+           
+            StartCoroutine(DestruirObjeto(aranaDesbloqueada));
+            print(aranaDesbloqueada.transform.position);
         }
-        if (Popularidad > 35 && PlayerPrefs.GetInt("aveDesbloqueada") == 0)
+        if (Popularidad > 30 && PlayerPrefs.GetInt("aveDesbloqueada") == 0)
         {
             PlayerPrefs.SetInt("aveDesbloqueada", 1);
             PlayerPrefs.SetInt("CantidadAve", PlayerPrefs.GetInt("CantidadAve") + 1);
+            //DestruirObjeto(aveDesbloqueada);
+            StartCoroutine(DestruirObjeto(aveDesbloqueada));
         }
-        if (Popularidad > 50 && PlayerPrefs.GetInt("serpienteDesbloqueada") == 0)
+        if (Popularidad > 35 && PlayerPrefs.GetInt("serpienteDesbloqueada") == 0)
         {
             PlayerPrefs.SetInt("serpienteDesbloqueada", 1);
             PlayerPrefs.SetInt("CantidadSerpiente", PlayerPrefs.GetInt("CantidadSerpiente") + 1);
+            //DestruirObjeto(serpienteDesbloqueada);
+            StartCoroutine(DestruirObjeto(serpienteDesbloqueada));
         }
 
         PlayerPrefs.SetString("Slot1", "");
@@ -131,6 +146,7 @@ public class CambioDeDia : MonoBehaviour {
             PlayerPrefs.SetInt("CantidadZorro", 99);
             PlayerPrefs.SetInt("CantidadCocodrilo", 99);
             PlayerPrefs.SetInt("CantidadSerpiente", 99);
+            PlayerPrefs.SetInt("CantidadMurcielago", 99);
             PlayerPrefs.SetInt("Moneditas", 999999999);
         }
 
@@ -145,6 +161,16 @@ public class CambioDeDia : MonoBehaviour {
         {
             PantallaPostEvento.SetActive(true);
         }
+    }
+
+
+    private IEnumerator DestruirObjeto(GameObject objeto)
+    {
+        //aranaDesbloqueada.transform.position = new Vector3(aranaDesbloqueada.transform.position.x - speed * Time.deltaTime, aranaDesbloqueada.transform.position.y, aranaDesbloqueada.transform.position.z);
+        objeto.SetActive(true);
+        yield return new WaitForSeconds(2);
+        objeto.SetActive(false);
+        Destroy(aranaDesbloqueada);
     }
 }
 

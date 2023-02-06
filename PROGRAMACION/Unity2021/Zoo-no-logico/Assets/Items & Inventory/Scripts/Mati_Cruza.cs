@@ -18,6 +18,8 @@ public class Mati_Cruza : MonoBehaviour
 
     public Mati_CruzasAnimales RetenerAnimal;                           // Retiene los datos del Scriptable Object (llamemoslos SO) para poder detectar el costo y el porcentaje
 
+    public GameObject cartel; 
+
     public string PC;
 
     private int divisorCosto = 4;
@@ -58,7 +60,13 @@ public class Mati_Cruza : MonoBehaviour
             {
                 if ((a.nombre.Contains(animales1[0])) && (a.nombre.Contains(animales1[1])) && (a.nombre.Contains(animales1[2])))    // Si un animal que está dentro del slot contiene parte del nombre de la cruza
                 {
-                    
+                    print("Cruza" + a.id);
+                    print(PlayerPrefs.GetInt("Cruza" + a.id));
+                    if (PlayerPrefs.GetInt("Cruza" + a.id) == 1)
+                    {
+                        print("tomi");
+                        StartCoroutine(DestruirObjeto(cartel));
+                    }
                     int costo = ((int)a.precio / divisorCosto);
                     TextoMonedas.text = costo.ToString();            // cambia texto del precio
                     TextoPorcentaje.text = a.porcentaje.ToString();     // cambia texto del porcentaje
@@ -189,5 +197,13 @@ public class Mati_Cruza : MonoBehaviour
                 print("Cocodrilo_Carpincho_Murcielago");
             }*/
 
+    }
+
+    private IEnumerator DestruirObjeto(GameObject objeto)
+    {
+        //aranaDesbloqueada.transform.position = new Vector3(aranaDesbloqueada.transform.position.x - speed * Time.deltaTime, aranaDesbloqueada.transform.position.y, aranaDesbloqueada.transform.position.z);
+        objeto.SetActive(true);
+        yield return new WaitForSeconds(3);
+        objeto.SetActive(false);
     }
 }

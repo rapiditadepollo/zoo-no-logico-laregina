@@ -17,7 +17,7 @@ public class StasisManager : MonoBehaviour
     private int peligrosidad;
     public int index;
     public Image foto;
-    public string nombreAnimal = "miNombre";
+    public string nombreAnimal = "animal";
 
     public Image estrella1;
     public Image estrella2;

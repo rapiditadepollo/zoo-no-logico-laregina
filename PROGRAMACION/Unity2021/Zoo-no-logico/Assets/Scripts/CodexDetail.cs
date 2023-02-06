@@ -17,6 +17,10 @@ public class CodexDetail : MonoBehaviour
     public Image foto;
     public GameObject[] CruzasArray;
 
+    public SpriteRenderer estrella1;
+    public SpriteRenderer estrella2;
+    public SpriteRenderer estrella3;
+
     [System.Serializable]
     public class Cruza
     {
@@ -70,6 +74,25 @@ public class CodexDetail : MonoBehaviour
         Image Cruza_image = CruzasArray[index].GetComponent<Image>();
 
         foto.sprite = cruza_test_img;
+
+        if (index < 35 && myCruzaList.cruza[index].peligrosidad == 1)
+        {
+            estrella1.color = Color.white;
+            estrella2.color = Color.grey;
+            estrella3.color = Color.grey;
+        }
+        if (index < 35 && myCruzaList.cruza[index].peligrosidad == 2)
+        {
+            estrella1.color = Color.white;
+            estrella2.color = Color.white;
+            estrella3.color = Color.grey;
+        }
+        if (index < 35 && myCruzaList.cruza[index].peligrosidad == 3)
+        {
+            estrella1.color = Color.white;
+            estrella2.color = Color.white;
+            estrella3.color = Color.white;
+        }
 
     }
 
