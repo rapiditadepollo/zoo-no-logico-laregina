@@ -15,7 +15,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: 1fccaf7698b4bae4ca000c84e4e1b96e, type: 3}
   nombre: Zorro Serpiente Cocodrilo
   id: 21
-  porcentaje: 50
+  porcentaje: 52
   peligrosidad: 3
   precio: 2333
   popularidad: 5

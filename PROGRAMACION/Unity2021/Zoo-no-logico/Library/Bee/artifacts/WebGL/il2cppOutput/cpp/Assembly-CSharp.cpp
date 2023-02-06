@@ -8154,8 +8154,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mati_Cruza_Craftear_m46A9C36CFBFD4CAC88D
 	int32_t V_6 = 0;
 	int32_t V_7 = 0;
 	{
-		// PlayerPrefs.SetInt("ImpuestoXDiasSinCruzas", 1);
-		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral077F7519B12FED1E3BAA736A0E51DD74789BC340, 1, NULL);
+		// PlayerPrefs.SetInt("ImpuestoXDiasSinCruzas", 0);
+		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral077F7519B12FED1E3BAA736A0E51DD74789BC340, 0, NULL);
 		// int plata = PlayerPrefs.GetInt("Moneditas");                    // Creo variable que obtiene las monedas que tengo
 		int32_t L_0;
 		L_0 = PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987(_stringLiteral240672F646834BE198B9DB0C5B32CF3F86A0C5F8, NULL);
@@ -14680,9 +14680,9 @@ IL_0017:
 		// objeto.SetActive(true);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___objeto_2;
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
-		// yield return new WaitForSeconds(2);
+		// yield return new WaitForSeconds(3);
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_5 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_5, (2.0f), NULL);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_5, (3.0f), NULL);
 		__this->___U3CU3E2__current_1 = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_5);
 		__this->___U3CU3E1__state_0 = 1;
@@ -17450,14 +17450,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Comentarios_Update_m4125A280C349F7D99686
 		L_51 = PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987(_stringLiteral077F7519B12FED1E3BAA736A0E51DD74789BC340, NULL);
 		if ((((int32_t)L_51) <= ((int32_t)2)))
 		{
-			goto IL_0222;
+			goto IL_0224;
 		}
 	}
 	{
-		// string dias = PlayerPrefs.GetInt("ImpuestoXDiasSinCruzas").ToString();
+		// string dias = (PlayerPrefs.GetInt("ImpuestoXDiasSinCruzas")-1).ToString();
 		int32_t L_52;
 		L_52 = PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987(_stringLiteral077F7519B12FED1E3BAA736A0E51DD74789BC340, NULL);
-		V_2 = L_52;
+		V_2 = ((int32_t)il2cpp_codegen_subtract(L_52, 1));
 		String_t* L_53;
 		L_53 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_2), NULL);
 		V_0 = L_53;
@@ -17477,10 +17477,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Comentarios_Update_m4125A280C349F7D99686
 		int32_t L_61 = L_60;
 		String_t* L_62 = (L_59)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_61));
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_58, L_62);
-		goto IL_02b9;
+		goto IL_02bb;
 	}
 
-IL_0222:
+IL_0224:
 	{
 		// else if (nombreLastCruza.Length<2)
 		String_t* L_63 = __this->___nombreLastCruza_23;
@@ -17488,7 +17488,7 @@ IL_0222:
 		L_64 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_63, NULL);
 		if ((((int32_t)L_64) >= ((int32_t)2)))
 		{
-			goto IL_0252;
+			goto IL_0254;
 		}
 	}
 	{
@@ -17498,17 +17498,17 @@ IL_0222:
 		// Comentario2.text = "Los ba?os estaban relativamente limpios, es todo lo que puedo decir.";
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_66 = __this->___Comentario2_10;
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_66, _stringLiteral96E73F0CEDC7BB465FE82D1C25F41A6B03DF637C);
-		goto IL_02b9;
+		goto IL_02bb;
 	}
 
-IL_0252:
+IL_0254:
 	{
 		// else if(PlayerPrefs.GetInt("Jaulitas")<3) {
 		int32_t L_67;
 		L_67 = PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987(_stringLiteral2BA50EDAFD3790C714549263F9A4EBFAF9A5810F, NULL);
 		if ((((int32_t)L_67) >= ((int32_t)3)))
 		{
-			goto IL_0289;
+			goto IL_028b;
 		}
 	}
 	{
@@ -17522,10 +17522,10 @@ IL_0252:
 		// Comentario2.text = "Hay muchas jaulas pero muy pocas est?n ocupadas.";
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_73 = __this->___Comentario2_10;
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_73, _stringLiteralDE3FF1A01F416CA6F0AF087AD5E363036E4FCA33);
-		goto IL_02b9;
+		goto IL_02bb;
 	}
 
-IL_0289:
+IL_028b:
 	{
 		// Comentario.text = Comentariosuwu[ComentarioRandom];
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_74 = __this->___Comentario_9;
@@ -17543,7 +17543,7 @@ IL_0289:
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_79, L_83);
 	}
 
-IL_02b9:
+IL_02bb:
 	{
 		// switch (AvatarRandom1)
 		int32_t L_84 = __this->___AvatarRandom1_8;
@@ -17553,59 +17553,59 @@ IL_02b9:
 		{
 			case 0:
 			{
-				goto IL_02fd;
+				goto IL_02ff;
 			}
 			case 1:
 			{
-				goto IL_0320;
+				goto IL_0322;
 			}
 			case 2:
 			{
-				goto IL_0343;
+				goto IL_0345;
 			}
 			case 3:
 			{
-				goto IL_0366;
+				goto IL_0368;
 			}
 			case 4:
 			{
-				goto IL_0389;
+				goto IL_038b;
 			}
 			case 5:
 			{
-				goto IL_03ac;
+				goto IL_03ae;
 			}
 			case 6:
 			{
-				goto IL_03cf;
+				goto IL_03d1;
 			}
 			case 7:
 			{
-				goto IL_03f2;
+				goto IL_03f4;
 			}
 			case 8:
 			{
-				goto IL_0415;
+				goto IL_0417;
 			}
 			case 9:
 			{
-				goto IL_0438;
+				goto IL_043a;
 			}
 			case 10:
 			{
-				goto IL_045b;
+				goto IL_045d;
 			}
 			case 11:
 			{
-				goto IL_047e;
+				goto IL_0480;
 			}
 		}
 	}
 	{
-		goto IL_04a1;
+		goto IL_04a3;
 	}
 
-IL_02fd:
+IL_02ff:
 	{
 		// avatar.sprite = avatar1;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_86 = __this->___avatar_24;
@@ -17619,7 +17619,7 @@ IL_02fd:
 		return;
 	}
 
-IL_0320:
+IL_0322:
 	{
 		// avatar.sprite = avatar2;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_90 = __this->___avatar_24;
@@ -17633,7 +17633,7 @@ IL_0320:
 		return;
 	}
 
-IL_0343:
+IL_0345:
 	{
 		// avatar.sprite = avatar3;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_94 = __this->___avatar_24;
@@ -17647,7 +17647,7 @@ IL_0343:
 		return;
 	}
 
-IL_0366:
+IL_0368:
 	{
 		// avatar.sprite = avatar4;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_98 = __this->___avatar_24;
@@ -17661,7 +17661,7 @@ IL_0366:
 		return;
 	}
 
-IL_0389:
+IL_038b:
 	{
 		// avatar.sprite = avatar5;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_102 = __this->___avatar_24;
@@ -17675,7 +17675,7 @@ IL_0389:
 		return;
 	}
 
-IL_03ac:
+IL_03ae:
 	{
 		// avatar.sprite = avatar6;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_106 = __this->___avatar_24;
@@ -17689,7 +17689,7 @@ IL_03ac:
 		return;
 	}
 
-IL_03cf:
+IL_03d1:
 	{
 		// avatar.sprite = avatar7;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_110 = __this->___avatar_24;
@@ -17703,7 +17703,7 @@ IL_03cf:
 		return;
 	}
 
-IL_03f2:
+IL_03f4:
 	{
 		// avatar.sprite = avatar8;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_114 = __this->___avatar_24;
@@ -17717,7 +17717,7 @@ IL_03f2:
 		return;
 	}
 
-IL_0415:
+IL_0417:
 	{
 		// avatar.sprite = avatar9;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_118 = __this->___avatar_24;
@@ -17731,7 +17731,7 @@ IL_0415:
 		return;
 	}
 
-IL_0438:
+IL_043a:
 	{
 		// avatar.sprite = avatar10;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_122 = __this->___avatar_24;
@@ -17745,7 +17745,7 @@ IL_0438:
 		return;
 	}
 
-IL_045b:
+IL_045d:
 	{
 		// avatar.sprite = avatar11;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_126 = __this->___avatar_24;
@@ -17759,7 +17759,7 @@ IL_045b:
 		return;
 	}
 
-IL_047e:
+IL_0480:
 	{
 		// avatar.sprite = avatar12;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_130 = __this->___avatar_24;
@@ -17773,7 +17773,7 @@ IL_047e:
 		return;
 	}
 
-IL_04a1:
+IL_04a3:
 	{
 		// avatar.sprite = avatar11;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_134 = __this->___avatar_24;
@@ -18599,8 +18599,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeletePlayerPrefs_Delete_mD77085AD0A1E3A
 		V_0 = L_0;
 		// PlayerPrefs.DeleteAll();
 		PlayerPrefs_DeleteAll_m7687D47AE64203DB76AC6754EC276DFFD0DFAB0E(NULL);
-		// PlayerPrefs.SetInt("Moneditas", 12500);
-		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral240672F646834BE198B9DB0C5B32CF3F86A0C5F8, ((int32_t)12500), NULL);
+		// PlayerPrefs.SetInt("Moneditas", 15000);
+		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral240672F646834BE198B9DB0C5B32CF3F86A0C5F8, ((int32_t)15000), NULL);
 		// PlayerPrefs.SetInt("Popularidad", 20);
 		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteralBAEC9FE849AFD70A0652D0A980C26B2FF811DDA0, ((int32_t)20), NULL);
 		// PlayerPrefs.SetInt("CantidadCarpincho", 0);

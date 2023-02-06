@@ -15,7 +15,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: 34f7e5ad877ca384d94a8d1d41236207, type: 3}
   nombre: Zorro Cocodrilo Murcielago
   id: 0
-  porcentaje: 100
+  porcentaje: 80
   peligrosidad: 1
   precio: 1667
   popularidad: 2

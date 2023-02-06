@@ -70,7 +70,7 @@ public class Comentarios : MonoBehaviour {
 
         if (PlayerPrefs.GetInt("ImpuestoXDiasSinCruzas") > 2)
         {
-            string dias = PlayerPrefs.GetInt("ImpuestoXDiasSinCruzas").ToString();
+            string dias = (PlayerPrefs.GetInt("ImpuestoXDiasSinCruzas")-1).ToString();
             var texto = "Hace " + dias + " días que no veo una cruza nueva, ¡qué aburrido!";
             Comentario.text = texto;
             Comentario2.text = Comentariosuwu2[ComentarioRandom2];

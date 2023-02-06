@@ -168,7 +168,7 @@ public class CambioDeDia : MonoBehaviour {
     {
         //aranaDesbloqueada.transform.position = new Vector3(aranaDesbloqueada.transform.position.x - speed * Time.deltaTime, aranaDesbloqueada.transform.position.y, aranaDesbloqueada.transform.position.z);
         objeto.SetActive(true);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
         objeto.SetActive(false);
         Destroy(aranaDesbloqueada);
     }

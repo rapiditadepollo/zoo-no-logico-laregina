@@ -15,7 +15,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: 7b041cba488b1a14abb30ced0ff30ee3, type: 3}
   nombre: Serpiente Murcielago Carpincho
   id: 26
-  porcentaje: 75
+  porcentaje: 72
   peligrosidad: 3
   precio: 2833
   popularidad: 3

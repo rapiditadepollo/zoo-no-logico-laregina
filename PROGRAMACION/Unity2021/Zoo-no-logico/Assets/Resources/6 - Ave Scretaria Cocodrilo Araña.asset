@@ -15,7 +15,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: fe47508d399593d4b90adf5fda9dd98d, type: 3}
   nombre: "Ave Secretaria Ara\xF1a Carpincho"
   id: 6
-  porcentaje: 50
+  porcentaje: 64
   peligrosidad: 2
   precio: 3500
   popularidad: 7

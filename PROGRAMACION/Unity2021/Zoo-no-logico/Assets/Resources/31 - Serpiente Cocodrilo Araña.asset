@@ -15,7 +15,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: aae2b90fedf008b48a54203362ba2198, type: 3}
   nombre: "Serpiente Cocodrilo Ara\xF1a"
   id: 31
-  porcentaje: 90
+  porcentaje: 56
   peligrosidad: 2
   precio: 2167
   popularidad: 6

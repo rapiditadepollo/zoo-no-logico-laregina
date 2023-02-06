@@ -15,7 +15,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: d2ac1b52cf8177b4a88cc66c7d883022, type: 3}
   nombre: "Serpiente Carpincho Ara\xF1a"
   id: 33
-  porcentaje: 85
+  porcentaje: 64
   peligrosidad: 3
   precio: 2500
   popularidad: 9

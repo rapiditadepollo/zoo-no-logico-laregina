@@ -15,7 +15,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: 3453590dd77eae545839cb89beebed1f, type: 3}
   nombre: Cocodrilo Murcielago Carpincho
   id: 3
-  porcentaje: 45
+  porcentaje: 72
   peligrosidad: 2
   precio: 1833
   popularidad: 2

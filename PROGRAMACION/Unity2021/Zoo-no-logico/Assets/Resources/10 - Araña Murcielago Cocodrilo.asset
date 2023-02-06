@@ -15,7 +15,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: f961c09fcc740da499d24f967becdfb2, type: 3}
   nombre: "Ara\xF1a Murcielago Cocodrilo"
   id: 10
-  porcentaje: 99
+  porcentaje: 84
   peligrosidad: 3
   precio: 2167
   popularidad: 4

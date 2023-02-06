@@ -9224,26 +9224,26 @@ IL_005c:
 
 IL_007f:
 	{
-		// if (PlayerPrefs.GetInt("ImpuestoXDiasSinCruzas") <= 2)
+		// if (PlayerPrefs.GetInt("ImpuestoXDiasSinCruzas") > 3)
 		int32_t L_7;
 		L_7 = PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987(_stringLiteral077F7519B12FED1E3BAA736A0E51DD74789BC340, NULL);
-		if ((((int32_t)L_7) > ((int32_t)2)))
+		if ((((int32_t)L_7) <= ((int32_t)3)))
 		{
-			goto IL_0099;
+			goto IL_00a1;
 		}
 	}
-	{
-		// impuestoPorNoHacerCruzasMultiplicador = 0;
-		__this->___impuestoPorNoHacerCruzasMultiplicador_20 = (0.0f);
-		goto IL_00ac;
-	}
-
-IL_0099:
 	{
 		// impuestoPorNoHacerCruzasMultiplicador = PlayerPrefs.GetInt("ImpuestoXDiasSinCruzas") + 1;
 		int32_t L_8;
 		L_8 = PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987(_stringLiteral077F7519B12FED1E3BAA736A0E51DD74789BC340, NULL);
 		__this->___impuestoPorNoHacerCruzasMultiplicador_20 = ((float)((int32_t)il2cpp_codegen_add(L_8, 1)));
+		goto IL_00ac;
+	}
+
+IL_00a1:
+	{
+		// impuestoPorNoHacerCruzasMultiplicador = 0;
+		__this->___impuestoPorNoHacerCruzasMultiplicador_20 = (0.0f);
 	}
 
 IL_00ac:

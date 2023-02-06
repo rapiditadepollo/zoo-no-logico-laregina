@@ -15,7 +15,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: 2e4124092a2ec964995d8511fc9ff166, type: 3}
   nombre: "Serpiente Murcielago Ara\xF1a"
   id: 28
-  porcentaje: 15
+  porcentaje: 84
   peligrosidad: 1
   precio: 333
   popularidad: 10

@@ -15,7 +15,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: 3cb6d9ec424a73c4a978fd658c206008, type: 3}
   nombre: Zorro Cocodrilo Carpincho
   id: 1
-  porcentaje: 40
+  porcentaje: 60
   peligrosidad: 3
   precio: 2000
   popularidad: 6

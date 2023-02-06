@@ -15,7 +15,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: a397b2980bb98eb47abc7a99905fcd9b, type: 3}
   nombre: Serpiente Murcielago Cocodrilo
   id: 25
-  porcentaje: 60
+  porcentaje: 64
   peligrosidad: 1
   precio: 2667
   popularidad: 5

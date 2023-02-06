@@ -15,7 +15,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: b8ec0489dcc852c4e9d22126a9692437, type: 3}
   nombre: "Ara\xF1a Zorro Murcielago"
   id: 11
-  porcentaje: 51
+  porcentaje: 100
   peligrosidad: 1
   precio: 2333
   popularidad: 8

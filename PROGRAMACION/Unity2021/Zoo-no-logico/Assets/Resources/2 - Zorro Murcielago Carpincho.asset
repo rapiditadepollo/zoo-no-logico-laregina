@@ -15,7 +15,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: 2965a48c9b90e7346bcb5d2ea770d00e, type: 3}
   nombre: Zorro Murcielago Carpincho
   id: 2
-  porcentaje: 95
+  porcentaje: 88
   peligrosidad: 1
   precio: 1833
   popularidad: 5

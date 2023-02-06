@@ -15,7 +15,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: 25a2ea3fd6ed02e45b7a5006afab9150, type: 3}
   nombre: "Zorro Serpiente Ara\xF1a"
   id: 24
-  porcentaje: 80
+  porcentaje: 72
   peligrosidad: 1
   precio: 2167
   popularidad: 4

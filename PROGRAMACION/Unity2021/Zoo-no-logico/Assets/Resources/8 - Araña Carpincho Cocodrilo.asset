@@ -15,7 +15,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: 10a177657b7534640982a0a9fd4f529b, type: 3}
   nombre: "Ara\xF1a Carpincho Cocodrilo"
   id: 8
-  porcentaje: 75
+  porcentaje: 64
   peligrosidad: 1
   precio: 2500
   popularidad: 3

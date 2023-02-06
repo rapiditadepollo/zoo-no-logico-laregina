@@ -15,7 +15,7 @@ MonoBehaviour:
   img: {fileID: 21300000, guid: 9ed4501a99afb8949a04b593b0148253, type: 3}
   nombre: Zorro Serpiente Murcielago
   id: 20
-  porcentaje: 85
+  porcentaje: 80
   peligrosidad: 1
   precio: 3000
   popularidad: 5
