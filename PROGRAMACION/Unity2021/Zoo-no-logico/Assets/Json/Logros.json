@@ -1,0 +1,22 @@
+{
+  "logros": [
+    {
+      "id": "0",
+      "titulo": "QUE CHICO POPULAR",
+      "descripcion": " Alcanzar 50 de popularidad.",
+      "runCheck": true,
+      "condicion": {
+        "variable": "Popularidad",
+        "valor": 50,
+        "operador": ">",
+        "tipo": "int"
+      }
+    },
+    {
+      "id": "1",
+      "titulo": "QUE CHICO POPULAR",
+      "descripcion": " Alcanzar 50 de popularidad.",
+      "runCheck": false
+    }
+  ]
+}
