@@ -30,7 +30,8 @@ public class LogroList
 {
     public List<Logro> logros;
 }
-public class Logros : MonoBehaviour { 
+public class Logros : MonoBehaviour
+{
 
     public TextAsset LogrosJson;
 
@@ -79,8 +80,8 @@ public class Logros : MonoBehaviour {
         {
             Debug.Log(PlayerPrefs.GetInt("Logro" + logro.id));
 
-                if (PlayerPrefs.GetInt("Logro" + logro.id) == 0)
-                {
+            if (PlayerPrefs.GetInt("Logro" + logro.id) == 0)
+            {
 
                 if (logro.runCheck == true)
                 {
@@ -97,7 +98,7 @@ public class Logros : MonoBehaviour {
                 }
 
             }
-            
+
         }
     }
 

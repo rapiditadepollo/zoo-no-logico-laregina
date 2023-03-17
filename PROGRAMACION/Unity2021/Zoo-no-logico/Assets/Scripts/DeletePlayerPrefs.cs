@@ -67,5 +67,7 @@ public class DeletePlayerPrefs : MonoBehaviour {
         PlayerPrefs.SetInt("ResetListCartas", 0);
         PlayerPrefs.SetInt("EventoCartas", 0);
         PlayerPrefs.SetInt("DesactivarNoti", 0);
+
+        PlayerPrefs.SetInt("Logro0", 0);
     }
 }
