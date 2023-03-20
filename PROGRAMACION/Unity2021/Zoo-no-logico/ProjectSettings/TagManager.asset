@@ -114,3 +114,6 @@ TagManager:
   - name: Carpincho
     uniqueID: 4227735225
     locked: 0
+  - name: Logros
+    uniqueID: 2092225951
+    locked: 0

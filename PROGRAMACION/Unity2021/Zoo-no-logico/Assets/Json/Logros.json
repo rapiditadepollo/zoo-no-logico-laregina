@@ -97,7 +97,7 @@
       }
     },
 
-    
+
     {
       "id": "8",
       "titulo": "Mesozoico",
@@ -171,7 +171,7 @@
       }
     },
 
-    
+
     {
       "id": "14",
       "titulo": "PLACEHOLDER",
@@ -222,7 +222,7 @@
     },
     {
       "id": "18",
-      "titulo": "PLACEHOLDER",
+      "titulo": "Sobrepoblacion",
       "descripcion": "Llena 20 jaulas",
       "runCheck": true,
       "condicion": {
@@ -231,8 +231,90 @@
         "operador": "==",
         "tipo": "int"
       }
+    },
+    {
+      "id": "19",
+      "titulo": "Noticias Locales",
+      "descripcion": "Alcanza 25% de Popularidad",
+      "runCheck": true,
+      "condicion": {
+        "variable": "Popularidad",
+        "valor": 25,
+        "operador": ">=",
+        "tipo": "int"
+      }
+    },
+    {
+      "id": "20",
+      "titulo": "Microcelebridad",
+      "descripcion": "Alcanza 50% de Popularidad",
+      "runCheck": true,
+      "condicion": {
+        "variable": "Popularidad",
+        "valor": 50,
+        "operador": ">=",
+        "tipo": "int"
+      }
+    },
+    {
+      "id": "21",
+      "titulo": "Fenomeno Internacional",
+      "descripcion": "Alcanza 75% de Popularidad",
+      "runCheck": true,
+      "condicion": {
+        "variable": "Popularidad",
+        "valor": 75,
+        "operador": ">=",
+        "tipo": "int"
+      }
+    },
+    {
+      "id": "22",
+      "titulo": "Emperador Mundial",
+      "descripcion": "Alcanza 100% de Popularidad",
+      "runCheck": true,
+      "condicion": {
+        "variable": "Popularidad",
+        "valor": 100,
+        "operador": ">=",
+        "tipo": "int"
+      }
+    },
+    {
+      "id": "23",
+      "titulo": "¡Alto Ahi!",
+      "descripcion": "Envia un animal a Stasis",
+      "runCheck": true,
+      "condicion": {
+        "variable": "CantidadCruzasEnStasis",
+        "valor": 1,
+        "operador": "==",
+        "tipo": "int"
+      }
+    },
+    {
+      "id": "24",
+      "titulo": "¡Alto Ahi!",
+      "descripcion": "Ocupa 5 camaras de Stasis",
+      "runCheck": true,
+      "condicion": {
+        "variable": "CantidadCruzasEnStasis",
+        "valor": 5,
+        "operador": "==",
+        "tipo": "int"
+      }
+    },
+    {
+      "id": "25",
+      "titulo": "Un poco apretado, ¿No?",
+      "descripcion": "Ocupa 10 camaras de Stasis",
+      "runCheck": true,
+      "condicion": {
+        "variable": "CantidadCruzasEnStasis",
+        "valor": 10,
+        "operador": "==",
+        "tipo": "int"
+      }
     }
-
-    
   ]
 }

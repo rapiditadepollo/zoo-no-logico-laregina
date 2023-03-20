@@ -139,6 +139,10 @@ public class Logros : MonoBehaviour
                     return (PlayerPrefs.GetInt(condicion.variable) == condicion.valor);
                 case "<":
                     return (PlayerPrefs.GetInt(condicion.variable) < condicion.valor);
+                case ">=":
+                    return (PlayerPrefs.GetInt(condicion.variable) >= condicion.valor);
+                case "<=":
+                    return (PlayerPrefs.GetInt(condicion.variable) <= condicion.valor);
                 default:
                     return false;
             }
