@@ -38,6 +38,7 @@ public class Logros : MonoBehaviour
     public TextAsset LogrosJson;
 
     public GameObject Popup;
+    public GameObject Titulo;
 
     public LogroList myLogroList = new LogroList();
 
@@ -135,10 +136,10 @@ public class Logros : MonoBehaviour
             {
                 case ">":
                     return (PlayerPrefs.GetInt(condicion.variable) > condicion.valor);
-                case "==":
-                    return (PlayerPrefs.GetInt(condicion.variable) == condicion.valor);
                 case "<":
                     return (PlayerPrefs.GetInt(condicion.variable) < condicion.valor);
+                case "==":
+                    return (PlayerPrefs.GetInt(condicion.variable) == condicion.valor);
                 case ">=":
                     return (PlayerPrefs.GetInt(condicion.variable) >= condicion.valor);
                 case "<=":
@@ -177,6 +178,10 @@ public class Logros : MonoBehaviour
         SpriteRenderer popup_img = Popup.GetComponent<SpriteRenderer>();
 
         popup_img.sprite = logro_img;
+
+        // Texto de Logros
+
+        //Titulo.GetComponent<Text>().text =  No se llamar esto lmao;
     }
 
     void RunQueue()
