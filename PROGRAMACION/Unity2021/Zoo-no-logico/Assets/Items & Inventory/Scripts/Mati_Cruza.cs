@@ -159,6 +159,14 @@ public class Mati_Cruza : MonoBehaviour
                 PlayerPrefs.SetString("PrimeraCombinacion", "false");           // Cambio el player pref a false
                 SceneManager.LoadScene(6);                                      // Cambia a escena de animal nuevo
                 PlayerPrefs.SetInt("cruzasExito", PlayerPrefs.GetInt("cruzasExito") + 1);
+
+                Debug.Log("primera cruza");
+
+                if (PlayerPrefs.GetInt("Cruza" + RetenerAnimal.id) == 0)
+                {
+                    Debug.Log("codex = 1");
+                    PlayerPrefs.SetInt("totalCodex", PlayerPrefs.GetInt("totalCodex") + 1);
+                }
             }
             else                                                                // Si no es la primera combinación que hago
             {                                                           
@@ -170,6 +178,12 @@ public class Mati_Cruza : MonoBehaviour
         {
             SceneManager.LoadScene(6);                                  // Cambia a escena de animal nuevo
             PlayerPrefs.SetInt("cruzasExito", PlayerPrefs.GetInt("cruzasExito") + 1);
+
+            if (PlayerPrefs.GetInt("Cruza" + RetenerAnimal.id) == 0)
+            {
+                Debug.Log("codex = 1");
+                PlayerPrefs.SetInt("totalCodex", PlayerPrefs.GetInt("totalCodex") + 1);
+            }
         }
 
 

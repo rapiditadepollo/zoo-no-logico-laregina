@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Text;
 using System.IO;
+using System;
+using System.Linq;
 
 [System.Serializable]
 public class Logro
@@ -39,15 +41,23 @@ public class Logros : MonoBehaviour
 
     public LogroList myLogroList = new LogroList();
 
+    public List<string> achievementQueue;
+
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
-        PlayerPrefs.SetInt("Logro0", 0);
     }
 
     void Start()
     {
         LoadLogros();
+
+        foreach (Logro logro in myLogroList.logros)
+        {
+            PlayerPrefs.SetInt("Logro" + logro.id, 0);
+        }
+
+        InvokeRepeating("RunQueue", 0, 5);
     }
 
     // Update is called once per frame
@@ -78,23 +88,20 @@ public class Logros : MonoBehaviour
 
         foreach (Logro logro in myLogroList.logros)
         {
-            Debug.Log(PlayerPrefs.GetInt("Logro" + logro.id));
-
             if (PlayerPrefs.GetInt("Logro" + logro.id) == 0)
             {
-
                 if (logro.runCheck == true)
                 {
-                    Debug.Log("HAY CONDICION");
-
                     if (CheckCondition(logro.condicion))
                     {
-                        UnlockAchievement(logro.id);
+                        //UnlockAchievement(logro.id);
+                        achievementQueue.Add(logro.id);
+
+                        PlayerPrefs.SetInt("Logro" + logro.id, 1);
                     }
                 }
                 else
                 {
-                    Debug.Log("NO HAY CONDICION");
                 }
 
             }
@@ -116,11 +123,11 @@ public class Logros : MonoBehaviour
         //        return false;
         //}
 
-        Debug.Log(condicion.tipo);
-        Debug.Log(condicion.variable);
-        Debug.Log(condicion.operador);
-        Debug.Log(condicion.valor);
-        Debug.Log(PlayerPrefs.GetInt(condicion.variable));
+        //Debug.Log(condicion.tipo);
+        //Debug.Log(condicion.variable);
+        //Debug.Log(condicion.operador);
+        //Debug.Log(condicion.valor);
+        //Debug.Log(PlayerPrefs.GetInt(condicion.variable));
 
         if (condicion.tipo == "int")
         {
@@ -128,6 +135,10 @@ public class Logros : MonoBehaviour
             {
                 case ">":
                     return (PlayerPrefs.GetInt(condicion.variable) > condicion.valor);
+                case "==":
+                    return (PlayerPrefs.GetInt(condicion.variable) == condicion.valor);
+                case "<":
+                    return (PlayerPrefs.GetInt(condicion.variable) < condicion.valor);
                 default:
                     return false;
             }
@@ -138,13 +149,12 @@ public class Logros : MonoBehaviour
         }
     }
 
-    void UnlockAchievement(string id)
+    private IEnumerator UnlockAchievement(string id)
     {
-
-        PlayerPrefs.SetInt("Logro" + id, 1);
         Debug.Log("Logro " + id + " Desbloqueado");
         GetAchievement(int.Parse(id));
         StartCoroutine(ShowPopup());
+        yield return new WaitForSeconds(1);
     }
 
     private IEnumerator ShowPopup()
@@ -158,10 +168,27 @@ public class Logros : MonoBehaviour
     {
         Sprite logro_img = Resources.Load<Sprite>("Logros/" + id);
 
-        Debug.Log(logro_img);
+        //Debug.Log(logro_img);
 
         SpriteRenderer popup_img = Popup.GetComponent<SpriteRenderer>();
 
         popup_img.sprite = logro_img;
+    }
+
+    void RunQueue()
+    {
+        if (achievementQueue.Count > 0 && achievementQueue[0] != null)
+        {
+            foreach (var logro in achievementQueue)
+            {
+                Debug.Log(logro);
+            }
+
+            Debug.Log("queue id = " + achievementQueue[0]);
+
+            StartCoroutine(UnlockAchievement(achievementQueue[0]));
+
+            achievementQueue.RemoveAt(0);
+        }
     }
 }
