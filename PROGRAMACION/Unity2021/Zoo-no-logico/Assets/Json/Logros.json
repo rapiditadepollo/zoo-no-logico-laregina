@@ -315,6 +315,12 @@
         "operador": "==",
         "tipo": "int"
       }
+    },
+    {
+      "id": "26",
+      "titulo": "Bienvenido al Zoo-No-Logico!",
+      "descripcion": "Inicia tu primer partida",
+      "runCheck": false
     }
   ]
 }

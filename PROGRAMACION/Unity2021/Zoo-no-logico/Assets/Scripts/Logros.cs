@@ -164,9 +164,11 @@ public class Logros : MonoBehaviour
 
     private IEnumerator ShowPopup()
     {
-        Popup.SetActive(true);
+        Popup.GetComponent<SpriteRenderer>().enabled = true;
+        Titulo.GetComponent<Text>().enabled = true;
         yield return new WaitForSeconds(3);
-        Popup.SetActive(false);
+        Popup.GetComponent<SpriteRenderer>().enabled = false;
+        Titulo.GetComponent<Text>().enabled = false;
     }
 
     void GetAchievement(int id)
@@ -181,7 +183,14 @@ public class Logros : MonoBehaviour
 
         // Texto de Logros
 
-        //Titulo.GetComponent<Text>().text =  No se llamar esto lmao;
+        foreach (var logro in myLogroList.logros)
+        {
+            if (logro.id == id.ToString())
+            {
+                Debug.Log(logro.titulo);
+                Titulo.GetComponent<Text>().text = logro.titulo;
+            }
+        }
     }
 
     void RunQueue()

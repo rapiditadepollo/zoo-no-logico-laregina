@@ -1004,6 +1004,7 @@ GameObject:
   - component: {fileID: 1429457057}
   - component: {fileID: 1429457060}
   - component: {fileID: 1429457056}
+  - component: {fileID: 1429457061}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1136,6 +1137,18 @@ MonoBehaviour:
           m_StringArgument: iniciar_partida
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1429457061}
+        m_TargetAssemblyTypeName: LogroBtnTrigger, Assembly-CSharp
+        m_MethodName: TriggerAchievement
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 26
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1429457058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1187,6 +1200,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continuar: {fileID: 1558287587}
+--- !u!114 &1429457061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429457054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65be877ca1f910c4ca9f339efc940647, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LogrosJson: {fileID: 4900000, guid: dc4e0f294e6ecaf41a746fb96dbefda9, type: 3}
+  Popup: {fileID: 0}
+  Titulo: {fileID: 0}
+  myLogroList:
+    logros: []
 --- !u!1 &1558287584
 GameObject:
   m_ObjectHideFlags: 0

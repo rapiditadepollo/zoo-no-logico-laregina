@@ -53,6 +53,9 @@ TagManager:
   - avatar2
   - ANALYTICS
   - Continuar
+  - Popup
+  - Popup_title
+  - Logros
   layers:
   - Default
   - TransparentFX
