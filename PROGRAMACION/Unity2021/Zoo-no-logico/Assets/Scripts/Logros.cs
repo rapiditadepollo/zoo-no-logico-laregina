@@ -37,8 +37,9 @@ public class Logros : MonoBehaviour
 
     public TextAsset LogrosJson;
 
-    public GameObject Popup;
+    public GameObject Icono;
     public GameObject Titulo;
+    public GameObject Fondo;
 
     public LogroList myLogroList = new LogroList();
 
@@ -176,10 +177,12 @@ public class Logros : MonoBehaviour
 
     private IEnumerator ShowPopup()
     {
-        Popup.GetComponent<SpriteRenderer>().enabled = true;
+        Icono.GetComponent<SpriteRenderer>().enabled = true;
+        Fondo.GetComponent<SpriteRenderer>().enabled = true;
         Titulo.GetComponent<Text>().enabled = true;
         yield return new WaitForSeconds(3);
-        Popup.GetComponent<SpriteRenderer>().enabled = false;
+        Icono.GetComponent<SpriteRenderer>().enabled = false;
+        Fondo.GetComponent<SpriteRenderer>().enabled = false;
         Titulo.GetComponent<Text>().enabled = false;
     }
 
@@ -189,7 +192,7 @@ public class Logros : MonoBehaviour
 
         //Debug.Log(logro_img);
 
-        SpriteRenderer popup_img = Popup.GetComponent<SpriteRenderer>();
+        SpriteRenderer popup_img = Icono.GetComponent<SpriteRenderer>();
 
         popup_img.sprite = logro_img;
 
