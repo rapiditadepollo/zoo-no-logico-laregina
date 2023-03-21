@@ -15,7 +15,7 @@ public class Logro
     public string titulo;
     public string descripcion;
     public bool runCheck;
-    public Condition condicion;
+    public Condition[] condicion;
 }
 
 [System.Serializable]
@@ -93,13 +93,25 @@ public class Logros : MonoBehaviour
             {
                 if (logro.runCheck == true)
                 {
-                    if (CheckCondition(logro.condicion))
-                    {
-                        //UnlockAchievement(logro.id);
-                        achievementQueue.Add(logro.id);
+                        Debug.Log(logro.titulo);
+                        Debug.Log(logro.condicion);
+                        bool achievementGet = true;
+                        foreach (Condition condition in logro.condicion)
+                        {
+                            Debug.Log(condition);
+                            if (!CheckCondition(condition))
+                            {
+                                achievementGet = false;
+                            }
+                        }
 
-                        PlayerPrefs.SetInt("Logro" + logro.id, 1);
-                    }
+                        if (achievementGet)
+                        {
+                            // UnlockAchievement(logro.id);
+                            achievementQueue.Add(logro.id);
+
+                            PlayerPrefs.SetInt("Logro" + logro.id, 1);
+                        }
                 }
                 else
                 {

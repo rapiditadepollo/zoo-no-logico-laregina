@@ -5,322 +5,440 @@
       "titulo": "�Dolly?",
       "descripcion": "Realiza tu primer cruza",
       "runCheck": true,
-      "condicion": {
-        "variable": "totalCodex",
-        "valor": 1,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "totalCodex",
+          "valor": 1,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "1",
       "titulo": "Mitosis",
       "descripcion": "Realiza 5 cruzas unicas",
       "runCheck": true,
-      "condicion": {
-        "variable": "totalCodex",
-        "valor": 5,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "totalCodex",
+          "valor": 5,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "2",
       "titulo": "No es el monstruo",
       "descripcion": "Realiza 10 cruzas unicas",
       "runCheck": true,
-      "condicion": {
-        "variable": "totalCodex",
-        "valor": 10,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "totalCodex",
+          "valor": 10,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "3",
       "titulo": "Es el doctor",
       "descripcion": "Realiza 15 cruzas unicas",
       "runCheck": true,
-      "condicion": {
-        "variable": "totalCodex",
-        "valor": 15,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "totalCodex",
+          "valor": 15,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "4",
       "titulo": "�Tucker!",
       "descripcion": "Realiza 20 cruzas unicas",
       "runCheck": true,
-      "condicion": {
-        "variable": "totalCodex",
-        "valor": 20,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "totalCodex",
+          "valor": 20,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "5",
       "titulo": "PLACEHOLDER",
       "descripcion": "Realiza 25 cruzas unicas",
       "runCheck": true,
-      "condicion": {
-        "variable": "totalCodex",
-        "valor": 25,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "totalCodex",
+          "valor": 25,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "6",
       "titulo": "PLACEHOLDER",
       "descripcion": "Realiza 30 cruzas unicas",
       "runCheck": true,
-      "condicion": {
-        "variable": "totalCodex",
-        "valor": 30,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "totalCodex",
+          "valor": 30,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "7",
       "titulo": "�Jugando a ser Dios?",
       "descripcion": "Completa el Codex",
       "runCheck": true,
-      "condicion": {
-        "variable": "totalCodex",
-        "valor": 35,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "totalCodex",
+          "valor": 35,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
-
-
     {
       "id": "8",
       "titulo": "Mesozoico",
       "descripcion": "Realiza 5 cruzas totales",
       "runCheck": true,
-      "condicion": {
-        "variable": "combinarTotales",
-        "valor": 5,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "combinarTotales",
+          "valor": 5,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "9",
       "titulo": "Triasico",
       "descripcion": "Realiza 10 cruzas totales",
       "runCheck": true,
-      "condicion": {
-        "variable": "combinarTotales",
-        "valor": 10,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "combinarTotales",
+          "valor": 10,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "10",
       "titulo": "Jurasico",
       "descripcion": "Realiza 25 cruzas totales",
       "runCheck": true,
-      "condicion": {
-        "variable": "combinarTotales",
-        "valor": 25,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "combinarTotales",
+          "valor": 25,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "11",
       "titulo": "Cretacico",
       "descripcion": "Realiza 50 cruzas totales",
       "runCheck": true,
-      "condicion": {
-        "variable": "combinarTotales",
-        "valor": 50,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "combinarTotales",
+          "valor": 50,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "12",
       "titulo": "Cenozoico",
       "descripcion": "Realiza 75 cruzas totales",
       "runCheck": true,
-      "condicion": {
-        "variable": "combinarTotales",
-        "valor": 75,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "combinarTotales",
+          "valor": 75,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "13",
       "titulo": "Neolitico",
       "descripcion": "Realiza 100 cruzas totales",
       "runCheck": true,
-      "condicion": {
-        "variable": "combinarTotales",
-        "valor": 100,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "combinarTotales",
+          "valor": 100,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
-
-
     {
       "id": "14",
       "titulo": "PLACEHOLDER",
       "descripcion": "Llena 1 jaula",
       "runCheck": true,
-      "condicion": {
-        "variable": "JaulasOcupadas",
-        "valor": 1,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "JaulasOcupadas",
+          "valor": 1,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "15",
       "titulo": "PLACEHOLDER",
       "descripcion": "Llena 5 jaulas",
       "runCheck": true,
-      "condicion": {
-        "variable": "JaulasOcupadas",
-        "valor": 5,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "JaulasOcupadas",
+          "valor": 5,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "16",
       "titulo": "PLACEHOLDER",
       "descripcion": "Llena 10 jaulas",
       "runCheck": true,
-      "condicion": {
-        "variable": "JaulasOcupadas",
-        "valor": 10,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "JaulasOcupadas",
+          "valor": 10,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "17",
       "titulo": "PLACEHOLDER",
       "descripcion": "Llena 15 jaulas",
       "runCheck": true,
-      "condicion": {
-        "variable": "JaulasOcupadas",
-        "valor": 15,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "JaulasOcupadas",
+          "valor": 15,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "18",
       "titulo": "Sobrepoblacion",
       "descripcion": "Llena 20 jaulas",
       "runCheck": true,
-      "condicion": {
-        "variable": "JaulasOcupadas",
-        "valor": 20,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "JaulasOcupadas",
+          "valor": 20,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "19",
       "titulo": "Noticias Locales",
       "descripcion": "Alcanza 25% de Popularidad",
       "runCheck": true,
-      "condicion": {
-        "variable": "Popularidad",
-        "valor": 25,
-        "operador": ">=",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "Popularidad",
+          "valor": 25,
+          "operador": ">=",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "20",
       "titulo": "Microcelebridad",
       "descripcion": "Alcanza 50% de Popularidad",
       "runCheck": true,
-      "condicion": {
-        "variable": "Popularidad",
-        "valor": 50,
-        "operador": ">=",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "Popularidad",
+          "valor": 50,
+          "operador": ">=",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "21",
       "titulo": "Fenomeno Internacional",
       "descripcion": "Alcanza 75% de Popularidad",
       "runCheck": true,
-      "condicion": {
-        "variable": "Popularidad",
-        "valor": 75,
-        "operador": ">=",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "Popularidad",
+          "valor": 75,
+          "operador": ">=",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "22",
       "titulo": "Emperador Mundial",
       "descripcion": "Alcanza 100% de Popularidad",
       "runCheck": true,
-      "condicion": {
-        "variable": "Popularidad",
-        "valor": 100,
-        "operador": ">=",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "Popularidad",
+          "valor": 100,
+          "operador": ">=",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "23",
       "titulo": "¡Alto Ahi!",
       "descripcion": "Envia un animal a Stasis",
       "runCheck": true,
-      "condicion": {
-        "variable": "CantidadCruzasEnStasis",
-        "valor": 1,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "CantidadCruzasEnStasis",
+          "valor": 1,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "24",
       "titulo": "¡Alto Ahi!",
       "descripcion": "Ocupa 5 camaras de Stasis",
       "runCheck": true,
-      "condicion": {
-        "variable": "CantidadCruzasEnStasis",
-        "valor": 5,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "CantidadCruzasEnStasis",
+          "valor": 5,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "25",
       "titulo": "Un poco apretado, ¿No?",
       "descripcion": "Ocupa 10 camaras de Stasis",
       "runCheck": true,
-      "condicion": {
-        "variable": "CantidadCruzasEnStasis",
-        "valor": 10,
-        "operador": "==",
-        "tipo": "int"
-      }
+      "condicion": [
+        {
+          "variable": "CantidadCruzasEnStasis",
+          "valor": 10,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
     },
     {
       "id": "26",
       "titulo": "Bienvenido al Zoo-No-Logico!",
       "descripcion": "Inicia tu primer partida",
       "runCheck": false
+    },
+    {
+      "id": "27",
+      "titulo": "Chad!",
+      "descripcion": "Gana sin mandar a stasis gil",
+      "runCheck": true,
+      "condicion": [
+        {
+        "variable": "Ganaste",
+        "valor": 1,
+        "operador": "==",
+        "tipo": "int"
+        },
+        {
+          "variable": "totalStasis",
+          "valor": 0,
+          "operador": "==",
+          "tipo": "int"
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "titulo": "Avido comprador",
+      "descripcion": "Comprar uno de cada animal",
+      "runCheck": true,
+      "condicion": [
+        {
+        "variable": "AvesTotales",
+        "valor": 1,
+        "operador": ">=",
+        "tipo": "int"
+        },
+        {
+        "variable": "SerpientesTotales",
+        "valor": 1,
+        "operador": ">=",
+        "tipo": "int"
+        },
+        {
+        "variable": "MurcielagosTotales",
+        "valor": 1,
+        "operador": ">=",
+        "tipo": "int"
+        },
+        {
+        "variable": "ZorrosTotales",
+        "valor": 1,
+        "operador": ">=",
+        "tipo": "int"
+        },
+        {
+        "variable": "CocodrilosTotales",
+        "valor": 1,
+        "operador": ">=",
+        "tipo": "int"
+        },
+        {
+        "variable": "AranasTotales",
+        "valor": 1,
+        "operador": ">=",
+        "tipo": "int"
+        },
+        {
+        "variable": "CarpinchosTotales",
+        "valor": 1,
+        "operador": ">=",
+        "tipo": "int"
+        }
+      ]
     }
   ]
 }

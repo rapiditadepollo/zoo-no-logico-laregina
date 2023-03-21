@@ -62,25 +62,25 @@ public class EventosAnalytics : MonoBehaviour
         AnalyticsService.Instance.CustomData("comprar", new Dictionary<string, object>(){
             {"vez", PlayerPrefs.GetInt("vezCompra")},
             {"animal", PlayerPrefs.GetString("animalCompra")},
-            {"cantidad_ave", PlayerPrefs.GetInt("avesTotales")},
-            {"cantidad_serpiente", PlayerPrefs.GetInt("serpientesTotales")},
-            {"cantidad_murcielago", PlayerPrefs.GetInt("murcielagosTotales")},
-            {"cantidad_zorro", PlayerPrefs.GetInt("zorrosTotales")},
-            {"cantidad_cocodrilo", PlayerPrefs.GetInt("cocodrilosTotales")},
-            {"cantidad_arana", PlayerPrefs.GetInt("aranasTotales")},
-            {"cantidad_carpincho", PlayerPrefs.GetInt("carpinchosTotales")},
+            {"cantidad_ave", PlayerPrefs.GetInt("AvesTotales")},
+            {"cantidad_serpiente", PlayerPrefs.GetInt("SerpientesTotales")},
+            {"cantidad_murcielago", PlayerPrefs.GetInt("MurcielagosTotales")},
+            {"cantidad_zorro", PlayerPrefs.GetInt("ZorrosTotales")},
+            {"cantidad_cocodrilo", PlayerPrefs.GetInt("CocodrilosTotales")},
+            {"cantidad_arana", PlayerPrefs.GetInt("AranasTotales")},
+            {"cantidad_carpincho", PlayerPrefs.GetInt("CarpinchosTotales")},
 
         });  //TERMINADO
 
         Debug.Log("vez" +  PlayerPrefs.GetInt("vezCompra"));
         Debug.Log("animal " + PlayerPrefs.GetString("animalCompra"));
-        Debug.Log("cantidad_ave" + PlayerPrefs.GetInt("avesTotales"));
-        Debug.Log("cantidad_serpiente" + PlayerPrefs.GetInt("serpientesTotales"));
-        Debug.Log("cantidad_murcielago" + PlayerPrefs.GetInt("murcielagosTotales"));
-        Debug.Log("cantidad_zorro" + PlayerPrefs.GetInt("zorrosTotales"));
-        Debug.Log("cantidad_cocodrilo" + PlayerPrefs.GetInt("cocodrilosTotales"));
-        Debug.Log("cantidad_arana" + PlayerPrefs.GetInt("aranasTotales"));
-        Debug.Log("cantidad_carpincho" + PlayerPrefs.GetInt("carpinchosTotales"));
+        Debug.Log("cantidad_ave" + PlayerPrefs.GetInt("AvesTotales"));
+        Debug.Log("cantidad_serpiente" + PlayerPrefs.GetInt("SerpientesTotales"));
+        Debug.Log("cantidad_murcielago" + PlayerPrefs.GetInt("MurcielagosTotales"));
+        Debug.Log("cantidad_zorro" + PlayerPrefs.GetInt("ZorrosTotales"));
+        Debug.Log("cantidad_cocodrilo" + PlayerPrefs.GetInt("CocodrilosTotales"));
+        Debug.Log("cantidad_arana" + PlayerPrefs.GetInt("AranasTotales"));
+        Debug.Log("cantidad_carpincho" + PlayerPrefs.GetInt("CarpinchosTotales"));
     }
 
     public void cruza()

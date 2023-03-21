@@ -410,6 +410,7 @@
 "Assets/Scripts/popularityTest.cs"
 "Assets/Scripts/RandomPercent.cs"
 "Assets/Scripts/RawImageTexture.cs"
+"Assets/Scripts/ResetSave.cs"
 "Assets/Scripts/save-load/GameData.cs"
 "Assets/Scripts/save-load/SaveManager.cs"
 "Assets/Scripts/save-load/SaveSystem.cs"

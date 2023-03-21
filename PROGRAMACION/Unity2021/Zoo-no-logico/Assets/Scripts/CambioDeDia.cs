@@ -89,6 +89,7 @@ public class CambioDeDia : MonoBehaviour {
 
     public void AbrirPantalla()
     {
+
         int Random1= new System.Random().Next(0, 20);
         int Random2 = new System.Random().Next(0, 20);
         int Random3 = new System.Random().Next(1, 13);
