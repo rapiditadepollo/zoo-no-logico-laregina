@@ -324,7 +324,7 @@
     },
     {
       "id": "23",
-      "titulo": "¡Alto Ahi!",
+      "titulo": "Cryogenesis",
       "descripcion": "Envia un animal a Stasis",
       "runCheck": true,
       "condicion": [
@@ -338,7 +338,7 @@
     },
     {
       "id": "24",
-      "titulo": "¡Alto Ahi!",
+      "titulo": "Frente Invernal",
       "descripcion": "Ocupa 5 camaras de Stasis",
       "runCheck": true,
       "condicion": [
@@ -352,7 +352,7 @@
     },
     {
       "id": "25",
-      "titulo": "Un poco apretado, ¿No?",
+      "titulo": "Era de Hielo",
       "descripcion": "Ocupa 10 camaras de Stasis",
       "runCheck": true,
       "condicion": [
