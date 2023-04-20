@@ -2,7 +2,7 @@
   "logros": [
     {
       "id": "0",
-      "titulo": "�Dolly?",
+      "titulo": "Dolly",
       "descripcion": "Realiza tu primer cruza",
       "runCheck": true,
       "condicion": [
@@ -58,7 +58,7 @@
     },
     {
       "id": "4",
-      "titulo": "�Tucker!",
+      "titulo": "Tucker",
       "descripcion": "Realiza 20 cruzas unicas",
       "runCheck": true,
       "condicion": [
@@ -72,7 +72,7 @@
     },
     {
       "id": "5",
-      "titulo": "PLACEHOLDER",
+      "titulo": "Mendel",
       "descripcion": "Realiza 25 cruzas unicas",
       "runCheck": true,
       "condicion": [
@@ -100,7 +100,7 @@
     },
     {
       "id": "7",
-      "titulo": "�Jugando a ser Dios?",
+      "titulo": "Jugando a ser Dios",
       "descripcion": "Completa el Codex",
       "runCheck": true,
       "condicion": [
@@ -372,8 +372,8 @@
     },
     {
       "id": "27",
-      "titulo": "Chad!",
-      "descripcion": "Gana sin mandar a stasis gil",
+      "titulo": "No lo Necesito",
+      "descripcion": "Gana sin enviar un animal a stasis",
       "runCheck": true,
       "condicion": [
         {
@@ -392,7 +392,7 @@
     },
     {
       "id": "28",
-      "titulo": "Avido comprador",
+      "titulo": "Avido Comprador",
       "descripcion": "Comprar uno de cada animal",
       "runCheck": true,
       "condicion": [
