@@ -198,7 +198,7 @@
     },
     {
       "id": "14",
-      "titulo": "PLACEHOLDER",
+      "titulo": "Encerrado",
       "descripcion": "Llena 1 jaula",
       "runCheck": true,
       "condicion": [
@@ -212,7 +212,7 @@
     },
     {
       "id": "15",
-      "titulo": "PLACEHOLDER",
+      "titulo": "Jauria",
       "descripcion": "Llena 5 jaulas",
       "runCheck": true,
       "condicion": [
@@ -226,7 +226,7 @@
     },
     {
       "id": "16",
-      "titulo": "PLACEHOLDER",
+      "titulo": "Muchedumbre",
       "descripcion": "Llena 10 jaulas",
       "runCheck": true,
       "condicion": [
@@ -240,7 +240,7 @@
     },
     {
       "id": "17",
-      "titulo": "PLACEHOLDER",
+      "titulo": "Algo Apretados",
       "descripcion": "Llena 15 jaulas",
       "runCheck": true,
       "condicion": [

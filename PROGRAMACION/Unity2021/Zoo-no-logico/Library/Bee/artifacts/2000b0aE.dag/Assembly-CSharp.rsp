@@ -27,6 +27,7 @@
 -define:UNITY_2021_2_OR_NEWER
 -define:UNITY_2021_3_OR_NEWER
 -define:UNITY_INCLUDE_TESTS
+-define:UNITY_ANALYTICS
 -define:USE_SEARCH_ENGINE_API
 -define:USE_SEARCH_TABLE
 -define:USE_SEARCH_MODULE
@@ -359,7 +360,7 @@
 "Assets/Items & Inventory/Scripts/Mati_CruzasAnimales.cs"
 "Assets/Items & Inventory/Scripts/SlotDeCruza.cs"
 "Assets/Items & Inventory/Scripts/VM_AgarrarSoltar.cs"
-"Assets/ModoLibre.cs"
+"Assets/LogroScreen.cs"
 "Assets/Scripts/AbrirCartas.cs"
 "Assets/Scripts/AgarrarSoltar.cs"
 "Assets/Scripts/Analytics/EventosAnalytics.cs"
@@ -397,6 +398,7 @@
 "Assets/Scripts/JsonReader.cs"
 "Assets/Scripts/LogroBtnTrigger.cs"
 "Assets/Scripts/Logros.cs"
+"Assets/Scripts/ModoLibre.cs"
 "Assets/Scripts/MonedasTotales.cs"
 "Assets/Scripts/MoneySetter.cs"
 "Assets/Scripts/NewDayMoney.cs"
@@ -419,11 +421,11 @@
 "Assets/Scripts/StasisManager.cs"
 "Assets/Scripts/swipe_inventory.cs"
 "Assets/Scripts/Test.cs"
+"Assets/Scripts/TiendaSlot.cs"
 "Assets/Scripts/TogglePerder2.cs"
 "Assets/Scripts/TogglePerdida.cs"
 "Assets/Scripts/UIZoomImage.cs"
 "Assets/Scripts/UnlockStoreAnimals.cs"
-"Assets/TiendaSlot.cs"
 -langversion:9.0
 
 /deterministic

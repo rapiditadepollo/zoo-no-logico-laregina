@@ -56,6 +56,10 @@ TagManager:
   - Popup
   - Popup_title
   - Logros
+  - LogroSlot
+  - LogroTitle
+  - LogroIcon
+  - LogroDesc
   layers:
   - Default
   - TransparentFX
