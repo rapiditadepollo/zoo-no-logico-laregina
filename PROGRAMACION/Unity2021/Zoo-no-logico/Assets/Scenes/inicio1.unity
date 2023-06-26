@@ -160,6 +160,7 @@ MonoBehaviour:
   myLogroList:
     logros: []
   achievementQueue: []
+  ANALYTICS: {fileID: 0}
 --- !u!4 &17860165
 Transform:
   m_ObjectHideFlags: 0
@@ -3755,6 +3756,7 @@ GameObject:
   - component: {fileID: 1560927819}
   - component: {fileID: 1560927818}
   - component: {fileID: 1560927817}
+  - component: {fileID: 1560927820}
   - component: {fileID: 1560927816}
   m_Layer: 5
   m_Name: Terminar el dia
@@ -3791,7 +3793,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560927814}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 478735e70260c7144a94ea5325eff84b, type: 3}
   m_Name: 
@@ -3840,14 +3842,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1560927816}
-        m_TargetAssemblyTypeName: ResetSave, Assembly-CSharp
-        m_MethodName: ClearSave
-        m_Mode: 1
+      - m_Target: {fileID: 1560927820}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: MoveToScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 16
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3890,6 +3892,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560927814}
   m_CullTransparentMesh: 0
+--- !u!114 &1560927820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560927814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cc4e04c7e122e243862dca6dfb9179d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ANALYTICS: {fileID: 0}
 --- !u!1 &1630763919
 GameObject:
   m_ObjectHideFlags: 0

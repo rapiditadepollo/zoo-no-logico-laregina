@@ -3,6 +3,7 @@ using Unity.Services.Core;
 using Unity.Services.Analytics;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Services.Core.Environments;
 
 public class EventosAnalytics : MonoBehaviour
 {
@@ -41,7 +42,36 @@ public class EventosAnalytics : MonoBehaviour
             {"animales_stasis_cantidad", PlayerPrefs.GetInt("CantidadCruzasEnStasis")},
             {"animales_lazaro", PlayerPrefs.GetInt("totalVendidos")},
             {"cartas", PlayerPrefs.GetInt("cartasTotales")},
-
+            
+            {"logro0", PlayerPrefs.GetInt("Logro0")},
+            {"logro1", PlayerPrefs.GetInt("Logro1")},
+            {"logro2", PlayerPrefs.GetInt("Logro2")},
+            {"logro3", PlayerPrefs.GetInt("Logro3")},
+            {"logro4", PlayerPrefs.GetInt("Logro4")},
+            {"logro5", PlayerPrefs.GetInt("Logro5")},
+            {"logro6", PlayerPrefs.GetInt("Logro6")},
+            {"logro7", PlayerPrefs.GetInt("Logro7")},
+            {"logro8", PlayerPrefs.GetInt("Logro8")},
+            {"logro9", PlayerPrefs.GetInt("Logro9")},
+            {"logro10", PlayerPrefs.GetInt("Logro10")},
+            {"logro11", PlayerPrefs.GetInt("Logro11")},
+            {"logro12", PlayerPrefs.GetInt("Logro12")},
+            {"logro13", PlayerPrefs.GetInt("Logro13")},
+            {"logro14", PlayerPrefs.GetInt("Logro14")},
+            {"logro15", PlayerPrefs.GetInt("Logro15")},
+            {"logro16", PlayerPrefs.GetInt("Logro16")},
+            {"logro17", PlayerPrefs.GetInt("Logro17")},
+            {"logro18", PlayerPrefs.GetInt("Logro18")},
+            {"logro19", PlayerPrefs.GetInt("Logro19")},
+            {"logro20", PlayerPrefs.GetInt("Logro20")},
+            {"logro21", PlayerPrefs.GetInt("Logro21")},
+            {"logro22", PlayerPrefs.GetInt("Logro22")},
+            {"logro23", PlayerPrefs.GetInt("Logro23")},
+            {"logro24", PlayerPrefs.GetInt("Logro24")},
+            {"logro25", PlayerPrefs.GetInt("Logro25")},
+            {"logro26", PlayerPrefs.GetInt("Logro26")},
+            {"logro27", PlayerPrefs.GetInt("Logro27")},
+            {"logro28", PlayerPrefs.GetInt("Logro28")},
         });  //TERMINADO
 
         Debug.Log("dinero " + PlayerPrefs.GetInt("Moneditas"));
@@ -55,6 +85,8 @@ public class EventosAnalytics : MonoBehaviour
         Debug.Log("animales_stasis_cantidad " + PlayerPrefs.GetInt("CantidadCruzasEnStasis"));
         Debug.Log("animales_lazaro " + PlayerPrefs.GetInt("totalVendidos"));
         Debug.Log("cartas" + PlayerPrefs.GetInt("cartasTotales"));
+
+        Debug.Log("logro0" + PlayerPrefs.GetInt("Logro0"));
     }
 
     public void comprar()
@@ -115,6 +147,36 @@ public class EventosAnalytics : MonoBehaviour
             {"dias", PlayerPrefs.GetInt("Dias")},
             {"cartas", PlayerPrefs.GetInt("cartasTotales")},
             {"cruzas", PlayerPrefs.GetInt("totalCodex")},
+
+            {"logro0", PlayerPrefs.GetInt("Logro0")},
+            {"logro1", PlayerPrefs.GetInt("Logro1")},
+            {"logro2", PlayerPrefs.GetInt("Logro2")},
+            {"logro3", PlayerPrefs.GetInt("Logro3")},
+            {"logro4", PlayerPrefs.GetInt("Logro4")},
+            {"logro5", PlayerPrefs.GetInt("Logro5")},
+            {"logro6", PlayerPrefs.GetInt("Logro6")},
+            {"logro7", PlayerPrefs.GetInt("Logro7")},
+            {"logro8", PlayerPrefs.GetInt("Logro8")},
+            {"logro9", PlayerPrefs.GetInt("Logro9")},
+            {"logro10", PlayerPrefs.GetInt("Logro10")},
+            {"logro11", PlayerPrefs.GetInt("Logro11")},
+            {"logro12", PlayerPrefs.GetInt("Logro12")},
+            {"logro13", PlayerPrefs.GetInt("Logro13")},
+            {"logro14", PlayerPrefs.GetInt("Logro14")},
+            {"logro15", PlayerPrefs.GetInt("Logro15")},
+            {"logro16", PlayerPrefs.GetInt("Logro16")},
+            {"logro17", PlayerPrefs.GetInt("Logro17")},
+            {"logro18", PlayerPrefs.GetInt("Logro18")},
+            {"logro19", PlayerPrefs.GetInt("Logro19")},
+            {"logro20", PlayerPrefs.GetInt("Logro20")},
+            {"logro21", PlayerPrefs.GetInt("Logro21")},
+            {"logro22", PlayerPrefs.GetInt("Logro22")},
+            {"logro23", PlayerPrefs.GetInt("Logro23")},
+            {"logro24", PlayerPrefs.GetInt("Logro24")},
+            {"logro25", PlayerPrefs.GetInt("Logro25")},
+            {"logro26", PlayerPrefs.GetInt("Logro26")},
+            {"logro27", PlayerPrefs.GetInt("Logro27")},
+            {"logro28", PlayerPrefs.GetInt("Logro28")},
         }); //TERMINADO
 
         Debug.Log("tiempo_juego" + PlayerPrefs.GetInt("TiempoJuego"));
@@ -128,6 +190,8 @@ public class EventosAnalytics : MonoBehaviour
         Debug.Log("dias" + PlayerPrefs.GetInt("Dias"));
         Debug.Log("cartas" + PlayerPrefs.GetInt("cartasTotales"));
         Debug.Log("cruzas" + PlayerPrefs.GetInt("totalCodex"));
+
+        Debug.Log("logro0" + PlayerPrefs.GetInt("Logro0"));
 
     }
 
@@ -145,6 +209,36 @@ public class EventosAnalytics : MonoBehaviour
             {"dias", PlayerPrefs.GetInt("Dias")},
             {"cartas", PlayerPrefs.GetInt("cartasTotales")},
             {"cruzas", PlayerPrefs.GetInt("totalCodex")},
+
+            {"logro0", PlayerPrefs.GetInt("Logro0")},
+            {"logro1", PlayerPrefs.GetInt("Logro1")},
+            {"logro2", PlayerPrefs.GetInt("Logro2")},
+            {"logro3", PlayerPrefs.GetInt("Logro3")},
+            {"logro4", PlayerPrefs.GetInt("Logro4")},
+            {"logro5", PlayerPrefs.GetInt("Logro5")},
+            {"logro6", PlayerPrefs.GetInt("Logro6")},
+            {"logro7", PlayerPrefs.GetInt("Logro7")},
+            {"logro8", PlayerPrefs.GetInt("Logro8")},
+            {"logro9", PlayerPrefs.GetInt("Logro9")},
+            {"logro10", PlayerPrefs.GetInt("Logro10")},
+            {"logro11", PlayerPrefs.GetInt("Logro11")},
+            {"logro12", PlayerPrefs.GetInt("Logro12")},
+            {"logro13", PlayerPrefs.GetInt("Logro13")},
+            {"logro14", PlayerPrefs.GetInt("Logro14")},
+            {"logro15", PlayerPrefs.GetInt("Logro15")},
+            {"logro16", PlayerPrefs.GetInt("Logro16")},
+            {"logro17", PlayerPrefs.GetInt("Logro17")},
+            {"logro18", PlayerPrefs.GetInt("Logro18")},
+            {"logro19", PlayerPrefs.GetInt("Logro19")},
+            {"logro20", PlayerPrefs.GetInt("Logro20")},
+            {"logro21", PlayerPrefs.GetInt("Logro21")},
+            {"logro22", PlayerPrefs.GetInt("Logro22")},
+            {"logro23", PlayerPrefs.GetInt("Logro23")},
+            {"logro24", PlayerPrefs.GetInt("Logro24")},
+            {"logro25", PlayerPrefs.GetInt("Logro25")},
+            {"logro26", PlayerPrefs.GetInt("Logro26")},
+            {"logro27", PlayerPrefs.GetInt("Logro27")},
+            {"logro28", PlayerPrefs.GetInt("Logro28")},
         }); //TERMINADO
 
         Debug.Log("tiempo_juego" + PlayerPrefs.GetInt("TiempoJuego"));
@@ -278,14 +372,49 @@ public class EventosAnalytics : MonoBehaviour
         AnalyticsService.Instance.CustomData("calificacion", new Dictionary<string, object>(){
             {"graficos", PlayerPrefs.GetInt("CalifGraficos")},
             {"jugabilidad", PlayerPrefs.GetInt("CalifJugabilidad")},
-            {"redacción", PlayerPrefs.GetInt("CalifRedaccion")},
+            {"redacciï¿½n", PlayerPrefs.GetInt("CalifRedaccion")},
             {"contenido", PlayerPrefs.GetInt("CalifContenido")},
 
         }); //TERMINADO
         Debug.Log("graficos" + PlayerPrefs.GetInt("CalifGraficos"));
         Debug.Log("jugabilidad" + PlayerPrefs.GetInt("CalifJugabilidad"));
-        Debug.Log("redacción" + PlayerPrefs.GetInt("CalifRedaccion"));
+        Debug.Log("redacciï¿½n" + PlayerPrefs.GetInt("CalifRedaccion"));
         Debug.Log("contenido" + PlayerPrefs.GetInt("CalifContenido"));
+    }
+
+     public void logro()
+    {
+        AnalyticsService.Instance.CustomData("logro", new Dictionary<string, object>(){
+            {"logro0", PlayerPrefs.GetInt("Logro0")},
+            {"logro1", PlayerPrefs.GetInt("Logro1")},
+            {"logro2", PlayerPrefs.GetInt("Logro2")},
+            {"logro3", PlayerPrefs.GetInt("Logro3")},
+            {"logro4", PlayerPrefs.GetInt("Logro4")},
+            {"logro5", PlayerPrefs.GetInt("Logro5")},
+            {"logro6", PlayerPrefs.GetInt("Logro6")},
+            {"logro7", PlayerPrefs.GetInt("Logro7")},
+            {"logro8", PlayerPrefs.GetInt("Logro8")},
+            {"logro9", PlayerPrefs.GetInt("Logro9")},
+            {"logro10", PlayerPrefs.GetInt("Logro10")},
+            {"logro11", PlayerPrefs.GetInt("Logro11")},
+            {"logro12", PlayerPrefs.GetInt("Logro12")},
+            {"logro13", PlayerPrefs.GetInt("Logro13")},
+            {"logro14", PlayerPrefs.GetInt("Logro14")},
+            {"logro15", PlayerPrefs.GetInt("Logro15")},
+            {"logro16", PlayerPrefs.GetInt("Logro16")},
+            {"logro17", PlayerPrefs.GetInt("Logro17")},
+            {"logro18", PlayerPrefs.GetInt("Logro18")},
+            {"logro19", PlayerPrefs.GetInt("Logro19")},
+            {"logro20", PlayerPrefs.GetInt("Logro20")},
+            {"logro21", PlayerPrefs.GetInt("Logro21")},
+            {"logro22", PlayerPrefs.GetInt("Logro22")},
+            {"logro23", PlayerPrefs.GetInt("Logro23")},
+            {"logro24", PlayerPrefs.GetInt("Logro24")},
+            {"logro25", PlayerPrefs.GetInt("Logro25")},
+            {"logro26", PlayerPrefs.GetInt("Logro26")},
+            {"logro27", PlayerPrefs.GetInt("Logro27")},
+            {"logro28", PlayerPrefs.GetInt("Logro28")},
+        }); //TERMINADO
     }
 }
 

@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Logros.unity
     guid: 8a439c2a7bccd484587bfcda62af686e
+  - enabled: 1
+    path: Assets/Scenes/confirmar-reset.unity
+    guid: 479c93100b629f94a837bd30d7796481
   m_configObjects: {}

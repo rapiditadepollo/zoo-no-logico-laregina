@@ -10173,7 +10173,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Inicia tu primer partida
+  m_Text: Inicia la partida
 --- !u!222 &1243363508
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10266,7 +10266,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 711506155}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.37629563
+  m_Size: 0.37629566
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

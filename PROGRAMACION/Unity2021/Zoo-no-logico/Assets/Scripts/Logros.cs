@@ -32,6 +32,7 @@ public class LogroList
 {
     public List<Logro> logros;
 }
+
 public class Logros : MonoBehaviour
 {
 
@@ -45,6 +46,10 @@ public class Logros : MonoBehaviour
 
     public List<string> achievementQueue;
 
+    [SerializeField] private GameObject ANALYTICS;
+
+    public string jsonString;
+
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -52,12 +57,14 @@ public class Logros : MonoBehaviour
 
     void Start()
     {
+        ANALYTICS = GameObject.FindGameObjectWithTag("ANALYTICS");
+
         LoadLogros();
 
-        foreach (Logro logro in myLogroList.logros)
-        {
-            PlayerPrefs.SetInt("Logro" + logro.id, 0);
-        }
+        // foreach (Logro logro in myLogroList.logros)
+        // {
+        //     PlayerPrefs.SetInt("Logro" + logro.id, 0);
+        // }
 
         InvokeRepeating("RunQueue", 0, 5);
     }
@@ -81,8 +88,9 @@ public class Logros : MonoBehaviour
     }
     void LoadLogros()
     {
-        string json = File.ReadAllText(Application.dataPath + "/Json/Logros.json");
-        JsonUtility.FromJsonOverwrite(json, myLogroList);
+        myLogroList = JsonUtility.FromJson<LogroList>(LogrosJson.text);
+        
+        Debug.Log(myLogroList);
     }
 
     void CheckLogros()
@@ -94,24 +102,23 @@ public class Logros : MonoBehaviour
             {
                 if (logro.runCheck == true)
                 {
-                        Debug.Log(logro.titulo);
-                        Debug.Log(logro.condicion);
                         bool achievementGet = true;
                         foreach (Condition condition in logro.condicion)
                         {
-                            Debug.Log(condition);
                             if (!CheckCondition(condition))
                             {
                                 achievementGet = false;
                             }
                         }
 
-                        if (achievementGet)
+                        if (achievementGet && PlayerPrefs.GetInt("Logro" + logro.id + "Unlocked") != 1)
                         {
                             // UnlockAchievement(logro.id);
                             achievementQueue.Add(logro.id);
 
                             PlayerPrefs.SetInt("Logro" + logro.id, 1);
+                            PlayerPrefs.SetInt("Logro" + logro.id + "Unlocked", 1);
+                            ANALYTICS.SendMessage("logro");
                         }
                 }
                 else
@@ -169,7 +176,7 @@ public class Logros : MonoBehaviour
 
     private IEnumerator UnlockAchievement(string id)
     {
-        Debug.Log("Logro " + id + " Desbloqueado");
+        // Debug.Log("Logro " + id + " Desbloqueado");
         GetAchievement(int.Parse(id));
         StartCoroutine(ShowPopup());
         yield return new WaitForSeconds(1);
@@ -202,7 +209,7 @@ public class Logros : MonoBehaviour
         {
             if (logro.id == id.ToString())
             {
-                Debug.Log(logro.titulo);
+                // Debug.Log(logro.titulo);
                 Titulo.GetComponent<Text>().text = logro.titulo;
             }
         }
@@ -212,12 +219,12 @@ public class Logros : MonoBehaviour
     {
         if (achievementQueue.Count > 0 && achievementQueue[0] != null)
         {
-            foreach (var logro in achievementQueue)
-            {
-                Debug.Log(logro);
-            }
+            // foreach (var logro in achievementQueue)
+            // {
+            //     Debug.Log(logro);
+            // }
 
-            Debug.Log("queue id = " + achievementQueue[0]);
+            // Debug.Log("queue id = " + achievementQueue[0]);
 
             StartCoroutine(UnlockAchievement(achievementQueue[0]));
 

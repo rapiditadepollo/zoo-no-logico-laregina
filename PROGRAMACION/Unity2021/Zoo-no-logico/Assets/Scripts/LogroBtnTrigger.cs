@@ -16,6 +16,8 @@ public class LogroBtnTrigger : MonoBehaviour
 
     public GameObject LogrosObject;
 
+     public string jsonString;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,8 +34,9 @@ public class LogroBtnTrigger : MonoBehaviour
 
     void LoadLogros()
     {
-        string json = File.ReadAllText(Application.dataPath + "/Json/Logros.json");
-        JsonUtility.FromJsonOverwrite(json, myLogroList);
+        myLogroList = JsonUtility.FromJson<LogroList>(LogrosJson.text);
+
+        Debug.Log(myLogroList);
     }
 
     public void TriggerAchievement(string id)

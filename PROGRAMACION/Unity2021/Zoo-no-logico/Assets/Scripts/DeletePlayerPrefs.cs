@@ -68,6 +68,10 @@ public class DeletePlayerPrefs : MonoBehaviour {
         PlayerPrefs.SetInt("EventoCartas", 0);
         PlayerPrefs.SetInt("DesactivarNoti", 0);
 
-        PlayerPrefs.SetInt("Logro0", 0);
+        for (int i = 0; i < 28; i++)
+        {
+            PlayerPrefs.SetInt("Logro" + i, 0);
+            PlayerPrefs.SetInt("Logro" + i + "Unlocked", 0);
+        }
     }
 }

@@ -32,6 +32,8 @@ public class LogroScreen : MonoBehaviour
 
     public LogroListR myLogroList = new LogroListR();
 
+     public string jsonString;
+
     private void Awake()
     {
         LoadLogros();
@@ -45,8 +47,9 @@ public class LogroScreen : MonoBehaviour
 
     void LoadLogros()
     {
-        string json = File.ReadAllText(Application.dataPath + "/Json/Logros.json");
-        JsonUtility.FromJsonOverwrite(json, myLogroList);
+        myLogroList = JsonUtility.FromJson<LogroListR>(LogrosJson.text);
+
+        Debug.Log(myLogroList);
     }
 
     void GetAchievement()
