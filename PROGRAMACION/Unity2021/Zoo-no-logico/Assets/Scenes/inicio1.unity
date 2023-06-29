@@ -161,6 +161,7 @@ MonoBehaviour:
     logros: []
   achievementQueue: []
   ANALYTICS: {fileID: 0}
+  jsonString: 
 --- !u!4 &17860165
 Transform:
   m_ObjectHideFlags: 0
@@ -482,7 +483,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -5.83, y: 2.47}
+  m_AnchoredPosition: {x: 6.675, y: 3}
   m_SizeDelta: {x: 4.7431, y: 2.5156}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &95989951
