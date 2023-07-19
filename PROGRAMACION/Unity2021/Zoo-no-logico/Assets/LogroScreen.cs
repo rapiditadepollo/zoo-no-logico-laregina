@@ -80,7 +80,7 @@ public class LogroScreen : MonoBehaviour
                     icono_img.color = Color.black;
 
                     Titulo.GetComponent<Text>().color = Color.black;
-                    Titulo.GetComponent<Text>().text = "???";
+                    Titulo.GetComponent<Text>().text = logro.titulo;
 
                     Descripcion.GetComponent<Text>().color = Color.black;
                     Descripcion.GetComponent<Text>().text = "No has desbloqueado este logro";
