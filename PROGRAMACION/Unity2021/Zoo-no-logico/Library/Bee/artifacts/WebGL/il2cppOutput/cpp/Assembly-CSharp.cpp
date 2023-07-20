@@ -686,7 +686,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralF1D99CE8891FDF8CFCC3AC6121A9A477BD3A9EA5
 IL2CPP_EXTERN_C String_t* _stringLiteralF25725A424ACF705D6D4D98F46C2C7D95EC6D0DF;
 IL2CPP_EXTERN_C String_t* _stringLiteralF350AC0178C3A13A20D6A8A41E50880738D1AA32;
 IL2CPP_EXTERN_C String_t* _stringLiteralF38DFDE659491719C419EBE0B6347BF66EECE112;
-IL2CPP_EXTERN_C String_t* _stringLiteralF475C40B66CDDEC9B385F4B9DDBBD87798470EA5;
 IL2CPP_EXTERN_C String_t* _stringLiteralF5687C0DC90026B5558121E53BCB0FD077ED2B96;
 IL2CPP_EXTERN_C String_t* _stringLiteralF5F750D4434131B3331AE614594F995C6E6B07D6;
 IL2CPP_EXTERN_C String_t* _stringLiteralFA58D8F7E4DA46217B08E0956C6FCD0D6AA2CF38;
@@ -9502,7 +9501,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LogroScreen_GetAchievement_m81E9011A66EB
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral033458FFF4C248B179876E05F508747788E2A734);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral60A91CBD22B653D8116295CF4B443F9C4C9A9BD9);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD11088B6F788FE92AE9E2135C149649E2C3E32F4);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF475C40B66CDDEC9B385F4B9DDBBD87798470EA5);
 		s_Il2CppMethodInitialized = true;
 	}
 	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* V_0 = NULL;
@@ -9541,7 +9539,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LogroScreen_GetAchievement_m81E9011A66EB
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_0170:
+FINALLY_0171:
 			{// begin finally (depth: 1)
 				Enumerator_Dispose_m24581D3AD532082848815FA17E8A5645DA665180((&V_2), Enumerator_Dispose_m24581D3AD532082848815FA17E8A5645DA665180_RuntimeMethod_var);
 				return;
@@ -9550,7 +9548,7 @@ FINALLY_0170:
 		try
 		{// begin try (depth: 1)
 			{
-				goto IL_0162_1;
+				goto IL_0163_1;
 			}
 
 IL_0044_1:
@@ -9570,7 +9568,7 @@ IL_0044_1:
 				L_16 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_13, L_15, NULL);
 				if (!L_16)
 				{
-					goto IL_0162_1;
+					goto IL_0163_1;
 				}
 			}
 			{
@@ -9622,7 +9620,7 @@ IL_0044_1:
 				LogroR_t8435EE8A1AC2EF633BCEC3AC09BE8E7C8F41AAC6* L_35 = V_3;
 				String_t* L_36 = L_35->___descripcion_2;
 				VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_34, L_36);
-				goto IL_0162_1;
+				goto IL_0163_1;
 			}
 
 IL_0103_1:
@@ -9639,37 +9637,39 @@ IL_0103_1:
 				Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_41;
 				L_41 = Color_get_black_mB50217951591A045844C61E7FF31EEE3FEF16737_inline(NULL);
 				VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_40, L_41);
-				// Titulo.GetComponent<Text>().text = "???";
+				// Titulo.GetComponent<Text>().text = logro.titulo;
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_42 = __this->___Titulo_6;
 				Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_43;
 				L_43 = GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F(L_42, GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F_RuntimeMethod_var);
-				VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_43, _stringLiteralF475C40B66CDDEC9B385F4B9DDBBD87798470EA5);
+				LogroR_t8435EE8A1AC2EF633BCEC3AC09BE8E7C8F41AAC6* L_44 = V_3;
+				String_t* L_45 = L_44->___titulo_1;
+				VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_43, L_45);
 				// Descripcion.GetComponent<Text>().color = Color.black;
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_44 = __this->___Descripcion_7;
-				Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_45;
-				L_45 = GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F(L_44, GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F_RuntimeMethod_var);
-				Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_46;
-				L_46 = Color_get_black_mB50217951591A045844C61E7FF31EEE3FEF16737_inline(NULL);
-				VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_45, L_46);
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_46 = __this->___Descripcion_7;
+				Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_47;
+				L_47 = GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F(L_46, GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F_RuntimeMethod_var);
+				Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_48;
+				L_48 = Color_get_black_mB50217951591A045844C61E7FF31EEE3FEF16737_inline(NULL);
+				VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_47, L_48);
 				// Descripcion.GetComponent<Text>().text = "No has desbloqueado este logro";
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_47 = __this->___Descripcion_7;
-				Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_48;
-				L_48 = GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F(L_47, GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F_RuntimeMethod_var);
-				VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_48, _stringLiteral60A91CBD22B653D8116295CF4B443F9C4C9A9BD9);
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_49 = __this->___Descripcion_7;
+				Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_50;
+				L_50 = GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F(L_49, GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F_RuntimeMethod_var);
+				VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_50, _stringLiteral60A91CBD22B653D8116295CF4B443F9C4C9A9BD9);
 			}
 
-IL_0162_1:
+IL_0163_1:
 			{
 				// foreach (var logro in myLogroList.logros)
-				bool L_49;
-				L_49 = Enumerator_MoveNext_mF877AFE9BAFB07995D69E6D471EBB70C362E1B7D((&V_2), Enumerator_MoveNext_mF877AFE9BAFB07995D69E6D471EBB70C362E1B7D_RuntimeMethod_var);
-				if (L_49)
+				bool L_51;
+				L_51 = Enumerator_MoveNext_mF877AFE9BAFB07995D69E6D471EBB70C362E1B7D((&V_2), Enumerator_MoveNext_mF877AFE9BAFB07995D69E6D471EBB70C362E1B7D_RuntimeMethod_var);
+				if (L_51)
 				{
 					goto IL_0044_1;
 				}
 			}
 			{
-				goto IL_017e;
+				goto IL_017f;
 			}
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
@@ -9678,7 +9678,7 @@ IL_0162_1:
 		}
 	}
 
-IL_017e:
+IL_017f:
 	{
 		// }
 		return;
