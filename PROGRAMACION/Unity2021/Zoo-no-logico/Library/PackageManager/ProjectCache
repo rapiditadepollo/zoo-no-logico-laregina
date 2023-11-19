@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638356658911095813
-    m_Hash: 1980740055
+      ticks: 638360325124945449
+    m_Hash: 3233391291
   m_LockFileStatus:
     m_FilePath: F:/GitHub/zoo-no-logico-laregina/PROGRAMACION/Unity2021/Zoo-no-logico/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638356658911095813
-    m_Hash: 2037531239
+      ticks: 638360325125165467
+    m_Hash: 1564433640
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -193,6 +193,7 @@ m_ResolvedPackages:
     - 4.2.1
     - 4.3.0
     - 4.4.1
+    - 4.4.2
     compatible:
     - 3.7.5
     - 4.0.0
@@ -201,6 +202,7 @@ m_ResolvedPackages:
     - 4.2.1
     - 4.3.0
     - 4.4.1
+    - 4.4.2
     verified: 3.7.5
   dependencies:
   - name: com.unity.ugui
@@ -417,9 +419,16 @@ m_ResolvedPackages:
     - 2.0.0-preview.21
     - 2.0.0-preview.22
     - 2.0.0
+    - 2.0.1
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
+    - 2.1.0
+    - 2.2.0
     compatible:
     - 1.17.6
     - 1.17.7
@@ -431,20 +440,27 @@ m_ResolvedPackages:
     - 2.0.0-preview.21
     - 2.0.0-preview.22
     - 2.0.0
+    - 2.0.1
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
+    - 2.1.0
+    - 2.2.0
     verified: 1.17.7
   dependencies:
   - name: com.unity.services.core
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.services.core
-    version: 1.5.2
+    version: 1.10.1
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
-    version: 3.0.2
+    version: 3.2.1
   - name: com.unity.modules.androidjni
     version: 1.0.0
   keywords:
@@ -538,12 +554,24 @@ m_ResolvedPackages:
     - 3.0.16
     - 3.0.17
     - 3.0.18
+    - 3.0.20
+    - 3.0.21
+    - 3.0.22
+    - 3.0.24
+    - 3.0.25
+    - 3.0.26
     compatible:
     - 3.0.15
     - 3.0.16
     - 3.0.17
     - 3.0.18
-    verified: 3.0.18
+    - 3.0.20
+    - 3.0.21
+    - 3.0.22
+    - 3.0.24
+    - 3.0.25
+    - 3.0.26
+    verified: 3.0.26
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -614,10 +642,18 @@ m_ResolvedPackages:
     - 2.0.15
     - 2.0.16
     - 2.0.17
+    - 2.0.18
+    - 2.0.20
+    - 2.0.21
+    - 2.0.22
     compatible:
     - 2.0.16
     - 2.0.17
-    verified: 2.0.17
+    - 2.0.18
+    - 2.0.20
+    - 2.0.21
+    - 2.0.22
+    verified: 2.0.22
   dependencies:
   - name: com.unity.test-framework
     version: 1.1.9
@@ -805,11 +841,25 @@ m_ResolvedPackages:
     - 4.5.0
     - 4.5.1
     - 4.5.2
+    - 4.6.0
+    - 4.7.0
+    - 4.8.0
+    - 4.9.2
+    - 4.9.3
+    - 4.9.4
+    - 4.10.0
     compatible:
     - 4.4.1
     - 4.5.0
     - 4.5.1
     - 4.5.2
+    - 4.6.0
+    - 4.7.0
+    - 4.8.0
+    - 4.9.2
+    - 4.9.3
+    - 4.9.4
+    - 4.10.0
     verified: 4.4.1
   dependencies:
   - name: com.unity.ugui
@@ -842,11 +892,11 @@ m_ResolvedPackages:
   - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.services.core
-    version: 1.5.2
+    version: 1.10.1
   - name: com.unity.nuget.newtonsoft-json
-    version: 3.0.2
+    version: 3.2.1
   - name: com.unity.services.analytics
-    version: 4.2.0
+    version: 5.0.1
   keywords:
   - purchasing
   - iap
@@ -871,6 +921,107 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 4.4.1
+    nextVersion: 
+- packageId: com.unity.services.analytics@5.0.1
+  testable: 0
+  isDirectDependency: 1
+  version: 5.0.1
+  source: 1
+  resolvedPath: F:\GitHub\zoo-no-logico-laregina\PROGRAMACION\Unity2021\Zoo-no-logico\Library\PackageCache\com.unity.services.analytics@5.0.1
+  assetPath: Packages/com.unity.services.analytics
+  name: com.unity.services.analytics
+  displayName: Analytics
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: The Unity Analytics package automatically collects core events and
+    user properties when someone uses your game or application, and enables you to
+    track specific in-game actions your user performs by defining custom events.
+    The data collected from this package is surfaced in the Unity dashboard where
+    you can use it to gather user insights, segment your player base and make informed
+    decisions around the optimization of your game.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.3
+    - 1.0.4
+    - 1.0.5
+    - 2.0.7-pre.4
+    - 2.0.7-pre.6
+    - 2.0.7-pre.7
+    - 3.0.0-pre.2
+    - 3.0.0-pre.3
+    - 3.0.0-pre.4
+    - 4.0.0-pre.2
+    - 4.0.0-pre.3
+    - 4.0.0
+    - 4.0.1
+    - 4.1.0
+    - 4.2.0
+    - 4.3.0
+    - 4.4.0
+    - 4.4.1
+    - 4.4.2
+    - 5.0.0
+    - 5.0.1
+    compatible:
+    - 4.2.0
+    - 4.3.0
+    - 4.4.0
+    - 4.4.1
+    - 4.4.2
+    - 5.0.0
+    - 5.0.1
+    verified: 4.2.0
+  dependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.services.core
+    version: 1.10.1
+  resolvedDependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.services.core
+    version: 1.10.1
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.1
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 638327852030000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.analytics@5.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
+    revision: f0516cff70d3123f4c7ab1e2625d29f6b057b8f7
+    path: 
+  unityLifecycle:
+    version: 4.2.0
     nextVersion: 
 - packageId: com.unity.test-framework@1.1.31
   testable: 0
@@ -929,6 +1080,13 @@ m_ResolvedPackages:
     - 1.3.0
     - 1.3.1
     - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.7
+    - 1.3.8
+    - 1.3.9
+    - 1.4.0
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -939,6 +1097,13 @@ m_ResolvedPackages:
     - 1.3.0
     - 1.3.1
     - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.7
+    - 1.3.8
+    - 1.3.9
+    - 1.4.0
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -1105,13 +1270,18 @@ m_ResolvedPackages:
     - 3.2.0-pre.2
     - 3.2.0-pre.3
     - 3.2.0-pre.4
+    - 3.2.0-pre.5
+    - 3.2.0-pre.6
     - 4.0.0-pre.1
+    - 4.0.0-pre.2
     compatible:
     - 3.0.6
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
     - 3.2.0-pre.4
+    - 3.2.0-pre.5
+    - 3.2.0-pre.6
     verified: 3.0.6
   dependencies:
   - name: com.unity.ugui
@@ -1239,21 +1409,43 @@ m_ResolvedPackages:
     - 1.6.2
     - 1.6.3
     - 1.6.4
+    - 1.6.5
     - 1.7.0-pre.1
     - 1.7.0-pre.2
     - 1.7.0
     - 1.7.1
     - 1.7.2
+    - 1.7.3
+    - 1.7.4
+    - 1.7.5
+    - 1.7.6
     - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.8.3
+    - 1.8.4
+    - 1.8.5
+    - 1.8.6
     compatible:
     - 1.6.4
+    - 1.6.5
     - 1.7.0-pre.1
     - 1.7.0-pre.2
     - 1.7.0
     - 1.7.1
     - 1.7.2
+    - 1.7.3
+    - 1.7.4
+    - 1.7.5
+    - 1.7.6
     - 1.8.0
-    verified: 1.6.4
+    - 1.8.1
+    - 1.8.2
+    - 1.8.3
+    - 1.8.4
+    - 1.8.5
+    - 1.8.6
+    verified: 1.6.5
   dependencies:
   - name: com.unity.modules.director
     version: 1.0.0
@@ -1323,6 +1515,8 @@ m_ResolvedPackages:
   versions:
     all:
     - 1.0.0
+    - 3.0.0-exp.1
+    - 3.0.0-exp.3
     compatible:
     - 1.0.0
     verified: 1.0.0
@@ -3260,10 +3454,14 @@ m_ResolvedPackages:
     - 1.0.6
     - 2.0.2
     - 2.0.3
+    - 2.0.4
+    - 2.0.5
     compatible:
     - 1.0.6
     - 2.0.2
     - 2.0.3
+    - 2.0.4
+    - 2.0.5
     verified: 1.0.6
   dependencies: []
   resolvedDependencies: []
@@ -3292,12 +3490,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.6
     nextVersion: 
-- packageId: com.unity.services.core@1.5.2
+- packageId: com.unity.services.core@1.10.1
   testable: 0
   isDirectDependency: 0
-  version: 1.5.2
+  version: 1.10.1
   source: 1
-  resolvedPath: F:\GitHub\zoo-no-logico-laregina\PROGRAMACION\Unity2021\Zoo-no-logico\Library\PackageCache\com.unity.services.core@1.5.2
+  resolvedPath: F:\GitHub\zoo-no-logico-laregina\PROGRAMACION\Unity2021\Zoo-no-logico\Library\PackageCache\com.unity.services.core@1.10.1
   assetPath: Packages/com.unity.services.core
   name: com.unity.services.core
   displayName: Services Core
@@ -3306,7 +3504,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: assets
   description: 'This package defines common components used by multiple Game Service
     packages.
 
@@ -3335,24 +3533,36 @@ m_ResolvedPackages:
     - 1.6.0
     - 1.7.0
     - 1.7.1
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.1
+    - 1.11.0
+    - 1.12.0
     compatible:
     - 1.5.2
     - 1.6.0
     - 1.7.0
     - 1.7.1
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.1
+    - 1.11.0
+    - 1.12.0
     verified: 1.5.2
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
-    version: 3.0.2
+    version: 3.2.1
   - name: com.unity.modules.androidjni
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
-    version: 3.0.2
+    version: 3.2.1
   - name: com.unity.modules.androidjni
     version: 1.0.0
   keywords: []
@@ -3366,110 +3576,23 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 638018550440000000
-  documentationUrl: 
+  datePublishedTicks: 638216346020000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.core@1.10/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: e040465b79d519da3eae1f3ee97816020574dd5e
+    revision: 608305128daff56c9d3a0cbff0cb258a4c4d3739
     path: 
   unityLifecycle:
     version: 1.5.2
     nextVersion: 
-- packageId: com.unity.services.analytics@4.2.0
+- packageId: com.unity.nuget.newtonsoft-json@3.2.1
   testable: 0
   isDirectDependency: 0
-  version: 4.2.0
+  version: 3.2.1
   source: 1
-  resolvedPath: F:\GitHub\zoo-no-logico-laregina\PROGRAMACION\Unity2021\Zoo-no-logico\Library\PackageCache\com.unity.services.analytics@4.2.0
-  assetPath: Packages/com.unity.services.analytics
-  name: com.unity.services.analytics
-  displayName: Analytics
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: asset
-  description: The Unity Analytics package automatically collects core events and
-    user properties when someone uses your game or application, and enables you to
-    track specific in-game actions your user performs by defining custom events.
-    The data collected from this package is surfaced in the Unity dashboard where
-    you can use it to gather user insights, segment your player base and make informed
-    decisions around the optimization of your game.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 1.0.3
-    - 1.0.4
-    - 1.0.5
-    - 2.0.7-pre.4
-    - 2.0.7-pre.6
-    - 2.0.7-pre.7
-    - 3.0.0-pre.2
-    - 3.0.0-pre.3
-    - 3.0.0-pre.4
-    - 4.0.0-pre.2
-    - 4.0.0-pre.3
-    - 4.0.0
-    - 4.0.1
-    - 4.1.0
-    - 4.2.0
-    - 4.3.0
-    compatible:
-    - 4.2.0
-    - 4.3.0
-    verified: 4.2.0
-  dependencies:
-  - name: com.unity.ugui
-    version: 1.0.0
-  - name: com.unity.services.core
-    version: 1.4.0
-  resolvedDependencies:
-  - name: com.unity.ugui
-    version: 1.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.services.core
-    version: 1.5.2
-  - name: com.unity.modules.unitywebrequest
-    version: 1.0.0
-  - name: com.unity.nuget.newtonsoft-json
-    version: 3.0.2
-  - name: com.unity.modules.androidjni
-    version: 1.0.0
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 637970128630000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: 40445d94118e139ce5bff46afdeb574502a2e3c9
-    path: 
-  unityLifecycle:
-    version: 4.2.0
-    nextVersion: 
-- packageId: com.unity.nuget.newtonsoft-json@3.0.2
-  testable: 0
-  isDirectDependency: 0
-  version: 3.0.2
-  source: 1
-  resolvedPath: F:\GitHub\zoo-no-logico-laregina\PROGRAMACION\Unity2021\Zoo-no-logico\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2
+  resolvedPath: F:\GitHub\zoo-no-logico-laregina\PROGRAMACION\Unity2021\Zoo-no-logico\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1
   assetPath: Packages/com.unity.nuget.newtonsoft-json
   name: com.unity.nuget.newtonsoft-json
   displayName: Newtonsoft Json
@@ -3480,7 +3603,7 @@ m_ResolvedPackages:
   category: 
   type: library
   description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
-    synced to version 13.0.1.
+    synced to version 13.0.2.
 
 
     This package is used for advanced json serialization
@@ -3506,8 +3629,14 @@ m_ResolvedPackages:
     - 2.0.2
     - 3.0.1
     - 3.0.2
+    - 3.1.0
+    - 3.2.0
+    - 3.2.1
     compatible:
     - 3.0.2
+    - 3.1.0
+    - 3.2.0
+    - 3.2.1
     verified: 3.0.2
   dependencies: []
   resolvedDependencies: []
@@ -3522,13 +3651,13 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637846828220000000
+  datePublishedTicks: 638186318800000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
-    revision: 8f66870a71ad3f2cdd46330b5c482dfd138ffc64
+    revision: d8e49aef8979bef617144382052ec2f479645eaf
     path: 
   unityLifecycle:
     version: 3.0.2

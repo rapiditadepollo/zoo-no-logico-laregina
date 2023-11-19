@@ -308,7 +308,7 @@
 -r:"F:/GitHub/zoo-no-logico-laregina/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll"
 -r:"F:/GitHub/zoo-no-logico-laregina/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll"
 -r:"F:/GitHub/zoo-no-logico-laregina/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll"
--r:"F:/GitHub/zoo-no-logico-laregina/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
+-r:"F:/GitHub/zoo-no-logico-laregina/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Analytics.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Purchasing.Common.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.2D.Sprite.Editor.ref.dll"

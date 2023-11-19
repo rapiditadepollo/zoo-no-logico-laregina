@@ -322,7 +322,7 @@
 -r:"F:/GitHub/zoo-no-logico-laregina/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
 -r:"F:/GitHub/zoo-no-logico-laregina/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/unityplastic.dll"
 -r:"F:/GitHub/zoo-no-logico-laregina/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
--r:"F:/GitHub/zoo-no-logico-laregina/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
+-r:"F:/GitHub/zoo-no-logico-laregina/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Services.Analytics.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Services.Core.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Services.Core.Internal.ref.dll"
@@ -331,9 +331,9 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
-"Library/PackageCache/com.unity.services.analytics@4.2.0/Editor/CoreStatsIntegration.cs"
-"Library/PackageCache/com.unity.services.analytics@4.2.0/Editor/Settings/AnalyticsEditorGameService.cs"
-"Library/PackageCache/com.unity.services.analytics@4.2.0/Editor/Settings/AnalyticsSettingsProvider.cs"
+"Library/PackageCache/com.unity.services.analytics@5.0.1/Editor/CoreStatsIntegration.cs"
+"Library/PackageCache/com.unity.services.analytics@5.0.1/Editor/Settings/AnalyticsEditorGameService.cs"
+"Library/PackageCache/com.unity.services.analytics@5.0.1/Editor/Settings/AnalyticsSettingsProvider.cs"
 -langversion:9.0
 
 /deterministic

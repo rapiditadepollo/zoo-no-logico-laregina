@@ -19,13 +19,19 @@ public class EventosAnalytics : MonoBehaviour
     {
         try
         {
-            await UnityServices.InitializeAsync();
-            List<string> consentIdentifiers = await AnalyticsService.Instance.CheckForRequiredConsents();
+            var options = new InitializationOptions();
+            options.SetEnvironmentName("zoo-no-logico-laregina");
+            await UnityServices.InitializeAsync(options);
         }
         catch (ConsentCheckException e)
         {
             // Something went wrong when checking the GeoIP, check the e.Reason and handle appropriately.
         }
+    }
+
+    public void ConsentGiven()
+    {
+        AnalyticsService.Instance.StartDataCollection();
     }
 
     public void game_over()

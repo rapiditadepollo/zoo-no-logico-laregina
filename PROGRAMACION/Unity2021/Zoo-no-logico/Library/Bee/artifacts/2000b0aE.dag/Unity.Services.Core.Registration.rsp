@@ -316,7 +316,7 @@
 -r:"F:/GitHub/zoo-no-logico-laregina/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
 -r:"F:/GitHub/zoo-no-logico-laregina/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
 -r:"F:/GitHub/zoo-no-logico-laregina/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/unityplastic.dll"
--r:"F:/GitHub/zoo-no-logico-laregina/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
+-r:"F:/GitHub/zoo-no-logico-laregina/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Services.Core.Configuration.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Services.Core.Device.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Services.Core.Environments.Internal.ref.dll"
@@ -328,8 +328,8 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Services.Core.Threading.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
-"Library/PackageCache/com.unity.services.core@1.5.2/Runtime/Registration/AssemblyInfo.cs"
-"Library/PackageCache/com.unity.services.core@1.5.2/Runtime/Registration/CorePackageInitializer.cs"
+"Library/PackageCache/com.unity.services.core@1.10.1/Runtime/Registration/AssemblyInfo.cs"
+"Library/PackageCache/com.unity.services.core@1.10.1/Runtime/Registration/CorePackageInitializer.cs"
 -langversion:9.0
 
 /deterministic
