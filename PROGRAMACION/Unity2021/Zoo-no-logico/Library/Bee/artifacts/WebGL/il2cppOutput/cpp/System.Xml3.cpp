@@ -10818,7 +10818,7 @@ FINALLY_0040:
 									}
 									{
 										Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_2 = __this->___stream_5;
-										VirtualActionInvoker0::Invoke(18 /* System.Void System.IO.Stream::Close() */, L_2);
+										VirtualActionInvoker0::Invoke(19 /* System.Void System.IO.Stream::Close() */, L_2);
 									}
 
 IL_003e_1:
@@ -10841,7 +10841,7 @@ IL_0048:
 					try
 					{// begin try (depth: 2)
 						Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_3 = __this->___stream_5;
-						VirtualActionInvoker0::Invoke(20 /* System.Void System.IO.Stream::Flush() */, L_3);
+						VirtualActionInvoker0::Invoke(21 /* System.Void System.IO.Stream::Flush() */, L_3);
 						goto IL_0049;
 					}// end try (depth: 2)
 					catch(Il2CppExceptionWrapper& e)
@@ -10887,7 +10887,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlUtf8RawTextWriter_Flush_m52C4545C8843
 	}
 	{
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_1 = __this->___stream_5;
-		VirtualActionInvoker0::Invoke(20 /* System.Void System.IO.Stream::Flush() */, L_1);
+		VirtualActionInvoker0::Invoke(21 /* System.Void System.IO.Stream::Flush() */, L_1);
 	}
 
 IL_001f:
@@ -11023,7 +11023,7 @@ IL_00c5:
 					Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_29 = __this->___stream_5;
 					ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_30 = __this->___bufBytes_4;
 					int32_t L_31 = __this->___bufPos_8;
-					VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(34 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_29, L_30, 1, ((int32_t)il2cpp_codegen_subtract(L_31, 1)));
+					VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(36 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_29, L_30, 1, ((int32_t)il2cpp_codegen_subtract(L_31, 1)));
 				}
 
 IL_0022_2:

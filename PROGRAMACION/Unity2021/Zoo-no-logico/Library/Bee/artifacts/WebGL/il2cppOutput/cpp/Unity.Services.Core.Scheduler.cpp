@@ -128,15 +128,15 @@ IL2CPP_EXTERN_C String_t* _stringLiteralF9010398F7F524C05AB19445BDCE02E617A3E267
 IL2CPP_EXTERN_C const RuntimeMethod* ActionScheduler_ExecuteExpiredActions_mB683F55950DD543D90A479DF7E68539969F2B48C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ActionScheduler_ScheduleAction_m6D586ADFCCA974FEBA1D7E23AA3D3DBBA517F8CD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_mF48375565652F72160F059EB62C1FC8A6331A0AA_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_ContainsKey_m7D797AD73D42AA88EA61A27C31F72AB423DB1D3F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Remove_m4EEA35DDD180B435CA4CCB7714A4FF4844ADFE34_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_mD4BDCE432034E3DD2E6E079602DF5CE6C804937C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mC2C4F027C0F5DF5863AC1194299269D2907550D2_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Item_mFF139C50AEE548A51800EB755A2409B5AF324B30_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_mAC237D510E358726C014DD3F610942E989613559_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m46C4F2A2917BB3C219137A08B6E29579FCBF6CA5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m76478B2825D5D7493DFBD3E478233114BE128B35_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m20B47157F68B2A1C1C92F34C111874885F78607A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m3539AF736216DC060382909AAC2FAD2AA49EF16C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Clear_m708BB07A967216E1312094EBD2CD7C393B281926_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Contains_m040083A451046E87051FFEF6119F608D5B760BD4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m1E92478DAD982718EEF541288BFDEEFBD906EB0A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_ToArray_mF1B4B099D6EC830C7AE856231485FF238F2985E3_RuntimeMethod_var;
@@ -336,27 +336,31 @@ struct Enumerator_tAE300C7056BDE583F62C47321CE68904319DE228
 // Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1<System.Object>
 struct MinimumBinaryHeap_1_tEE553DEE7A9880C6DB0CD490BFE9F1B9FC502EC2  : public MinimumBinaryHeap_tA55F58E6B1D3F482C11529BAB4C1D56F5BF745FE
 {
+	// System.Object Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1::m_Lock
+	RuntimeObject* ___m_Lock_0;
 	// System.Collections.Generic.IComparer`1<T> Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1::m_Comparer
-	RuntimeObject* ___m_Comparer_0;
+	RuntimeObject* ___m_Comparer_1;
 	// System.Int32 Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1::m_MinimumCapacity
-	int32_t ___m_MinimumCapacity_1;
+	int32_t ___m_MinimumCapacity_2;
 	// T[] Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1::m_HeapArray
-	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___m_HeapArray_2;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___m_HeapArray_3;
 	// System.Int32 Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1::<Count>k__BackingField
-	int32_t ___U3CCountU3Ek__BackingField_3;
+	int32_t ___U3CCountU3Ek__BackingField_4;
 };
 
 // Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1<Unity.Services.Core.Scheduler.Internal.ScheduledInvocation>
 struct MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD  : public MinimumBinaryHeap_tA55F58E6B1D3F482C11529BAB4C1D56F5BF745FE
 {
+	// System.Object Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1::m_Lock
+	RuntimeObject* ___m_Lock_0;
 	// System.Collections.Generic.IComparer`1<T> Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1::m_Comparer
-	RuntimeObject* ___m_Comparer_0;
+	RuntimeObject* ___m_Comparer_1;
 	// System.Int32 Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1::m_MinimumCapacity
-	int32_t ___m_MinimumCapacity_1;
+	int32_t ___m_MinimumCapacity_2;
 	// T[] Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1::m_HeapArray
-	ScheduledInvocationU5BU5D_t5FF33B203DD9429A370AB454EAC64C77BF507DAE* ___m_HeapArray_2;
+	ScheduledInvocationU5BU5D_t5FF33B203DD9429A370AB454EAC64C77BF507DAE* ___m_HeapArray_3;
 	// System.Int32 Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1::<Count>k__BackingField
-	int32_t ___U3CCountU3Ek__BackingField_3;
+	int32_t ___U3CCountU3Ek__BackingField_4;
 };
 
 // System.Boolean
@@ -652,18 +656,20 @@ struct ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93  : public R
 // Unity.Services.Core.Scheduler.Internal.ActionScheduler
 struct ActionScheduler_t25AE26866357EBC70F6698FCD3E0B6DBE7473154  : public RuntimeObject
 {
-	// Unity.Services.Core.Scheduler.Internal.ITimeProvider Unity.Services.Core.Scheduler.Internal.ActionScheduler::m_TimeProvider
-	RuntimeObject* ___m_TimeProvider_0;
-	// System.Object Unity.Services.Core.Scheduler.Internal.ActionScheduler::m_Lock
-	RuntimeObject* ___m_Lock_1;
-	// Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1<Unity.Services.Core.Scheduler.Internal.ScheduledInvocation> Unity.Services.Core.Scheduler.Internal.ActionScheduler::m_ScheduledActions
-	MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* ___m_ScheduledActions_2;
-	// System.Collections.Generic.Dictionary`2<System.Int64,Unity.Services.Core.Scheduler.Internal.ScheduledInvocation> Unity.Services.Core.Scheduler.Internal.ActionScheduler::m_IdScheduledInvocationMap
-	Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* ___m_IdScheduledInvocationMap_3;
 	// UnityEngine.LowLevel.PlayerLoopSystem Unity.Services.Core.Scheduler.Internal.ActionScheduler::SchedulerLoopSystem
-	PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F ___SchedulerLoopSystem_4;
+	PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F ___SchedulerLoopSystem_0;
+	// Unity.Services.Core.Scheduler.Internal.ITimeProvider Unity.Services.Core.Scheduler.Internal.ActionScheduler::m_TimeProvider
+	RuntimeObject* ___m_TimeProvider_1;
+	// System.Object Unity.Services.Core.Scheduler.Internal.ActionScheduler::m_Lock
+	RuntimeObject* ___m_Lock_2;
+	// Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1<Unity.Services.Core.Scheduler.Internal.ScheduledInvocation> Unity.Services.Core.Scheduler.Internal.ActionScheduler::m_ScheduledActions
+	MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* ___m_ScheduledActions_3;
+	// System.Collections.Generic.Dictionary`2<System.Int64,Unity.Services.Core.Scheduler.Internal.ScheduledInvocation> Unity.Services.Core.Scheduler.Internal.ActionScheduler::m_IdScheduledInvocationMap
+	Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* ___m_IdScheduledInvocationMap_4;
+	// System.Collections.Generic.List`1<Unity.Services.Core.Scheduler.Internal.ScheduledInvocation> Unity.Services.Core.Scheduler.Internal.ActionScheduler::m_ExpiredActions
+	List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3* ___m_ExpiredActions_5;
 	// System.Int64 Unity.Services.Core.Scheduler.Internal.ActionScheduler::m_NextId
-	int64_t ___m_NextId_5;
+	int64_t ___m_NextId_6;
 };
 
 // System.MulticastDelegate
@@ -825,20 +831,20 @@ struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeA
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MinimumBinaryHeap_1__ctor_m994738C835A39AE64AC301F8D840B2B267CF426F_gshared (MinimumBinaryHeap_1_tEE553DEE7A9880C6DB0CD490BFE9F1B9FC502EC2* __this, RuntimeObject* ___comparer0, int32_t ___minimumCapacity1, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Int64,System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m6E4700E09E9816E4C0C88C90C5BB8FAF312B8481_gshared (Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* __this, const RuntimeMethod* method) ;
-// System.Void Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1<System.Object>::Insert(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MinimumBinaryHeap_1_Insert_mF22154926CB8760CC6547BD5B2727E50178559D3_gshared (MinimumBinaryHeap_1_tEE553DEE7A9880C6DB0CD490BFE9F1B9FC502EC2* __this, RuntimeObject* ___data0, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.Dictionary`2<System.Int64,System.Object>::Add(TKey,TValue)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_mF6ABB6369C9A6394AE57424BE839FE87809B4102_gshared (Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* __this, int64_t ___key0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
-// System.Boolean System.Collections.Generic.Dictionary`2<System.Int64,System.Object>::ContainsKey(TKey)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_ContainsKey_mA1BB0DE4E26C51B6E67399D8D563FEDF5A333D36_gshared (Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* __this, int64_t ___key0, const RuntimeMethod* method) ;
-// TValue System.Collections.Generic.Dictionary`2<System.Int64,System.Object>::get_Item(TKey)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Dictionary_2_get_Item_mAC70CA6E8EADDCD67AB1C6BA2417CC7CE49EAF0D_gshared (Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* __this, int64_t ___key0, const RuntimeMethod* method) ;
-// System.Void Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1<System.Object>::Remove(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MinimumBinaryHeap_1_Remove_m2859A3B245F1EA92C6BE49A34DCE1E7A769C0236_gshared (MinimumBinaryHeap_1_tEE553DEE7A9880C6DB0CD490BFE9F1B9FC502EC2* __this, RuntimeObject* ___data0, const RuntimeMethod* method) ;
-// System.Boolean System.Collections.Generic.Dictionary`2<System.Int64,System.Object>::Remove(TKey)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_Remove_m7A61F563F380F740D8288007493B16BB0329146D_gshared (Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* __this, int64_t ___key0, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1<System.Object>::Insert(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MinimumBinaryHeap_1_Insert_mF22154926CB8760CC6547BD5B2727E50178559D3_gshared (MinimumBinaryHeap_1_tEE553DEE7A9880C6DB0CD490BFE9F1B9FC502EC2* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Int64,System.Object>::Add(TKey,TValue)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_mF6ABB6369C9A6394AE57424BE839FE87809B4102_gshared (Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* __this, int64_t ___key0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int64,System.Object>::TryGetValue(TKey,TValue&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_TryGetValue_m9A4D60A27A7CAA492BE4A9AC1EB250802FDDF5A4_gshared (Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* __this, int64_t ___key0, RuntimeObject** ___value1, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1<System.Object>::Remove(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MinimumBinaryHeap_1_Remove_m2859A3B245F1EA92C6BE49A34DCE1E7A769C0236_gshared (MinimumBinaryHeap_1_tEE553DEE7A9880C6DB0CD490BFE9F1B9FC502EC2* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int64,System.Object>::Remove(TKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_Remove_m7A61F563F380F740D8288007493B16BB0329146D_gshared (Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* __this, int64_t ___key0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::Clear()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 // T Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1<System.Object>::ExtractMin()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MinimumBinaryHeap_1_ExtractMin_m257123539D018EA74AE7AA318624B5F7EF91A943_gshared (MinimumBinaryHeap_1_tEE553DEE7A9880C6DB0CD490BFE9F1B9FC502EC2* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
@@ -888,6 +894,11 @@ inline void Dictionary_2__ctor_mC2C4F027C0F5DF5863AC1194299269D2907550D2 (Dictio
 {
 	((  void (*) (Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA*, const RuntimeMethod*))Dictionary_2__ctor_m6E4700E09E9816E4C0C88C90C5BB8FAF312B8481_gshared)(__this, method);
 }
+// System.Void System.Collections.Generic.List`1<Unity.Services.Core.Scheduler.Internal.ScheduledInvocation>::.ctor()
+inline void List_1__ctor_mDB148E7C9F949120117B65AD14BDD7A5832ABA2F (List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
 // System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57 (RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ___handle0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.LowLevel.PlayerLoopSystem/UpdateFunction::.ctor(System.Object,System.IntPtr)
@@ -896,48 +907,43 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdateFunction__ctor_m0D1D766F22D0217639
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___message0, const RuntimeMethod* method) ;
 // System.Void System.ArgumentNullException::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* __this, String_t* ___paramName0, const RuntimeMethod* method) ;
-// System.Void Unity.Services.Core.Scheduler.Internal.ScheduledInvocation::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScheduledInvocation__ctor_mB7D79780A933DBF3A750A1FABB2DAA45852513BD (ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* __this, const RuntimeMethod* method) ;
-// System.DateTime System.DateTime::AddSeconds(System.Double)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D DateTime_AddSeconds_mC5FE3FB22A1295CA747746ECE48B9D4A4B6B2E81 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, double ___value0, const RuntimeMethod* method) ;
 // System.Void System.Threading.Monitor::Exit(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Monitor_Exit_m05B2CF037E2214B3208198C282490A2A475653FA (RuntimeObject* ___obj0, const RuntimeMethod* method) ;
 // System.Void System.Threading.Monitor::Enter(System.Object,System.Boolean&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149 (RuntimeObject* ___obj0, bool* ___lockTaken1, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Core.Scheduler.Internal.ScheduledInvocation::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScheduledInvocation__ctor_mB7D79780A933DBF3A750A1FABB2DAA45852513BD (ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* __this, const RuntimeMethod* method) ;
+// System.DateTime System.DateTime::AddSeconds(System.Double)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D DateTime_AddSeconds_mC5FE3FB22A1295CA747746ECE48B9D4A4B6B2E81 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, double ___value0, const RuntimeMethod* method) ;
 // System.Void Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1<Unity.Services.Core.Scheduler.Internal.ScheduledInvocation>::Insert(T)
-inline void MinimumBinaryHeap_1_Insert_m7AD50B20077FD1D21C8A8849E35493078CEB85C4 (MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* __this, ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* ___data0, const RuntimeMethod* method)
+inline void MinimumBinaryHeap_1_Insert_m7AD50B20077FD1D21C8A8849E35493078CEB85C4 (MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* __this, ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* ___item0, const RuntimeMethod* method)
 {
-	((  void (*) (MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD*, ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93*, const RuntimeMethod*))MinimumBinaryHeap_1_Insert_mF22154926CB8760CC6547BD5B2727E50178559D3_gshared)(__this, ___data0, method);
+	((  void (*) (MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD*, ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93*, const RuntimeMethod*))MinimumBinaryHeap_1_Insert_mF22154926CB8760CC6547BD5B2727E50178559D3_gshared)(__this, ___item0, method);
 }
 // System.Void System.Collections.Generic.Dictionary`2<System.Int64,Unity.Services.Core.Scheduler.Internal.ScheduledInvocation>::Add(TKey,TValue)
 inline void Dictionary_2_Add_mF48375565652F72160F059EB62C1FC8A6331A0AA (Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* __this, int64_t ___key0, ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* ___value1, const RuntimeMethod* method)
 {
 	((  void (*) (Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA*, int64_t, ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93*, const RuntimeMethod*))Dictionary_2_Add_mF6ABB6369C9A6394AE57424BE839FE87809B4102_gshared)(__this, ___key0, ___value1, method);
 }
-// System.Boolean System.Collections.Generic.Dictionary`2<System.Int64,Unity.Services.Core.Scheduler.Internal.ScheduledInvocation>::ContainsKey(TKey)
-inline bool Dictionary_2_ContainsKey_m7D797AD73D42AA88EA61A27C31F72AB423DB1D3F (Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* __this, int64_t ___key0, const RuntimeMethod* method)
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int64,Unity.Services.Core.Scheduler.Internal.ScheduledInvocation>::TryGetValue(TKey,TValue&)
+inline bool Dictionary_2_TryGetValue_mD4BDCE432034E3DD2E6E079602DF5CE6C804937C (Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* __this, int64_t ___key0, ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93** ___value1, const RuntimeMethod* method)
 {
-	return ((  bool (*) (Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA*, int64_t, const RuntimeMethod*))Dictionary_2_ContainsKey_mA1BB0DE4E26C51B6E67399D8D563FEDF5A333D36_gshared)(__this, ___key0, method);
-}
-// TValue System.Collections.Generic.Dictionary`2<System.Int64,Unity.Services.Core.Scheduler.Internal.ScheduledInvocation>::get_Item(TKey)
-inline ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* Dictionary_2_get_Item_mFF139C50AEE548A51800EB755A2409B5AF324B30 (Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* __this, int64_t ___key0, const RuntimeMethod* method)
-{
-	return ((  ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* (*) (Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA*, int64_t, const RuntimeMethod*))Dictionary_2_get_Item_mAC70CA6E8EADDCD67AB1C6BA2417CC7CE49EAF0D_gshared)(__this, ___key0, method);
+	return ((  bool (*) (Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA*, int64_t, ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93**, const RuntimeMethod*))Dictionary_2_TryGetValue_m9A4D60A27A7CAA492BE4A9AC1EB250802FDDF5A4_gshared)(__this, ___key0, ___value1, method);
 }
 // System.Void Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1<Unity.Services.Core.Scheduler.Internal.ScheduledInvocation>::Remove(T)
-inline void MinimumBinaryHeap_1_Remove_mB0E42318CD574177F32E7FECD9CE8C3B6F1DB464 (MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* __this, ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* ___data0, const RuntimeMethod* method)
+inline void MinimumBinaryHeap_1_Remove_mB0E42318CD574177F32E7FECD9CE8C3B6F1DB464 (MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* __this, ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* ___item0, const RuntimeMethod* method)
 {
-	((  void (*) (MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD*, ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93*, const RuntimeMethod*))MinimumBinaryHeap_1_Remove_m2859A3B245F1EA92C6BE49A34DCE1E7A769C0236_gshared)(__this, ___data0, method);
+	((  void (*) (MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD*, ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93*, const RuntimeMethod*))MinimumBinaryHeap_1_Remove_m2859A3B245F1EA92C6BE49A34DCE1E7A769C0236_gshared)(__this, ___item0, method);
 }
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Int64,Unity.Services.Core.Scheduler.Internal.ScheduledInvocation>::Remove(TKey)
 inline bool Dictionary_2_Remove_m4EEA35DDD180B435CA4CCB7714A4FF4844ADFE34 (Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* __this, int64_t ___key0, const RuntimeMethod* method)
 {
 	return ((  bool (*) (Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA*, int64_t, const RuntimeMethod*))Dictionary_2_Remove_m7A61F563F380F740D8288007493B16BB0329146D_gshared)(__this, ___key0, method);
 }
-// System.Void System.Collections.Generic.List`1<Unity.Services.Core.Scheduler.Internal.ScheduledInvocation>::.ctor()
-inline void List_1__ctor_mDB148E7C9F949120117B65AD14BDD7A5832ABA2F (List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3* __this, const RuntimeMethod* method)
+// System.Void System.Collections.Generic.List`1<Unity.Services.Core.Scheduler.Internal.ScheduledInvocation>::Clear()
+inline void List_1_Clear_m708BB07A967216E1312094EBD2CD7C393B281926_inline (List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+	((  void (*) (List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3*, const RuntimeMethod*))List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline)(__this, method);
 }
 // T Unity.Services.Core.Scheduler.Internal.MinimumBinaryHeap`1<Unity.Services.Core.Scheduler.Internal.ScheduledInvocation>::ExtractMin()
 inline ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* MinimumBinaryHeap_1_ExtractMin_m65CF7190823530D1EC9BB094AE57526F0B7FE155 (MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* __this, const RuntimeMethod* method)
@@ -1024,14 +1030,16 @@ inline void List_1_Add_m20B47157F68B2A1C1C92F34C111874885F78607A_inline (List_1_
 {
 	((  void (*) (List_1_tB751FDCEDAE7A97430AD924824F5D0193A720E52*, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F, const RuntimeMethod*))List_1_Add_m20B47157F68B2A1C1C92F34C111874885F78607A_gshared_inline)(__this, ___item0, method);
 }
-// System.Void Unity.Services.Core.Scheduler.Internal.ActionScheduler::UpdateSubSystemList(System.Collections.Generic.List`1<UnityEngine.LowLevel.PlayerLoopSystem>,UnityEngine.LowLevel.PlayerLoopSystem)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ActionScheduler_UpdateSubSystemList_m6ADBF46147851853585D17ADB4F6524389B836C1 (List_1_tB751FDCEDAE7A97430AD924824F5D0193A720E52* ___subSystemList0, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F ___currentPlayerLoop1, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Core.Scheduler.Internal.ActionScheduler::UpdateCurrentPlayerLoopWith(System.Collections.Generic.List`1<UnityEngine.LowLevel.PlayerLoopSystem>,UnityEngine.LowLevel.PlayerLoopSystem)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ActionScheduler_UpdateCurrentPlayerLoopWith_m32DBF6F37F3D8776484265E95830FEFA40C6A230 (List_1_tB751FDCEDAE7A97430AD924824F5D0193A720E52* ___subSystemList0, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F ___currentPlayerLoop1, const RuntimeMethod* method) ;
 // System.Int32 System.DateTime::CompareTo(System.DateTime)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DateTime_CompareTo_m4A3000CD4FF15EA7CA2E9C5C95A9D07F3AA8D35D (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___value0, const RuntimeMethod* method) ;
 // System.Int32 System.Int64::CompareTo(System.Int64)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Int64_CompareTo_m63A0BDA03C5B1DEB7387B1C53D6BFD961E4F5490 (int64_t* __this, int64_t ___value0, const RuntimeMethod* method) ;
 // System.DateTime System.DateTime::get_UtcNow()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D DateTime_get_UtcNow_m06B6E9995FE16846A0F71EC9DB23E90BE2C5F9FA (const RuntimeMethod* method) ;
+// System.Void System.Array::Clear(System.Array,System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB (RuntimeArray* ___array0, int32_t ___index1, int32_t ___length2, const RuntimeMethod* method) ;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -1073,6 +1081,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ActionScheduler__ctor_m3F34A80C3965C1046
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ActionScheduler_t25AE26866357EBC70F6698FCD3E0B6DBE7473154_0_0_0_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_mC2C4F027C0F5DF5863AC1194299269D2907550D2_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mDB148E7C9F949120117B65AD14BDD7A5832ABA2F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MinimumBinaryHeap_1__ctor_m9C7E57F3215D01D6C3543B43940790F1AD3BA4F4_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RuntimeObject_il2cpp_TypeInfo_var);
@@ -1087,54 +1097,59 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ActionScheduler__ctor_m3F34A80C3965C1046
 		// readonly object m_Lock = new object();
 		RuntimeObject* L_0 = (RuntimeObject*)il2cpp_codegen_object_new(RuntimeObject_il2cpp_TypeInfo_var);
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(L_0, NULL);
-		__this->___m_Lock_1 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Lock_1), (void*)L_0);
+		__this->___m_Lock_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Lock_2), (void*)L_0);
 		// readonly MinimumBinaryHeap<ScheduledInvocation> m_ScheduledActions
 		//     = new MinimumBinaryHeap<ScheduledInvocation>(new ScheduledInvocationComparer());
 		ScheduledInvocationComparer_t785D4501646D05413E8F88FAECD14D9902742CC2* L_1 = (ScheduledInvocationComparer_t785D4501646D05413E8F88FAECD14D9902742CC2*)il2cpp_codegen_object_new(ScheduledInvocationComparer_t785D4501646D05413E8F88FAECD14D9902742CC2_il2cpp_TypeInfo_var);
 		ScheduledInvocationComparer__ctor_mBC023A46362D70B10A4FB65D8C0BB653C9F5F972(L_1, NULL);
 		MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* L_2 = (MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD*)il2cpp_codegen_object_new(MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD_il2cpp_TypeInfo_var);
 		MinimumBinaryHeap_1__ctor_m9C7E57F3215D01D6C3543B43940790F1AD3BA4F4(L_2, L_1, ((int32_t)10), MinimumBinaryHeap_1__ctor_m9C7E57F3215D01D6C3543B43940790F1AD3BA4F4_RuntimeMethod_var);
-		__this->___m_ScheduledActions_2 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ScheduledActions_2), (void*)L_2);
+		__this->___m_ScheduledActions_3 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ScheduledActions_3), (void*)L_2);
 		// readonly Dictionary<long, ScheduledInvocation> m_IdScheduledInvocationMap
 		//     = new Dictionary<long, ScheduledInvocation>();
 		Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* L_3 = (Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA*)il2cpp_codegen_object_new(Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_mC2C4F027C0F5DF5863AC1194299269D2907550D2(L_3, Dictionary_2__ctor_mC2C4F027C0F5DF5863AC1194299269D2907550D2_RuntimeMethod_var);
-		__this->___m_IdScheduledInvocationMap_3 = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_IdScheduledInvocationMap_3), (void*)L_3);
+		__this->___m_IdScheduledInvocationMap_4 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_IdScheduledInvocationMap_4), (void*)L_3);
+		// readonly List<ScheduledInvocation> m_ExpiredActions = new List<ScheduledInvocation>();
+		List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3* L_4 = (List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3*)il2cpp_codegen_object_new(List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3_il2cpp_TypeInfo_var);
+		List_1__ctor_mDB148E7C9F949120117B65AD14BDD7A5832ABA2F(L_4, List_1__ctor_mDB148E7C9F949120117B65AD14BDD7A5832ABA2F_RuntimeMethod_var);
+		__this->___m_ExpiredActions_5 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ExpiredActions_5), (void*)L_4);
 		// long m_NextId = k_MinimumIdValue;
-		__this->___m_NextId_5 = ((int64_t)1);
+		__this->___m_NextId_6 = ((int64_t)1);
 		// public ActionScheduler(ITimeProvider timeProvider)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// m_TimeProvider = timeProvider;
-		RuntimeObject* L_4 = ___timeProvider0;
-		__this->___m_TimeProvider_0 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TimeProvider_0), (void*)L_4);
+		RuntimeObject* L_5 = ___timeProvider0;
+		__this->___m_TimeProvider_1 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TimeProvider_1), (void*)L_5);
 		// SchedulerLoopSystem = new PlayerLoopSystem
 		// {
 		//     type = typeof(ActionScheduler),
 		//     updateDelegate = ExecuteExpiredActions
 		// };
 		il2cpp_codegen_initobj((&V_0), sizeof(PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F));
-		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_5 = { reinterpret_cast<intptr_t> (ActionScheduler_t25AE26866357EBC70F6698FCD3E0B6DBE7473154_0_0_0_var) };
+		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_6 = { reinterpret_cast<intptr_t> (ActionScheduler_t25AE26866357EBC70F6698FCD3E0B6DBE7473154_0_0_0_var) };
 		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
-		Type_t* L_6;
-		L_6 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_5, NULL);
-		(&V_0)->___type_0 = L_6;
-		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___type_0), (void*)L_6);
-		UpdateFunction_t1C48B7EECBE47AC123A9D9D7D9D2A9EE951C56C4* L_7 = (UpdateFunction_t1C48B7EECBE47AC123A9D9D7D9D2A9EE951C56C4*)il2cpp_codegen_object_new(UpdateFunction_t1C48B7EECBE47AC123A9D9D7D9D2A9EE951C56C4_il2cpp_TypeInfo_var);
-		UpdateFunction__ctor_m0D1D766F22D02176396DA6745A60EA046EE8227B(L_7, __this, (intptr_t)((void*)ActionScheduler_ExecuteExpiredActions_mB683F55950DD543D90A479DF7E68539969F2B48C_RuntimeMethod_var), NULL);
-		(&V_0)->___updateDelegate_2 = L_7;
-		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___updateDelegate_2), (void*)L_7);
-		PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F L_8 = V_0;
-		__this->___SchedulerLoopSystem_4 = L_8;
-		Il2CppCodeGenWriteBarrier((void**)&(((&__this->___SchedulerLoopSystem_4))->___type_0), (void*)NULL);
+		Type_t* L_7;
+		L_7 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_6, NULL);
+		(&V_0)->___type_0 = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___type_0), (void*)L_7);
+		UpdateFunction_t1C48B7EECBE47AC123A9D9D7D9D2A9EE951C56C4* L_8 = (UpdateFunction_t1C48B7EECBE47AC123A9D9D7D9D2A9EE951C56C4*)il2cpp_codegen_object_new(UpdateFunction_t1C48B7EECBE47AC123A9D9D7D9D2A9EE951C56C4_il2cpp_TypeInfo_var);
+		UpdateFunction__ctor_m0D1D766F22D02176396DA6745A60EA046EE8227B(L_8, __this, (intptr_t)((void*)ActionScheduler_ExecuteExpiredActions_mB683F55950DD543D90A479DF7E68539969F2B48C_RuntimeMethod_var), NULL);
+		(&V_0)->___updateDelegate_2 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___updateDelegate_2), (void*)L_8);
+		PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F L_9 = V_0;
+		__this->___SchedulerLoopSystem_0 = L_9;
+		Il2CppCodeGenWriteBarrier((void**)&(((&__this->___SchedulerLoopSystem_0))->___type_0), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
-		Il2CppCodeGenWriteBarrier((void**)&(((&__this->___SchedulerLoopSystem_4))->___subSystemList_1), (void*)NULL);
+		Il2CppCodeGenWriteBarrier((void**)&(((&__this->___SchedulerLoopSystem_0))->___subSystemList_1), (void*)NULL);
 		#endif
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
-		Il2CppCodeGenWriteBarrier((void**)&(((&__this->___SchedulerLoopSystem_4))->___updateDelegate_2), (void*)NULL);
+		Il2CppCodeGenWriteBarrier((void**)&(((&__this->___SchedulerLoopSystem_0))->___updateDelegate_2), (void*)NULL);
 		#endif
 		// }
 		return;
@@ -1152,12 +1167,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t ActionScheduler_ScheduleAction_m6D586
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* V_0 = NULL;
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D V_1;
-	memset((&V_1), 0, sizeof(V_1));
-	int64_t V_2 = 0;
-	RuntimeObject* V_3 = NULL;
-	bool V_4 = false;
+	RuntimeObject* V_0 = NULL;
+	bool V_1 = false;
+	ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* V_2 = NULL;
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	int64_t V_4 = 0;
 	{
 		// if (delaySeconds < 0)
 		double L_0 = ___delaySeconds1;
@@ -1191,73 +1206,30 @@ IL_0017:
 
 IL_0025:
 	{
-		// var scheduledInvocation = new ScheduledInvocation
-		// {
-		//     Action = action,
-		//     InvocationTime = m_TimeProvider.Now.AddSeconds(delaySeconds),
-		//     ActionId = m_NextId++
-		// };
-		ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_4 = (ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93*)il2cpp_codegen_object_new(ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93_il2cpp_TypeInfo_var);
-		ScheduledInvocation__ctor_mB7D79780A933DBF3A750A1FABB2DAA45852513BD(L_4, NULL);
-		ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_5 = L_4;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_6 = ___action0;
-		L_5->___Action_0 = L_6;
-		Il2CppCodeGenWriteBarrier((void**)(&L_5->___Action_0), (void*)L_6);
-		ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_7 = L_5;
-		RuntimeObject* L_8 = __this->___m_TimeProvider_0;
-		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_9;
-		L_9 = InterfaceFuncInvoker0< DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D >::Invoke(0 /* System.DateTime Unity.Services.Core.Scheduler.Internal.ITimeProvider::get_Now() */, ITimeProvider_t6CB8C4316E58E0ABEFDEAAF4FA47B90DE03CD2E6_il2cpp_TypeInfo_var, L_8);
-		V_1 = L_9;
-		double L_10 = ___delaySeconds1;
-		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_11;
-		L_11 = DateTime_AddSeconds_mC5FE3FB22A1295CA747746ECE48B9D4A4B6B2E81((&V_1), L_10, NULL);
-		L_7->___InvocationTime_1 = L_11;
-		ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_12 = L_7;
-		int64_t L_13 = __this->___m_NextId_5;
-		V_2 = L_13;
-		int64_t L_14 = V_2;
-		__this->___m_NextId_5 = ((int64_t)il2cpp_codegen_add(L_14, ((int64_t)1)));
-		int64_t L_15 = V_2;
-		L_12->___ActionId_2 = L_15;
-		V_0 = L_12;
-		// if (m_NextId < k_MinimumIdValue)
-		int64_t L_16 = __this->___m_NextId_5;
-		if ((((int64_t)L_16) >= ((int64_t)((int64_t)1))))
-		{
-			goto IL_0076;
-		}
-	}
-	{
-		// m_NextId = k_MinimumIdValue;
-		__this->___m_NextId_5 = ((int64_t)1);
-	}
-
-IL_0076:
-	{
 		// lock (m_Lock)
-		RuntimeObject* L_17 = __this->___m_Lock_1;
-		V_3 = L_17;
-		V_4 = (bool)0;
+		RuntimeObject* L_4 = __this->___m_Lock_2;
+		V_0 = L_4;
+		V_1 = (bool)0;
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_00a8:
+FINALLY_00b2:
 			{// begin finally (depth: 1)
 				{
-					bool L_18 = V_4;
-					if (!L_18)
+					bool L_5 = V_1;
+					if (!L_5)
 					{
-						goto IL_00b2;
+						goto IL_00bb;
 					}
 				}
 				{
-					RuntimeObject* L_19 = V_3;
-					Monitor_Exit_m05B2CF037E2214B3208198C282490A2A475653FA(L_19, NULL);
+					RuntimeObject* L_6 = V_0;
+					Monitor_Exit_m05B2CF037E2214B3208198C282490A2A475653FA(L_6, NULL);
 				}
 
-IL_00b2:
+IL_00bb:
 				{
 					return;
 				}
@@ -1265,20 +1237,68 @@ IL_00b2:
 		});
 		try
 		{// begin try (depth: 1)
-			RuntimeObject* L_20 = V_3;
-			Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_20, (&V_4), NULL);
-			// m_ScheduledActions.Insert(scheduledInvocation);
-			MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* L_21 = __this->___m_ScheduledActions_2;
-			ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_22 = V_0;
-			MinimumBinaryHeap_1_Insert_m7AD50B20077FD1D21C8A8849E35493078CEB85C4(L_21, L_22, MinimumBinaryHeap_1_Insert_m7AD50B20077FD1D21C8A8849E35493078CEB85C4_RuntimeMethod_var);
-			// m_IdScheduledInvocationMap.Add(scheduledInvocation.ActionId, scheduledInvocation);
-			Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* L_23 = __this->___m_IdScheduledInvocationMap_3;
-			ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_24 = V_0;
-			int64_t L_25 = L_24->___ActionId_2;
-			ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_26 = V_0;
-			Dictionary_2_Add_mF48375565652F72160F059EB62C1FC8A6331A0AA(L_23, L_25, L_26, Dictionary_2_Add_mF48375565652F72160F059EB62C1FC8A6331A0AA_RuntimeMethod_var);
-			// }
-			goto IL_00b3;
+			{
+				RuntimeObject* L_7 = V_0;
+				Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_7, (&V_1), NULL);
+				// var scheduledInvocation = new ScheduledInvocation
+				// {
+				//     Action = action,
+				//     InvocationTime = m_TimeProvider.Now.AddSeconds(delaySeconds),
+				//     ActionId = m_NextId++
+				// };
+				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_8 = (ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93*)il2cpp_codegen_object_new(ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93_il2cpp_TypeInfo_var);
+				ScheduledInvocation__ctor_mB7D79780A933DBF3A750A1FABB2DAA45852513BD(L_8, NULL);
+				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_9 = L_8;
+				Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_10 = ___action0;
+				L_9->___Action_0 = L_10;
+				Il2CppCodeGenWriteBarrier((void**)(&L_9->___Action_0), (void*)L_10);
+				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_11 = L_9;
+				RuntimeObject* L_12 = __this->___m_TimeProvider_1;
+				DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_13;
+				L_13 = InterfaceFuncInvoker0< DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D >::Invoke(0 /* System.DateTime Unity.Services.Core.Scheduler.Internal.ITimeProvider::get_Now() */, ITimeProvider_t6CB8C4316E58E0ABEFDEAAF4FA47B90DE03CD2E6_il2cpp_TypeInfo_var, L_12);
+				V_3 = L_13;
+				double L_14 = ___delaySeconds1;
+				DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_15;
+				L_15 = DateTime_AddSeconds_mC5FE3FB22A1295CA747746ECE48B9D4A4B6B2E81((&V_3), L_14, NULL);
+				L_11->___InvocationTime_1 = L_15;
+				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_16 = L_11;
+				int64_t L_17 = __this->___m_NextId_6;
+				V_4 = L_17;
+				int64_t L_18 = V_4;
+				__this->___m_NextId_6 = ((int64_t)il2cpp_codegen_add(L_18, ((int64_t)1)));
+				int64_t L_19 = V_4;
+				L_16->___ActionId_2 = L_19;
+				V_2 = L_16;
+				// if (m_NextId < k_MinimumIdValue)
+				int64_t L_20 = __this->___m_NextId_6;
+				if ((((int64_t)L_20) >= ((int64_t)((int64_t)1))))
+				{
+					goto IL_008a_1;
+				}
+			}
+			{
+				// m_NextId = k_MinimumIdValue;
+				__this->___m_NextId_6 = ((int64_t)1);
+			}
+
+IL_008a_1:
+			{
+				// m_ScheduledActions.Insert(scheduledInvocation);
+				MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* L_21 = __this->___m_ScheduledActions_3;
+				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_22 = V_2;
+				MinimumBinaryHeap_1_Insert_m7AD50B20077FD1D21C8A8849E35493078CEB85C4(L_21, L_22, MinimumBinaryHeap_1_Insert_m7AD50B20077FD1D21C8A8849E35493078CEB85C4_RuntimeMethod_var);
+				// m_IdScheduledInvocationMap.Add(scheduledInvocation.ActionId, scheduledInvocation);
+				Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* L_23 = __this->___m_IdScheduledInvocationMap_4;
+				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_24 = V_2;
+				int64_t L_25 = L_24->___ActionId_2;
+				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_26 = V_2;
+				Dictionary_2_Add_mF48375565652F72160F059EB62C1FC8A6331A0AA(L_23, L_25, L_26, Dictionary_2_Add_mF48375565652F72160F059EB62C1FC8A6331A0AA_RuntimeMethod_var);
+				// return scheduledInvocation.ActionId;
+				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_27 = V_2;
+				int64_t L_28 = L_27->___ActionId_2;
+				V_4 = L_28;
+				goto IL_00bc;
+			}
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
 		{
@@ -1286,12 +1306,11 @@ IL_00b2:
 		}
 	}
 
-IL_00b3:
+IL_00bc:
 	{
-		// return scheduledInvocation.ActionId;
-		ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_27 = V_0;
-		int64_t L_28 = L_27->___ActionId_2;
-		return L_28;
+		// }
+		int64_t L_29 = V_4;
+		return L_29;
 	}
 }
 // System.Void Unity.Services.Core.Scheduler.Internal.ActionScheduler::CancelAction(System.Int64)
@@ -1300,9 +1319,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ActionScheduler_CancelAction_mDC93985AEC
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsKey_m7D797AD73D42AA88EA61A27C31F72AB423DB1D3F_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Remove_m4EEA35DDD180B435CA4CCB7714A4FF4844ADFE34_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Item_mFF139C50AEE548A51800EB755A2409B5AF324B30_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_mD4BDCE432034E3DD2E6E079602DF5CE6C804937C_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MinimumBinaryHeap_1_Remove_mB0E42318CD574177F32E7FECD9CE8C3B6F1DB464_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -1311,7 +1329,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ActionScheduler_CancelAction_mDC93985AEC
 	ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* V_2 = NULL;
 	{
 		// lock (m_Lock)
-		RuntimeObject* L_0 = __this->___m_Lock_1;
+		RuntimeObject* L_0 = __this->___m_Lock_2;
 		V_0 = L_0;
 		V_1 = (bool)0;
 	}
@@ -1319,13 +1337,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ActionScheduler_CancelAction_mDC93985AEC
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_004e:
+FINALLY_0043:
 			{// begin finally (depth: 1)
 				{
 					bool L_1 = V_1;
 					if (!L_1)
 					{
-						goto IL_0057;
+						goto IL_004c;
 					}
 				}
 				{
@@ -1333,7 +1351,7 @@ FINALLY_004e:
 					Monitor_Exit_m05B2CF037E2214B3208198C282490A2A475653FA(L_2, NULL);
 				}
 
-IL_0057:
+IL_004c:
 				{
 					return;
 				}
@@ -1344,41 +1362,35 @@ IL_0057:
 			{
 				RuntimeObject* L_3 = V_0;
 				Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_3, (&V_1), NULL);
-				// if (!m_IdScheduledInvocationMap.ContainsKey(actionId))
-				Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* L_4 = __this->___m_IdScheduledInvocationMap_3;
+				// if (!m_IdScheduledInvocationMap.TryGetValue(actionId, out var scheduledInvocation))
+				Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* L_4 = __this->___m_IdScheduledInvocationMap_4;
 				int64_t L_5 = ___actionId0;
 				bool L_6;
-				L_6 = Dictionary_2_ContainsKey_m7D797AD73D42AA88EA61A27C31F72AB423DB1D3F(L_4, L_5, Dictionary_2_ContainsKey_m7D797AD73D42AA88EA61A27C31F72AB423DB1D3F_RuntimeMethod_var);
+				L_6 = Dictionary_2_TryGetValue_mD4BDCE432034E3DD2E6E079602DF5CE6C804937C(L_4, L_5, (&V_2), Dictionary_2_TryGetValue_mD4BDCE432034E3DD2E6E079602DF5CE6C804937C_RuntimeMethod_var);
 				if (L_6)
 				{
-					goto IL_0021_1;
+					goto IL_0023_1;
 				}
 			}
 			{
 				// return;
-				goto IL_0058;
+				goto IL_004d;
 			}
 
-IL_0021_1:
+IL_0023_1:
 			{
-				// var scheduledInvocation = m_IdScheduledInvocationMap[actionId];
-				Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* L_7 = __this->___m_IdScheduledInvocationMap_3;
-				int64_t L_8 = ___actionId0;
-				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_9;
-				L_9 = Dictionary_2_get_Item_mFF139C50AEE548A51800EB755A2409B5AF324B30(L_7, L_8, Dictionary_2_get_Item_mFF139C50AEE548A51800EB755A2409B5AF324B30_RuntimeMethod_var);
-				V_2 = L_9;
 				// m_ScheduledActions.Remove(scheduledInvocation);
-				MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* L_10 = __this->___m_ScheduledActions_2;
-				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_11 = V_2;
-				MinimumBinaryHeap_1_Remove_mB0E42318CD574177F32E7FECD9CE8C3B6F1DB464(L_10, L_11, MinimumBinaryHeap_1_Remove_mB0E42318CD574177F32E7FECD9CE8C3B6F1DB464_RuntimeMethod_var);
+				MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* L_7 = __this->___m_ScheduledActions_3;
+				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_8 = V_2;
+				MinimumBinaryHeap_1_Remove_mB0E42318CD574177F32E7FECD9CE8C3B6F1DB464(L_7, L_8, MinimumBinaryHeap_1_Remove_mB0E42318CD574177F32E7FECD9CE8C3B6F1DB464_RuntimeMethod_var);
 				// m_IdScheduledInvocationMap.Remove(scheduledInvocation.ActionId);
-				Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* L_12 = __this->___m_IdScheduledInvocationMap_3;
-				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_13 = V_2;
-				int64_t L_14 = L_13->___ActionId_2;
-				bool L_15;
-				L_15 = Dictionary_2_Remove_m4EEA35DDD180B435CA4CCB7714A4FF4844ADFE34(L_12, L_14, Dictionary_2_Remove_m4EEA35DDD180B435CA4CCB7714A4FF4844ADFE34_RuntimeMethod_var);
+				Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* L_9 = __this->___m_IdScheduledInvocationMap_4;
+				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_10 = V_2;
+				int64_t L_11 = L_10->___ActionId_2;
+				bool L_12;
+				L_12 = Dictionary_2_Remove_m4EEA35DDD180B435CA4CCB7714A4FF4844ADFE34(L_9, L_11, Dictionary_2_Remove_m4EEA35DDD180B435CA4CCB7714A4FF4844ADFE34_RuntimeMethod_var);
 				// }
-				goto IL_0058;
+				goto IL_004d;
 			}
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
@@ -1387,7 +1399,7 @@ IL_0021_1:
 		}
 	}
 
-IL_0058:
+IL_004d:
 	{
 		// }
 		return;
@@ -1406,9 +1418,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ActionScheduler_ExecuteExpiredActions_mB
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m76478B2825D5D7493DFBD3E478233114BE128B35_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ITimeProvider_t6CB8C4316E58E0ABEFDEAAF4FA47B90DE03CD2E6_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m3539AF736216DC060382909AAC2FAD2AA49EF16C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Clear_m708BB07A967216E1312094EBD2CD7C393B281926_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m1E92478DAD982718EEF541288BFDEEFBD906EB0A_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mDB148E7C9F949120117B65AD14BDD7A5832ABA2F_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MinimumBinaryHeap_1_ExtractMin_m65CF7190823530D1EC9BB094AE57526F0B7FE155_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MinimumBinaryHeap_1_Remove_mB0E42318CD574177F32E7FECD9CE8C3B6F1DB464_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MinimumBinaryHeap_1_get_Count_m6E5BF62E288479F49068E184B79AFA6DD21ED588_RuntimeMethod_var);
@@ -1418,19 +1429,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ActionScheduler_ExecuteExpiredActions_mB
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_get_HasValue_m092C73DCE052BFB5C60A39EF9F4E3401AA95221C_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3* V_0 = NULL;
-	RuntimeObject* V_1 = NULL;
-	bool V_2 = false;
-	ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* V_3 = NULL;
-	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC V_4;
+	RuntimeObject* V_0 = NULL;
+	bool V_1 = false;
+	ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* V_2 = NULL;
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D V_4;
 	memset((&V_4), 0, sizeof(V_4));
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D V_5;
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC V_5;
 	memset((&V_5), 0, sizeof(V_5));
-	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC V_6;
+	Enumerator_tAE300C7056BDE583F62C47321CE68904319DE228 V_6;
 	memset((&V_6), 0, sizeof(V_6));
-	Enumerator_tAE300C7056BDE583F62C47321CE68904319DE228 V_7;
-	memset((&V_7), 0, sizeof(V_7));
-	ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* V_8 = NULL;
+	ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* V_7 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* G_B6_0 = NULL;
 	ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* G_B5_0 = NULL;
@@ -1438,34 +1448,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ActionScheduler_ExecuteExpiredActions_mB
 	memset((&G_B7_0), 0, sizeof(G_B7_0));
 	int32_t G_B10_0 = 0;
 	{
-		// List<ScheduledInvocation> scheduledInvocationList = new List<ScheduledInvocation>();
-		List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3* L_0 = (List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3*)il2cpp_codegen_object_new(List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3_il2cpp_TypeInfo_var);
-		List_1__ctor_mDB148E7C9F949120117B65AD14BDD7A5832ABA2F(L_0, List_1__ctor_mDB148E7C9F949120117B65AD14BDD7A5832ABA2F_RuntimeMethod_var);
-		V_0 = L_0;
 		// lock (m_Lock)
-		RuntimeObject* L_1 = __this->___m_Lock_1;
-		V_1 = L_1;
-		V_2 = (bool)0;
+		RuntimeObject* L_0 = __this->___m_Lock_2;
+		V_0 = L_0;
+		V_1 = (bool)0;
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_00ad:
+FINALLY_00fa:
 			{// begin finally (depth: 1)
 				{
-					bool L_2 = V_2;
-					if (!L_2)
+					bool L_1 = V_1;
+					if (!L_1)
 					{
-						goto IL_00b6;
+						goto IL_0103;
 					}
 				}
 				{
-					RuntimeObject* L_3 = V_1;
-					Monitor_Exit_m05B2CF037E2214B3208198C282490A2A475653FA(L_3, NULL);
+					RuntimeObject* L_2 = V_0;
+					Monitor_Exit_m05B2CF037E2214B3208198C282490A2A475653FA(L_2, NULL);
 				}
 
-IL_00b6:
+IL_0103:
 				{
 					return;
 				}
@@ -1474,48 +1480,51 @@ IL_00b6:
 		try
 		{// begin try (depth: 1)
 			{
-				RuntimeObject* L_4 = V_1;
-				Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_4, (&V_2), NULL);
-				goto IL_004a_1;
+				RuntimeObject* L_3 = V_0;
+				Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_3, (&V_1), NULL);
+				// m_ExpiredActions.Clear();
+				List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3* L_4 = __this->___m_ExpiredActions_5;
+				List_1_Clear_m708BB07A967216E1312094EBD2CD7C393B281926_inline(L_4, List_1_Clear_m708BB07A967216E1312094EBD2CD7C393B281926_RuntimeMethod_var);
+				goto IL_0054_1;
 			}
 
-IL_0019_1:
+IL_001e_1:
 			{
-				// var scheduledInvocation = m_ScheduledActions.ExtractMin();
-				MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* L_5 = __this->___m_ScheduledActions_2;
+				// var expiredAction = m_ScheduledActions.ExtractMin();
+				MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* L_5 = __this->___m_ScheduledActions_3;
 				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_6;
 				L_6 = MinimumBinaryHeap_1_ExtractMin_m65CF7190823530D1EC9BB094AE57526F0B7FE155(L_5, MinimumBinaryHeap_1_ExtractMin_m65CF7190823530D1EC9BB094AE57526F0B7FE155_RuntimeMethod_var);
-				V_3 = L_6;
-				// scheduledInvocationList.Add(scheduledInvocation);
-				List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3* L_7 = V_0;
-				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_8 = V_3;
+				V_2 = L_6;
+				// m_ExpiredActions.Add(expiredAction);
+				List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3* L_7 = __this->___m_ExpiredActions_5;
+				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_8 = V_2;
 				List_1_Add_m3539AF736216DC060382909AAC2FAD2AA49EF16C_inline(L_7, L_8, List_1_Add_m3539AF736216DC060382909AAC2FAD2AA49EF16C_RuntimeMethod_var);
-				// m_ScheduledActions.Remove(scheduledInvocation);
-				MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* L_9 = __this->___m_ScheduledActions_2;
-				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_10 = V_3;
+				// m_ScheduledActions.Remove(expiredAction);
+				MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* L_9 = __this->___m_ScheduledActions_3;
+				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_10 = V_2;
 				MinimumBinaryHeap_1_Remove_mB0E42318CD574177F32E7FECD9CE8C3B6F1DB464(L_9, L_10, MinimumBinaryHeap_1_Remove_mB0E42318CD574177F32E7FECD9CE8C3B6F1DB464_RuntimeMethod_var);
-				// m_IdScheduledInvocationMap.Remove(scheduledInvocation.ActionId);
-				Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* L_11 = __this->___m_IdScheduledInvocationMap_3;
-				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_12 = V_3;
+				// m_IdScheduledInvocationMap.Remove(expiredAction.ActionId);
+				Dictionary_2_t2306F810ADE46E708DBCF5BFFD57ED345A61D8CA* L_11 = __this->___m_IdScheduledInvocationMap_4;
+				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_12 = V_2;
 				int64_t L_13 = L_12->___ActionId_2;
 				bool L_14;
 				L_14 = Dictionary_2_Remove_m4EEA35DDD180B435CA4CCB7714A4FF4844ADFE34(L_11, L_13, Dictionary_2_Remove_m4EEA35DDD180B435CA4CCB7714A4FF4844ADFE34_RuntimeMethod_var);
 			}
 
-IL_004a_1:
+IL_0054_1:
 			{
 				// while (m_ScheduledActions.Count > 0
 				//        && m_ScheduledActions.Min?.InvocationTime <= m_TimeProvider.Now)
-				MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* L_15 = __this->___m_ScheduledActions_2;
+				MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* L_15 = __this->___m_ScheduledActions_3;
 				int32_t L_16;
 				L_16 = MinimumBinaryHeap_1_get_Count_m6E5BF62E288479F49068E184B79AFA6DD21ED588_inline(L_15, MinimumBinaryHeap_1_get_Count_m6E5BF62E288479F49068E184B79AFA6DD21ED588_RuntimeMethod_var);
 				if ((((int32_t)L_16) <= ((int32_t)0)))
 				{
-					goto IL_00ab_1;
+					goto IL_00b4_1;
 				}
 			}
 			{
-				MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* L_17 = __this->___m_ScheduledActions_2;
+				MinimumBinaryHeap_1_tB7A85B4D870F0107AF6031545D6054927A1CB7AD* L_17 = __this->___m_ScheduledActions_3;
 				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_18;
 				L_18 = MinimumBinaryHeap_1_get_Min_m20F161E9A7C1A2CD4AAD86738EC2624ED43E6383(L_17, MinimumBinaryHeap_1_get_Min_m20F161E9A7C1A2CD4AAD86738EC2624ED43E6383_RuntimeMethod_var);
 				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_19 = L_18;
@@ -1523,17 +1532,17 @@ IL_004a_1:
 				if (L_19)
 				{
 					G_B6_0 = L_19;
-					goto IL_0073_1;
+					goto IL_007d_1;
 				}
 			}
 			{
-				il2cpp_codegen_initobj((&V_6), sizeof(Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC));
-				Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC L_20 = V_6;
+				il2cpp_codegen_initobj((&V_5), sizeof(Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC));
+				Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC L_20 = V_5;
 				G_B7_0 = L_20;
-				goto IL_007d_1;
+				goto IL_0087_1;
 			}
 
-IL_0073_1:
+IL_007d_1:
 			{
 				DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_21 = G_B6_0->___InvocationTime_1;
 				Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC L_22;
@@ -1542,48 +1551,121 @@ IL_0073_1:
 				G_B7_0 = L_22;
 			}
 
-IL_007d_1:
+IL_0087_1:
 			{
-				V_4 = G_B7_0;
-				RuntimeObject* L_23 = __this->___m_TimeProvider_0;
+				V_3 = G_B7_0;
+				RuntimeObject* L_23 = __this->___m_TimeProvider_1;
 				DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_24;
 				L_24 = InterfaceFuncInvoker0< DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D >::Invoke(0 /* System.DateTime Unity.Services.Core.Scheduler.Internal.ITimeProvider::get_Now() */, ITimeProvider_t6CB8C4316E58E0ABEFDEAAF4FA47B90DE03CD2E6_il2cpp_TypeInfo_var, L_23);
-				V_5 = L_24;
+				V_4 = L_24;
 				bool L_25;
-				L_25 = Nullable_1_get_HasValue_m092C73DCE052BFB5C60A39EF9F4E3401AA95221C_inline((&V_4), Nullable_1_get_HasValue_m092C73DCE052BFB5C60A39EF9F4E3401AA95221C_RuntimeMethod_var);
+				L_25 = Nullable_1_get_HasValue_m092C73DCE052BFB5C60A39EF9F4E3401AA95221C_inline((&V_3), Nullable_1_get_HasValue_m092C73DCE052BFB5C60A39EF9F4E3401AA95221C_RuntimeMethod_var);
 				if (L_25)
 				{
-					goto IL_0098_1;
+					goto IL_00a1_1;
 				}
 			}
 			{
 				G_B10_0 = 0;
-				goto IL_00a6_1;
+				goto IL_00af_1;
 			}
 
-IL_0098_1:
+IL_00a1_1:
 			{
 				DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_26;
-				L_26 = Nullable_1_GetValueOrDefault_mBE26FDBA8873F7AE883FF290864E1D2665EAC52F_inline((&V_4), Nullable_1_GetValueOrDefault_mBE26FDBA8873F7AE883FF290864E1D2665EAC52F_RuntimeMethod_var);
-				DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_27 = V_5;
+				L_26 = Nullable_1_GetValueOrDefault_mBE26FDBA8873F7AE883FF290864E1D2665EAC52F_inline((&V_3), Nullable_1_GetValueOrDefault_mBE26FDBA8873F7AE883FF290864E1D2665EAC52F_RuntimeMethod_var);
+				DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_27 = V_4;
 				il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
 				bool L_28;
 				L_28 = DateTime_op_LessThanOrEqual_mC22EB236042D9E1C17C64393FB429E58B8F952F8(L_26, L_27, NULL);
 				G_B10_0 = ((int32_t)(L_28));
 			}
 
-IL_00a6_1:
+IL_00af_1:
 			{
 				if (G_B10_0)
 				{
-					goto IL_0019_1;
+					goto IL_001e_1;
 				}
 			}
 
-IL_00ab_1:
+IL_00b4_1:
 			{
-				// }
-				goto IL_00b7;
+				// foreach (var expiredAction in m_ExpiredActions)
+				List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3* L_29 = __this->___m_ExpiredActions_5;
+				Enumerator_tAE300C7056BDE583F62C47321CE68904319DE228 L_30;
+				L_30 = List_1_GetEnumerator_m1E92478DAD982718EEF541288BFDEEFBD906EB0A(L_29, List_1_GetEnumerator_m1E92478DAD982718EEF541288BFDEEFBD906EB0A_RuntimeMethod_var);
+				V_6 = L_30;
+			}
+			{
+				auto __finallyBlock = il2cpp::utils::Finally([&]
+				{
+
+FINALLY_00ec_1:
+					{// begin finally (depth: 2)
+						Enumerator_Dispose_mAC237D510E358726C014DD3F610942E989613559((&V_6), Enumerator_Dispose_mAC237D510E358726C014DD3F610942E989613559_RuntimeMethod_var);
+						return;
+					}// end finally (depth: 2)
+				});
+				try
+				{// begin try (depth: 2)
+					{
+						goto IL_00e1_2;
+					}
+
+IL_00c3_2:
+					{
+						// foreach (var expiredAction in m_ExpiredActions)
+						ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_31;
+						L_31 = Enumerator_get_Current_m76478B2825D5D7493DFBD3E478233114BE128B35_inline((&V_6), Enumerator_get_Current_m76478B2825D5D7493DFBD3E478233114BE128B35_RuntimeMethod_var);
+						V_7 = L_31;
+					}
+					try
+					{// begin try (depth: 3)
+						// expiredAction.Action();
+						ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_32 = V_7;
+						Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_33 = L_32->___Action_0;
+						Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(L_33, NULL);
+						// }
+						goto IL_00e1_2;
+					}// end try (depth: 3)
+					catch(Il2CppExceptionWrapper& e)
+					{
+						if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+						{
+							IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+							goto CATCH_00da_2;
+						}
+						throw e;
+					}
+
+CATCH_00da_2:
+					{// begin catch(System.Exception)
+						// CoreLogger.LogException(e);
+						CoreLogger_LogException_m7129C6F678E086232211CBC0347F2300D0A42F3C(((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*)), NULL);
+						// }
+						IL2CPP_POP_ACTIVE_EXCEPTION();
+						goto IL_00e1_2;
+					}// end catch (depth: 3)
+
+IL_00e1_2:
+					{
+						// foreach (var expiredAction in m_ExpiredActions)
+						bool L_34;
+						L_34 = Enumerator_MoveNext_m46C4F2A2917BB3C219137A08B6E29579FCBF6CA5((&V_6), Enumerator_MoveNext_m46C4F2A2917BB3C219137A08B6E29579FCBF6CA5_RuntimeMethod_var);
+						if (L_34)
+						{
+							goto IL_00c3_2;
+						}
+					}
+					{
+						goto IL_0104;
+					}
+				}// end try (depth: 2)
+				catch(Il2CppExceptionWrapper& e)
+				{
+					__finallyBlock.StoreException(e.ex);
+				}
 			}
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
@@ -1592,93 +1674,14 @@ IL_00ab_1:
 		}
 	}
 
-IL_00b7:
-	{
-		// foreach (var scheduledInv in scheduledInvocationList)
-		List_1_tFD4080EF47ACD067F2E4AB57C9E2E8E64CA953E3* L_29 = V_0;
-		Enumerator_tAE300C7056BDE583F62C47321CE68904319DE228 L_30;
-		L_30 = List_1_GetEnumerator_m1E92478DAD982718EEF541288BFDEEFBD906EB0A(L_29, List_1_GetEnumerator_m1E92478DAD982718EEF541288BFDEEFBD906EB0A_RuntimeMethod_var);
-		V_7 = L_30;
-	}
-	{
-		auto __finallyBlock = il2cpp::utils::Finally([&]
-		{
-
-FINALLY_00ea:
-			{// begin finally (depth: 1)
-				Enumerator_Dispose_mAC237D510E358726C014DD3F610942E989613559((&V_7), Enumerator_Dispose_mAC237D510E358726C014DD3F610942E989613559_RuntimeMethod_var);
-				return;
-			}// end finally (depth: 1)
-		});
-		try
-		{// begin try (depth: 1)
-			{
-				goto IL_00df_1;
-			}
-
-IL_00c1_1:
-			{
-				// foreach (var scheduledInv in scheduledInvocationList)
-				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_31;
-				L_31 = Enumerator_get_Current_m76478B2825D5D7493DFBD3E478233114BE128B35_inline((&V_7), Enumerator_get_Current_m76478B2825D5D7493DFBD3E478233114BE128B35_RuntimeMethod_var);
-				V_8 = L_31;
-			}
-			try
-			{// begin try (depth: 2)
-				// scheduledInv.Action();
-				ScheduledInvocation_t049B2F607AC8AAA60877C47F1F9D5F8EBDBA0B93* L_32 = V_8;
-				Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_33 = L_32->___Action_0;
-				Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(L_33, NULL);
-				// }
-				goto IL_00df_1;
-			}// end try (depth: 2)
-			catch(Il2CppExceptionWrapper& e)
-			{
-				if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
-				{
-					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-					goto CATCH_00d8_1;
-				}
-				throw e;
-			}
-
-CATCH_00d8_1:
-			{// begin catch(System.Exception)
-				// CoreLogger.LogException(e);
-				CoreLogger_LogException_m7129C6F678E086232211CBC0347F2300D0A42F3C(((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*)), NULL);
-				// }
-				IL2CPP_POP_ACTIVE_EXCEPTION();
-				goto IL_00df_1;
-			}// end catch (depth: 2)
-
-IL_00df_1:
-			{
-				// foreach (var scheduledInv in scheduledInvocationList)
-				bool L_34;
-				L_34 = Enumerator_MoveNext_m46C4F2A2917BB3C219137A08B6E29579FCBF6CA5((&V_7), Enumerator_MoveNext_m46C4F2A2917BB3C219137A08B6E29579FCBF6CA5_RuntimeMethod_var);
-				if (L_34)
-				{
-					goto IL_00c1_1;
-				}
-			}
-			{
-				goto IL_00f8;
-			}
-		}// end try (depth: 1)
-		catch(Il2CppExceptionWrapper& e)
-		{
-			__finallyBlock.StoreException(e.ex);
-		}
-	}
-
-IL_00f8:
+IL_0104:
 	{
 		// }
 		return;
 	}
 }
-// System.Void Unity.Services.Core.Scheduler.Internal.ActionScheduler::UpdateSubSystemList(System.Collections.Generic.List`1<UnityEngine.LowLevel.PlayerLoopSystem>,UnityEngine.LowLevel.PlayerLoopSystem)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ActionScheduler_UpdateSubSystemList_m6ADBF46147851853585D17ADB4F6524389B836C1 (List_1_tB751FDCEDAE7A97430AD924824F5D0193A720E52* ___subSystemList0, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F ___currentPlayerLoop1, const RuntimeMethod* method) 
+// System.Void Unity.Services.Core.Scheduler.Internal.ActionScheduler::UpdateCurrentPlayerLoopWith(System.Collections.Generic.List`1<UnityEngine.LowLevel.PlayerLoopSystem>,UnityEngine.LowLevel.PlayerLoopSystem)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ActionScheduler_UpdateCurrentPlayerLoopWith_m32DBF6F37F3D8776484265E95830FEFA40C6A230 (List_1_tB751FDCEDAE7A97430AD924824F5D0193A720E52* ___subSystemList0, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F ___currentPlayerLoop1, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -1728,7 +1731,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ActionScheduler_JoinPlayerLoopSystem_mB9
 		V_1 = L_3;
 		// if (!currentSubSystems.Contains(SchedulerLoopSystem))
 		List_1_tB751FDCEDAE7A97430AD924824F5D0193A720E52* L_4 = V_1;
-		PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F L_5 = __this->___SchedulerLoopSystem_4;
+		PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F L_5 = __this->___SchedulerLoopSystem_0;
 		bool L_6;
 		L_6 = List_1_Contains_m040083A451046E87051FFEF6119F608D5B760BD4(L_4, L_5, List_1_Contains_m040083A451046E87051FFEF6119F608D5B760BD4_RuntimeMethod_var);
 		if (L_6)
@@ -1739,12 +1742,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ActionScheduler_JoinPlayerLoopSystem_mB9
 	{
 		// currentSubSystems.Add(SchedulerLoopSystem);
 		List_1_tB751FDCEDAE7A97430AD924824F5D0193A720E52* L_7 = V_1;
-		PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F L_8 = __this->___SchedulerLoopSystem_4;
+		PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F L_8 = __this->___SchedulerLoopSystem_0;
 		List_1_Add_m20B47157F68B2A1C1C92F34C111874885F78607A_inline(L_7, L_8, List_1_Add_m20B47157F68B2A1C1C92F34C111874885F78607A_RuntimeMethod_var);
-		// UpdateSubSystemList(currentSubSystems, currentPlayerLoop);
+		// UpdateCurrentPlayerLoopWith(currentSubSystems, currentPlayerLoop);
 		List_1_tB751FDCEDAE7A97430AD924824F5D0193A720E52* L_9 = V_1;
 		PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F L_10 = V_0;
-		ActionScheduler_UpdateSubSystemList_m6ADBF46147851853585D17ADB4F6524389B836C1(L_9, L_10, NULL);
+		ActionScheduler_UpdateCurrentPlayerLoopWith_m32DBF6F37F3D8776484265E95830FEFA40C6A230(L_9, L_10, NULL);
 	}
 
 IL_0033:
@@ -1923,6 +1926,44 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72
 	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = (int32_t)__this->____version_3;
+		__this->____version_3 = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		if (!true)
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		int32_t L_1 = (int32_t)__this->____size_2;
+		V_0 = L_1;
+		__this->____size_2 = 0;
+		int32_t L_2 = V_0;
+		if ((((int32_t)L_2) <= ((int32_t)0)))
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)__this->____items_1;
+		int32_t L_4 = V_0;
+		Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB((RuntimeArray*)L_3, 0, L_4, NULL);
+		return;
+	}
+
+IL_0035:
+	{
+		__this->____size_2 = 0;
+	}
+
+IL_003c:
+	{
+		return;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
 {
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_0 = NULL;
@@ -1962,7 +2003,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t MinimumBinaryHeap_1_get_C
 {
 	{
 		// public int Count { get; private set; }
-		int32_t L_0 = (int32_t)__this->___U3CCountU3Ek__BackingField_3;
+		int32_t L_0 = (int32_t)__this->___U3CCountU3Ek__BackingField_4;
 		return L_0;
 	}
 }

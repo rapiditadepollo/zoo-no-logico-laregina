@@ -153,502 +153,512 @@ extern void ReadOnlyHttpResponse_get_IsNetworkError_mF41792AD3A3B43F941089D0D169
 // 0x00000061 System.Int32 Unity.Services.Core.Configuration.Internal.IProjectConfiguration::GetInt(System.String,System.Int32)
 // 0x00000062 System.Single Unity.Services.Core.Configuration.Internal.IProjectConfiguration::GetFloat(System.String,System.Single)
 // 0x00000063 System.String Unity.Services.Core.Configuration.Internal.IProjectConfiguration::GetString(System.String,System.String)
-// 0x00000064 System.Boolean Unity.Services.Core.Internal.AsyncOperation::get_IsDone()
+// 0x00000064 System.Void Unity.Services.Core.Analytics.Internal.IAnalyticsStandardEventComponent::Record(System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Int32,System.String)
+// 0x00000065 System.String Unity.Services.Core.Analytics.Internal.IAnalyticsUserId::GetAnalyticsUserId()
+// 0x00000066 System.Boolean Unity.Services.Core.Internal.AsyncOperation::get_IsDone()
 extern void AsyncOperation_get_IsDone_mFABF133C322E1F709C84DF9FA4C57C25AE1B28D0 (void);
-// 0x00000065 System.Void Unity.Services.Core.Internal.AsyncOperation::set_IsDone(System.Boolean)
+// 0x00000067 System.Void Unity.Services.Core.Internal.AsyncOperation::set_IsDone(System.Boolean)
 extern void AsyncOperation_set_IsDone_mE51C475EADA09A7ADDF3A1A49CD5E70BE1003443 (void);
-// 0x00000066 Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.AsyncOperation::get_Status()
+// 0x00000068 Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.AsyncOperation::get_Status()
 extern void AsyncOperation_get_Status_m0A936D453514234140366F6C2318ECA656CF3A87 (void);
-// 0x00000067 System.Void Unity.Services.Core.Internal.AsyncOperation::set_Status(Unity.Services.Core.Internal.AsyncOperationStatus)
+// 0x00000069 System.Void Unity.Services.Core.Internal.AsyncOperation::set_Status(Unity.Services.Core.Internal.AsyncOperationStatus)
 extern void AsyncOperation_set_Status_m052C39A5CBBF69314029BE4E2C61FC27CB3614AC (void);
-// 0x00000068 System.Void Unity.Services.Core.Internal.AsyncOperation::add_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>)
+// 0x0000006A System.Void Unity.Services.Core.Internal.AsyncOperation::add_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>)
 extern void AsyncOperation_add_Completed_m3BF706D0128F8660347D12C9C4F4DCBB580EC67F (void);
-// 0x00000069 System.Void Unity.Services.Core.Internal.AsyncOperation::remove_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>)
+// 0x0000006B System.Void Unity.Services.Core.Internal.AsyncOperation::remove_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>)
 extern void AsyncOperation_remove_Completed_mE76C24A21D1799C3979DBA0823F181CFEFCFB228 (void);
-// 0x0000006A System.Exception Unity.Services.Core.Internal.AsyncOperation::get_Exception()
+// 0x0000006C System.Exception Unity.Services.Core.Internal.AsyncOperation::get_Exception()
 extern void AsyncOperation_get_Exception_mA4C2316EBBAF7FC9E73CD1225E4D42E20F8663A9 (void);
-// 0x0000006B System.Void Unity.Services.Core.Internal.AsyncOperation::set_Exception(System.Exception)
+// 0x0000006D System.Void Unity.Services.Core.Internal.AsyncOperation::set_Exception(System.Exception)
 extern void AsyncOperation_set_Exception_m21F6F23F876ADED9AE850C41F324CE8F5334F244 (void);
-// 0x0000006C System.Void Unity.Services.Core.Internal.AsyncOperation::SetInProgress()
+// 0x0000006E System.Void Unity.Services.Core.Internal.AsyncOperation::SetInProgress()
 extern void AsyncOperation_SetInProgress_mF9F046353697ECEB9B2FD83E3193E8C050BCC860 (void);
-// 0x0000006D System.Void Unity.Services.Core.Internal.AsyncOperation::Succeed()
+// 0x0000006F System.Void Unity.Services.Core.Internal.AsyncOperation::Succeed()
 extern void AsyncOperation_Succeed_mE56F6B7EC1E7A92BD743C0B4E8D4EC85C1F07A28 (void);
-// 0x0000006E System.Void Unity.Services.Core.Internal.AsyncOperation::Fail(System.Exception)
+// 0x00000070 System.Void Unity.Services.Core.Internal.AsyncOperation::Fail(System.Exception)
 extern void AsyncOperation_Fail_m863A1DBBA999B7B0EA18739E519AACFF0054A5DF (void);
-// 0x0000006F System.Void Unity.Services.Core.Internal.AsyncOperation::Cancel()
+// 0x00000071 System.Void Unity.Services.Core.Internal.AsyncOperation::Cancel()
 extern void AsyncOperation_Cancel_m32C14294FB4C72F2F3B260796F47D6401B2F4045 (void);
-// 0x00000070 System.Boolean Unity.Services.Core.Internal.AsyncOperation::System.Collections.IEnumerator.MoveNext()
+// 0x00000072 System.Boolean Unity.Services.Core.Internal.AsyncOperation::System.Collections.IEnumerator.MoveNext()
 extern void AsyncOperation_System_Collections_IEnumerator_MoveNext_m596CB807AE95B2B961DB02CED835209527DAB777 (void);
-// 0x00000071 System.Void Unity.Services.Core.Internal.AsyncOperation::System.Collections.IEnumerator.Reset()
+// 0x00000073 System.Void Unity.Services.Core.Internal.AsyncOperation::System.Collections.IEnumerator.Reset()
 extern void AsyncOperation_System_Collections_IEnumerator_Reset_m6A6B5E00A6EC7F7286CFF63F2802A2C9C83426AE (void);
-// 0x00000072 System.Object Unity.Services.Core.Internal.AsyncOperation::System.Collections.IEnumerator.get_Current()
+// 0x00000074 System.Object Unity.Services.Core.Internal.AsyncOperation::System.Collections.IEnumerator.get_Current()
 extern void AsyncOperation_System_Collections_IEnumerator_get_Current_mE64353F2F4CB9E9CBD92B52FC1D56F96C6B93314 (void);
-// 0x00000073 System.Void Unity.Services.Core.Internal.AsyncOperation::.ctor()
+// 0x00000075 System.Void Unity.Services.Core.Internal.AsyncOperation::.ctor()
 extern void AsyncOperation__ctor_m39B9682C2896CAA23CAC25FCF9D902C19EBF11DE (void);
-// 0x00000074 System.Boolean Unity.Services.Core.Internal.AsyncOperation`1::get_IsDone()
-// 0x00000075 System.Void Unity.Services.Core.Internal.AsyncOperation`1::set_IsDone(System.Boolean)
-// 0x00000076 Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.AsyncOperation`1::get_Status()
-// 0x00000077 System.Void Unity.Services.Core.Internal.AsyncOperation`1::set_Status(Unity.Services.Core.Internal.AsyncOperationStatus)
-// 0x00000078 System.Void Unity.Services.Core.Internal.AsyncOperation`1::add_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation`1<T>>)
-// 0x00000079 System.Void Unity.Services.Core.Internal.AsyncOperation`1::remove_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation`1<T>>)
-// 0x0000007A System.Exception Unity.Services.Core.Internal.AsyncOperation`1::get_Exception()
-// 0x0000007B System.Void Unity.Services.Core.Internal.AsyncOperation`1::set_Exception(System.Exception)
-// 0x0000007C T Unity.Services.Core.Internal.AsyncOperation`1::get_Result()
-// 0x0000007D System.Void Unity.Services.Core.Internal.AsyncOperation`1::set_Result(T)
-// 0x0000007E System.Void Unity.Services.Core.Internal.AsyncOperation`1::SetInProgress()
-// 0x0000007F System.Void Unity.Services.Core.Internal.AsyncOperation`1::Succeed(T)
-// 0x00000080 System.Void Unity.Services.Core.Internal.AsyncOperation`1::Fail(System.Exception)
-// 0x00000081 System.Void Unity.Services.Core.Internal.AsyncOperation`1::Cancel()
-// 0x00000082 System.Boolean Unity.Services.Core.Internal.AsyncOperation`1::System.Collections.IEnumerator.MoveNext()
-// 0x00000083 System.Void Unity.Services.Core.Internal.AsyncOperation`1::System.Collections.IEnumerator.Reset()
-// 0x00000084 System.Object Unity.Services.Core.Internal.AsyncOperation`1::System.Collections.IEnumerator.get_Current()
-// 0x00000085 System.Void Unity.Services.Core.Internal.AsyncOperation`1::.ctor()
-// 0x00000086 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter::.ctor(Unity.Services.Core.Internal.IAsyncOperation)
+// 0x00000076 System.Boolean Unity.Services.Core.Internal.AsyncOperation`1::get_IsDone()
+// 0x00000077 System.Void Unity.Services.Core.Internal.AsyncOperation`1::set_IsDone(System.Boolean)
+// 0x00000078 Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.AsyncOperation`1::get_Status()
+// 0x00000079 System.Void Unity.Services.Core.Internal.AsyncOperation`1::set_Status(Unity.Services.Core.Internal.AsyncOperationStatus)
+// 0x0000007A System.Void Unity.Services.Core.Internal.AsyncOperation`1::add_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation`1<T>>)
+// 0x0000007B System.Void Unity.Services.Core.Internal.AsyncOperation`1::remove_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation`1<T>>)
+// 0x0000007C System.Exception Unity.Services.Core.Internal.AsyncOperation`1::get_Exception()
+// 0x0000007D System.Void Unity.Services.Core.Internal.AsyncOperation`1::set_Exception(System.Exception)
+// 0x0000007E T Unity.Services.Core.Internal.AsyncOperation`1::get_Result()
+// 0x0000007F System.Void Unity.Services.Core.Internal.AsyncOperation`1::set_Result(T)
+// 0x00000080 System.Void Unity.Services.Core.Internal.AsyncOperation`1::SetInProgress()
+// 0x00000081 System.Void Unity.Services.Core.Internal.AsyncOperation`1::Succeed(T)
+// 0x00000082 System.Void Unity.Services.Core.Internal.AsyncOperation`1::Fail(System.Exception)
+// 0x00000083 System.Void Unity.Services.Core.Internal.AsyncOperation`1::Cancel()
+// 0x00000084 System.Boolean Unity.Services.Core.Internal.AsyncOperation`1::System.Collections.IEnumerator.MoveNext()
+// 0x00000085 System.Void Unity.Services.Core.Internal.AsyncOperation`1::System.Collections.IEnumerator.Reset()
+// 0x00000086 System.Object Unity.Services.Core.Internal.AsyncOperation`1::System.Collections.IEnumerator.get_Current()
+// 0x00000087 System.Void Unity.Services.Core.Internal.AsyncOperation`1::.ctor()
+// 0x00000088 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter::.ctor(Unity.Services.Core.Internal.IAsyncOperation)
 extern void AsyncOperationAwaiter__ctor_mDA5FDE70CB821282BE1B34988F035D089E5C4668 (void);
-// 0x00000087 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter::OnCompleted(System.Action)
+// 0x00000089 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter::OnCompleted(System.Action)
 extern void AsyncOperationAwaiter_OnCompleted_m0DF5C7321350B0496AEA75861A16292D35202EA0 (void);
-// 0x00000088 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter::UnsafeOnCompleted(System.Action)
+// 0x0000008A System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter::UnsafeOnCompleted(System.Action)
 extern void AsyncOperationAwaiter_UnsafeOnCompleted_m0E5A4D81E41FBECC6E58B673E068F6B896670957 (void);
-// 0x00000089 System.Boolean Unity.Services.Core.Internal.AsyncOperationAwaiter::get_IsCompleted()
+// 0x0000008B System.Boolean Unity.Services.Core.Internal.AsyncOperationAwaiter::get_IsCompleted()
 extern void AsyncOperationAwaiter_get_IsCompleted_mE9AE20B408EE81FF5F8CFE8EF686B71AF51469A4 (void);
-// 0x0000008A System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter::GetResult()
+// 0x0000008C System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter::GetResult()
 extern void AsyncOperationAwaiter_GetResult_m04CD1981674B6AC7A9236E9E5D1F3B9814066504 (void);
-// 0x0000008B System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter/<>c__DisplayClass2_0::.ctor()
+// 0x0000008D System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter/<>c__DisplayClass2_0::.ctor()
 extern void U3CU3Ec__DisplayClass2_0__ctor_m0C6D38DE814AB874FF9303D952D1E7A82F8120DA (void);
-// 0x0000008C System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter/<>c__DisplayClass2_0::<OnCompleted>b__0(Unity.Services.Core.Internal.IAsyncOperation)
+// 0x0000008E System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter/<>c__DisplayClass2_0::<OnCompleted>b__0(Unity.Services.Core.Internal.IAsyncOperation)
 extern void U3CU3Ec__DisplayClass2_0_U3COnCompletedU3Eb__0_m7C168E70198DF4A1028F3249D6ABB220C8E0F430 (void);
-// 0x0000008D System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter/<>c__DisplayClass3_0::.ctor()
+// 0x0000008F System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter/<>c__DisplayClass3_0::.ctor()
 extern void U3CU3Ec__DisplayClass3_0__ctor_m5549E3FE1162B8CBEF71ED6F8254360B00C9682D (void);
-// 0x0000008E System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter/<>c__DisplayClass3_0::<UnsafeOnCompleted>b__0(Unity.Services.Core.Internal.IAsyncOperation)
+// 0x00000090 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter/<>c__DisplayClass3_0::<UnsafeOnCompleted>b__0(Unity.Services.Core.Internal.IAsyncOperation)
 extern void U3CU3Ec__DisplayClass3_0_U3CUnsafeOnCompletedU3Eb__0_m0B2FC427DC2CD56231179ADE92A745808C38D7B1 (void);
-// 0x0000008F System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter`1::.ctor(Unity.Services.Core.Internal.IAsyncOperation`1<T>)
-// 0x00000090 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter`1::OnCompleted(System.Action)
-// 0x00000091 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter`1::UnsafeOnCompleted(System.Action)
-// 0x00000092 System.Boolean Unity.Services.Core.Internal.AsyncOperationAwaiter`1::get_IsCompleted()
-// 0x00000093 T Unity.Services.Core.Internal.AsyncOperationAwaiter`1::GetResult()
-// 0x00000094 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter`1/<>c__DisplayClass2_0::.ctor()
-// 0x00000095 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter`1/<>c__DisplayClass2_0::<OnCompleted>b__0(Unity.Services.Core.Internal.IAsyncOperation`1<T>)
-// 0x00000096 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter`1/<>c__DisplayClass3_0::.ctor()
-// 0x00000097 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter`1/<>c__DisplayClass3_0::<UnsafeOnCompleted>b__0(Unity.Services.Core.Internal.IAsyncOperation`1<T>)
-// 0x00000098 System.Boolean Unity.Services.Core.Internal.AsyncOperationBase::get_keepWaiting()
+// 0x00000091 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter`1::.ctor(Unity.Services.Core.Internal.IAsyncOperation`1<T>)
+// 0x00000092 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter`1::OnCompleted(System.Action)
+// 0x00000093 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter`1::UnsafeOnCompleted(System.Action)
+// 0x00000094 System.Boolean Unity.Services.Core.Internal.AsyncOperationAwaiter`1::get_IsCompleted()
+// 0x00000095 T Unity.Services.Core.Internal.AsyncOperationAwaiter`1::GetResult()
+// 0x00000096 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter`1/<>c__DisplayClass2_0::.ctor()
+// 0x00000097 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter`1/<>c__DisplayClass2_0::<OnCompleted>b__0(Unity.Services.Core.Internal.IAsyncOperation`1<T>)
+// 0x00000098 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter`1/<>c__DisplayClass3_0::.ctor()
+// 0x00000099 System.Void Unity.Services.Core.Internal.AsyncOperationAwaiter`1/<>c__DisplayClass3_0::<UnsafeOnCompleted>b__0(Unity.Services.Core.Internal.IAsyncOperation`1<T>)
+// 0x0000009A System.Boolean Unity.Services.Core.Internal.AsyncOperationBase::get_keepWaiting()
 extern void AsyncOperationBase_get_keepWaiting_mA5C59C7B9164015B04F3653329FD905A743D507F (void);
-// 0x00000099 System.Boolean Unity.Services.Core.Internal.AsyncOperationBase::get_IsCompleted()
-// 0x0000009A System.Boolean Unity.Services.Core.Internal.AsyncOperationBase::get_IsDone()
+// 0x0000009B System.Boolean Unity.Services.Core.Internal.AsyncOperationBase::get_IsCompleted()
+// 0x0000009C System.Boolean Unity.Services.Core.Internal.AsyncOperationBase::get_IsDone()
 extern void AsyncOperationBase_get_IsDone_m238748BEE1ADD4EDF78ED968D94A089897228BB8 (void);
-// 0x0000009B Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.AsyncOperationBase::get_Status()
-// 0x0000009C System.Exception Unity.Services.Core.Internal.AsyncOperationBase::get_Exception()
-// 0x0000009D System.Void Unity.Services.Core.Internal.AsyncOperationBase::GetResult()
-// 0x0000009E Unity.Services.Core.Internal.AsyncOperationBase Unity.Services.Core.Internal.AsyncOperationBase::GetAwaiter()
-// 0x0000009F System.Void Unity.Services.Core.Internal.AsyncOperationBase::add_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>)
+// 0x0000009D Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.AsyncOperationBase::get_Status()
+// 0x0000009E System.Exception Unity.Services.Core.Internal.AsyncOperationBase::get_Exception()
+// 0x0000009F System.Void Unity.Services.Core.Internal.AsyncOperationBase::GetResult()
+// 0x000000A0 Unity.Services.Core.Internal.AsyncOperationBase Unity.Services.Core.Internal.AsyncOperationBase::GetAwaiter()
+// 0x000000A1 System.Void Unity.Services.Core.Internal.AsyncOperationBase::add_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>)
 extern void AsyncOperationBase_add_Completed_mBF050A2DCED3671779F2DCB9CE85B0CBF09D434C (void);
-// 0x000000A0 System.Void Unity.Services.Core.Internal.AsyncOperationBase::remove_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>)
+// 0x000000A2 System.Void Unity.Services.Core.Internal.AsyncOperationBase::remove_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>)
 extern void AsyncOperationBase_remove_Completed_m275A690292CDEB367604BFCB1642DBFDFFF32625 (void);
-// 0x000000A1 System.Void Unity.Services.Core.Internal.AsyncOperationBase::DidComplete()
+// 0x000000A3 System.Void Unity.Services.Core.Internal.AsyncOperationBase::DidComplete()
 extern void AsyncOperationBase_DidComplete_m898BABFB881C305E46DE4A8B443BED8E94A8F948 (void);
-// 0x000000A2 System.Void Unity.Services.Core.Internal.AsyncOperationBase::OnCompleted(System.Action)
+// 0x000000A4 System.Void Unity.Services.Core.Internal.AsyncOperationBase::OnCompleted(System.Action)
 extern void AsyncOperationBase_OnCompleted_m857D67EBD531576BF37FB74499C781666DC27F88 (void);
-// 0x000000A3 System.Void Unity.Services.Core.Internal.AsyncOperationBase::.ctor()
+// 0x000000A5 System.Void Unity.Services.Core.Internal.AsyncOperationBase::.ctor()
 extern void AsyncOperationBase__ctor_mAF087348521B946CBA095B83B3FC55FBE1C9E314 (void);
-// 0x000000A4 System.Void Unity.Services.Core.Internal.AsyncOperationBase/<>c__DisplayClass17_0::.ctor()
+// 0x000000A6 System.Void Unity.Services.Core.Internal.AsyncOperationBase/<>c__DisplayClass17_0::.ctor()
 extern void U3CU3Ec__DisplayClass17_0__ctor_m122B1CD2CAB952EAC3144B97638FA48B26CC00E1 (void);
-// 0x000000A5 System.Void Unity.Services.Core.Internal.AsyncOperationBase/<>c__DisplayClass17_0::<OnCompleted>b__0(Unity.Services.Core.Internal.IAsyncOperation)
+// 0x000000A7 System.Void Unity.Services.Core.Internal.AsyncOperationBase/<>c__DisplayClass17_0::<OnCompleted>b__0(Unity.Services.Core.Internal.IAsyncOperation)
 extern void U3CU3Ec__DisplayClass17_0_U3COnCompletedU3Eb__0_m776443FF8BCB7D55D852BA853922C09181C2467C (void);
-// 0x000000A6 System.Boolean Unity.Services.Core.Internal.AsyncOperationBase`1::get_keepWaiting()
-// 0x000000A7 System.Boolean Unity.Services.Core.Internal.AsyncOperationBase`1::get_IsCompleted()
-// 0x000000A8 System.Boolean Unity.Services.Core.Internal.AsyncOperationBase`1::get_IsDone()
-// 0x000000A9 Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.AsyncOperationBase`1::get_Status()
-// 0x000000AA System.Exception Unity.Services.Core.Internal.AsyncOperationBase`1::get_Exception()
-// 0x000000AB T Unity.Services.Core.Internal.AsyncOperationBase`1::get_Result()
-// 0x000000AC T Unity.Services.Core.Internal.AsyncOperationBase`1::GetResult()
-// 0x000000AD Unity.Services.Core.Internal.AsyncOperationBase`1<T> Unity.Services.Core.Internal.AsyncOperationBase`1::GetAwaiter()
-// 0x000000AE System.Void Unity.Services.Core.Internal.AsyncOperationBase`1::add_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation`1<T>>)
-// 0x000000AF System.Void Unity.Services.Core.Internal.AsyncOperationBase`1::remove_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation`1<T>>)
-// 0x000000B0 System.Void Unity.Services.Core.Internal.AsyncOperationBase`1::DidComplete()
-// 0x000000B1 System.Void Unity.Services.Core.Internal.AsyncOperationBase`1::OnCompleted(System.Action)
-// 0x000000B2 System.Void Unity.Services.Core.Internal.AsyncOperationBase`1::.ctor()
-// 0x000000B3 System.Void Unity.Services.Core.Internal.AsyncOperationBase`1/<>c__DisplayClass19_0::.ctor()
-// 0x000000B4 System.Void Unity.Services.Core.Internal.AsyncOperationBase`1/<>c__DisplayClass19_0::<OnCompleted>b__0(Unity.Services.Core.Internal.IAsyncOperation`1<T>)
-// 0x000000B5 Unity.Services.Core.Internal.AsyncOperationAwaiter Unity.Services.Core.Internal.AsyncOperationExtensions::GetAwaiter(Unity.Services.Core.Internal.IAsyncOperation)
+// 0x000000A8 System.Boolean Unity.Services.Core.Internal.AsyncOperationBase`1::get_keepWaiting()
+// 0x000000A9 System.Boolean Unity.Services.Core.Internal.AsyncOperationBase`1::get_IsCompleted()
+// 0x000000AA System.Boolean Unity.Services.Core.Internal.AsyncOperationBase`1::get_IsDone()
+// 0x000000AB Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.AsyncOperationBase`1::get_Status()
+// 0x000000AC System.Exception Unity.Services.Core.Internal.AsyncOperationBase`1::get_Exception()
+// 0x000000AD T Unity.Services.Core.Internal.AsyncOperationBase`1::get_Result()
+// 0x000000AE T Unity.Services.Core.Internal.AsyncOperationBase`1::GetResult()
+// 0x000000AF Unity.Services.Core.Internal.AsyncOperationBase`1<T> Unity.Services.Core.Internal.AsyncOperationBase`1::GetAwaiter()
+// 0x000000B0 System.Void Unity.Services.Core.Internal.AsyncOperationBase`1::add_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation`1<T>>)
+// 0x000000B1 System.Void Unity.Services.Core.Internal.AsyncOperationBase`1::remove_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation`1<T>>)
+// 0x000000B2 System.Void Unity.Services.Core.Internal.AsyncOperationBase`1::DidComplete()
+// 0x000000B3 System.Void Unity.Services.Core.Internal.AsyncOperationBase`1::OnCompleted(System.Action)
+// 0x000000B4 System.Void Unity.Services.Core.Internal.AsyncOperationBase`1::.ctor()
+// 0x000000B5 System.Void Unity.Services.Core.Internal.AsyncOperationBase`1/<>c__DisplayClass19_0::.ctor()
+// 0x000000B6 System.Void Unity.Services.Core.Internal.AsyncOperationBase`1/<>c__DisplayClass19_0::<OnCompleted>b__0(Unity.Services.Core.Internal.IAsyncOperation`1<T>)
+// 0x000000B7 Unity.Services.Core.Internal.AsyncOperationAwaiter Unity.Services.Core.Internal.AsyncOperationExtensions::GetAwaiter(Unity.Services.Core.Internal.IAsyncOperation)
 extern void AsyncOperationExtensions_GetAwaiter_mADADF7D32468A8CED211BA84C5381AAAD24C6392 (void);
-// 0x000000B6 System.Threading.Tasks.Task Unity.Services.Core.Internal.AsyncOperationExtensions::AsTask(Unity.Services.Core.Internal.IAsyncOperation)
+// 0x000000B8 System.Threading.Tasks.Task Unity.Services.Core.Internal.AsyncOperationExtensions::AsTask(Unity.Services.Core.Internal.IAsyncOperation)
 extern void AsyncOperationExtensions_AsTask_m639FEC1B981FCEFE41D206E5EE798158E523BE41 (void);
-// 0x000000B7 Unity.Services.Core.Internal.AsyncOperationAwaiter`1<T> Unity.Services.Core.Internal.AsyncOperationExtensions::GetAwaiter(Unity.Services.Core.Internal.IAsyncOperation`1<T>)
-// 0x000000B8 System.Threading.Tasks.Task`1<T> Unity.Services.Core.Internal.AsyncOperationExtensions::AsTask(Unity.Services.Core.Internal.IAsyncOperation`1<T>)
-// 0x000000B9 System.Void Unity.Services.Core.Internal.AsyncOperationExtensions/<>c__DisplayClass1_0::.ctor()
+// 0x000000B9 Unity.Services.Core.Internal.AsyncOperationAwaiter`1<T> Unity.Services.Core.Internal.AsyncOperationExtensions::GetAwaiter(Unity.Services.Core.Internal.IAsyncOperation`1<T>)
+// 0x000000BA System.Threading.Tasks.Task`1<T> Unity.Services.Core.Internal.AsyncOperationExtensions::AsTask(Unity.Services.Core.Internal.IAsyncOperation`1<T>)
+// 0x000000BB System.Void Unity.Services.Core.Internal.AsyncOperationExtensions/<>c__DisplayClass1_0::.ctor()
 extern void U3CU3Ec__DisplayClass1_0__ctor_mD92A511117A89E573219D50367FC2ECD9551DA54 (void);
-// 0x000000BA System.Void Unity.Services.Core.Internal.AsyncOperationExtensions/<>c__DisplayClass1_0::<AsTask>g__CompleteTask|0(Unity.Services.Core.Internal.IAsyncOperation)
+// 0x000000BC System.Void Unity.Services.Core.Internal.AsyncOperationExtensions/<>c__DisplayClass1_0::<AsTask>g__CompleteTask|0(Unity.Services.Core.Internal.IAsyncOperation)
 extern void U3CU3Ec__DisplayClass1_0_U3CAsTaskU3Eg__CompleteTaskU7C0_m971ACC6A960E4BAE00467A0B72768FFDE7DA0A3A (void);
-// 0x000000BB System.Void Unity.Services.Core.Internal.AsyncOperationExtensions/<>c__DisplayClass3_0`1::.ctor()
-// 0x000000BC System.Void Unity.Services.Core.Internal.AsyncOperationExtensions/<>c__DisplayClass3_0`1::<AsTask>g__CompleteTask|0(Unity.Services.Core.Internal.IAsyncOperation`1<T>)
-// 0x000000BD System.Boolean Unity.Services.Core.Internal.IAsyncOperation::get_IsDone()
-// 0x000000BE Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.IAsyncOperation::get_Status()
-// 0x000000BF System.Void Unity.Services.Core.Internal.IAsyncOperation::add_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>)
-// 0x000000C0 System.Void Unity.Services.Core.Internal.IAsyncOperation::remove_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>)
-// 0x000000C1 System.Exception Unity.Services.Core.Internal.IAsyncOperation::get_Exception()
-// 0x000000C2 System.Boolean Unity.Services.Core.Internal.IAsyncOperation`1::get_IsDone()
-// 0x000000C3 Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.IAsyncOperation`1::get_Status()
-// 0x000000C4 System.Void Unity.Services.Core.Internal.IAsyncOperation`1::add_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation`1<T>>)
-// 0x000000C5 System.Void Unity.Services.Core.Internal.IAsyncOperation`1::remove_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation`1<T>>)
-// 0x000000C6 System.Exception Unity.Services.Core.Internal.IAsyncOperation`1::get_Exception()
-// 0x000000C7 T Unity.Services.Core.Internal.IAsyncOperation`1::get_Result()
-// 0x000000C8 System.Boolean Unity.Services.Core.Internal.IAsyncOperationAwaiter::get_IsCompleted()
-// 0x000000C9 System.Void Unity.Services.Core.Internal.IAsyncOperationAwaiter::GetResult()
-// 0x000000CA System.Boolean Unity.Services.Core.Internal.IAsyncOperationAwaiter`1::get_IsCompleted()
-// 0x000000CB T Unity.Services.Core.Internal.IAsyncOperationAwaiter`1::GetResult()
-// 0x000000CC System.Boolean Unity.Services.Core.Internal.TaskAsyncOperation::get_IsCompleted()
+// 0x000000BD System.Void Unity.Services.Core.Internal.AsyncOperationExtensions/<>c__DisplayClass3_0`1::.ctor()
+// 0x000000BE System.Void Unity.Services.Core.Internal.AsyncOperationExtensions/<>c__DisplayClass3_0`1::<AsTask>g__CompleteTask|0(Unity.Services.Core.Internal.IAsyncOperation`1<T>)
+// 0x000000BF System.Boolean Unity.Services.Core.Internal.IAsyncOperation::get_IsDone()
+// 0x000000C0 Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.IAsyncOperation::get_Status()
+// 0x000000C1 System.Void Unity.Services.Core.Internal.IAsyncOperation::add_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>)
+// 0x000000C2 System.Void Unity.Services.Core.Internal.IAsyncOperation::remove_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>)
+// 0x000000C3 System.Exception Unity.Services.Core.Internal.IAsyncOperation::get_Exception()
+// 0x000000C4 System.Boolean Unity.Services.Core.Internal.IAsyncOperation`1::get_IsDone()
+// 0x000000C5 Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.IAsyncOperation`1::get_Status()
+// 0x000000C6 System.Void Unity.Services.Core.Internal.IAsyncOperation`1::add_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation`1<T>>)
+// 0x000000C7 System.Void Unity.Services.Core.Internal.IAsyncOperation`1::remove_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation`1<T>>)
+// 0x000000C8 System.Exception Unity.Services.Core.Internal.IAsyncOperation`1::get_Exception()
+// 0x000000C9 T Unity.Services.Core.Internal.IAsyncOperation`1::get_Result()
+// 0x000000CA System.Boolean Unity.Services.Core.Internal.IAsyncOperationAwaiter::get_IsCompleted()
+// 0x000000CB System.Void Unity.Services.Core.Internal.IAsyncOperationAwaiter::GetResult()
+// 0x000000CC System.Boolean Unity.Services.Core.Internal.IAsyncOperationAwaiter`1::get_IsCompleted()
+// 0x000000CD T Unity.Services.Core.Internal.IAsyncOperationAwaiter`1::GetResult()
+// 0x000000CE System.Boolean Unity.Services.Core.Internal.TaskAsyncOperation::get_IsCompleted()
 extern void TaskAsyncOperation_get_IsCompleted_mE8E514DC0AF426E20D123189A8166B0536A5BB0A (void);
-// 0x000000CD Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.TaskAsyncOperation::get_Status()
+// 0x000000CF Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.TaskAsyncOperation::get_Status()
 extern void TaskAsyncOperation_get_Status_mE71FE39E4040745C8991A9B2D9013485F2F570B2 (void);
-// 0x000000CE System.Exception Unity.Services.Core.Internal.TaskAsyncOperation::get_Exception()
+// 0x000000D0 System.Exception Unity.Services.Core.Internal.TaskAsyncOperation::get_Exception()
 extern void TaskAsyncOperation_get_Exception_m0DE2EB1BFD825B1EC8DF097F19BEAB5A97A8476D (void);
-// 0x000000CF System.Void Unity.Services.Core.Internal.TaskAsyncOperation::GetResult()
+// 0x000000D1 System.Void Unity.Services.Core.Internal.TaskAsyncOperation::GetResult()
 extern void TaskAsyncOperation_GetResult_mF09BB788C2E02361476796AE889E2FA9E88541C6 (void);
-// 0x000000D0 Unity.Services.Core.Internal.AsyncOperationBase Unity.Services.Core.Internal.TaskAsyncOperation::GetAwaiter()
+// 0x000000D2 Unity.Services.Core.Internal.AsyncOperationBase Unity.Services.Core.Internal.TaskAsyncOperation::GetAwaiter()
 extern void TaskAsyncOperation_GetAwaiter_mAFF3CA07A0A4DAFBB96D2D11C5A5085A4988521F (void);
-// 0x000000D1 System.Void Unity.Services.Core.Internal.TaskAsyncOperation::.ctor(System.Threading.Tasks.Task)
+// 0x000000D3 System.Void Unity.Services.Core.Internal.TaskAsyncOperation::.ctor(System.Threading.Tasks.Task)
 extern void TaskAsyncOperation__ctor_mEDC34C8442D9965300375DEB7A1658ED3BF33D46 (void);
-// 0x000000D2 Unity.Services.Core.Internal.TaskAsyncOperation Unity.Services.Core.Internal.TaskAsyncOperation::Run(System.Action)
+// 0x000000D4 Unity.Services.Core.Internal.TaskAsyncOperation Unity.Services.Core.Internal.TaskAsyncOperation::Run(System.Action)
 extern void TaskAsyncOperation_Run_m925817FA5D948CACE92697456D8EFE94B48601B2 (void);
-// 0x000000D3 System.Void Unity.Services.Core.Internal.TaskAsyncOperation::SetScheduler()
+// 0x000000D5 System.Void Unity.Services.Core.Internal.TaskAsyncOperation::SetScheduler()
 extern void TaskAsyncOperation_SetScheduler_m3DAA8E75D48B5977ED724AF4F5637FBD73199FBC (void);
-// 0x000000D4 System.Void Unity.Services.Core.Internal.TaskAsyncOperation/<>c::.cctor()
+// 0x000000D6 System.Void Unity.Services.Core.Internal.TaskAsyncOperation/<>c::.cctor()
 extern void U3CU3Ec__cctor_mC47CC42DC9A24EAC97D78FEA4343A078D74BB49F (void);
-// 0x000000D5 System.Void Unity.Services.Core.Internal.TaskAsyncOperation/<>c::.ctor()
+// 0x000000D7 System.Void Unity.Services.Core.Internal.TaskAsyncOperation/<>c::.ctor()
 extern void U3CU3Ec__ctor_m5A0343E410EC083744848A5D7F30B3A483D4ED20 (void);
-// 0x000000D6 System.Void Unity.Services.Core.Internal.TaskAsyncOperation/<>c::<.ctor>b__10_0(System.Threading.Tasks.Task,System.Object)
+// 0x000000D8 System.Void Unity.Services.Core.Internal.TaskAsyncOperation/<>c::<.ctor>b__10_0(System.Threading.Tasks.Task,System.Object)
 extern void U3CU3Ec_U3C_ctorU3Eb__10_0_m7D1C91349CC66FFB64227709E0E57B9BE35C6ECF (void);
-// 0x000000D7 System.Boolean Unity.Services.Core.Internal.TaskAsyncOperation`1::get_IsCompleted()
-// 0x000000D8 T Unity.Services.Core.Internal.TaskAsyncOperation`1::get_Result()
-// 0x000000D9 T Unity.Services.Core.Internal.TaskAsyncOperation`1::GetResult()
-// 0x000000DA Unity.Services.Core.Internal.AsyncOperationBase`1<T> Unity.Services.Core.Internal.TaskAsyncOperation`1::GetAwaiter()
-// 0x000000DB Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.TaskAsyncOperation`1::get_Status()
-// 0x000000DC System.Exception Unity.Services.Core.Internal.TaskAsyncOperation`1::get_Exception()
-// 0x000000DD System.Void Unity.Services.Core.Internal.TaskAsyncOperation`1::.ctor(System.Threading.Tasks.Task`1<T>)
-// 0x000000DE Unity.Services.Core.Internal.TaskAsyncOperation`1<T> Unity.Services.Core.Internal.TaskAsyncOperation`1::Run(System.Func`1<T>)
-// 0x000000DF System.Void Unity.Services.Core.Internal.TaskAsyncOperation`1/<>c::.cctor()
-// 0x000000E0 System.Void Unity.Services.Core.Internal.TaskAsyncOperation`1/<>c::.ctor()
-// 0x000000E1 System.Void Unity.Services.Core.Internal.TaskAsyncOperation`1/<>c::<.ctor>b__11_0(System.Threading.Tasks.Task`1<T>,System.Object)
-// 0x000000E2 System.Void Unity.Services.Core.Internal.CoreLogger::Log(System.Object)
+// 0x000000D9 System.Boolean Unity.Services.Core.Internal.TaskAsyncOperation`1::get_IsCompleted()
+// 0x000000DA T Unity.Services.Core.Internal.TaskAsyncOperation`1::get_Result()
+// 0x000000DB T Unity.Services.Core.Internal.TaskAsyncOperation`1::GetResult()
+// 0x000000DC Unity.Services.Core.Internal.AsyncOperationBase`1<T> Unity.Services.Core.Internal.TaskAsyncOperation`1::GetAwaiter()
+// 0x000000DD Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.TaskAsyncOperation`1::get_Status()
+// 0x000000DE System.Exception Unity.Services.Core.Internal.TaskAsyncOperation`1::get_Exception()
+// 0x000000DF System.Void Unity.Services.Core.Internal.TaskAsyncOperation`1::.ctor(System.Threading.Tasks.Task`1<T>)
+// 0x000000E0 Unity.Services.Core.Internal.TaskAsyncOperation`1<T> Unity.Services.Core.Internal.TaskAsyncOperation`1::Run(System.Func`1<T>)
+// 0x000000E1 System.Void Unity.Services.Core.Internal.TaskAsyncOperation`1/<>c::.cctor()
+// 0x000000E2 System.Void Unity.Services.Core.Internal.TaskAsyncOperation`1/<>c::.ctor()
+// 0x000000E3 System.Void Unity.Services.Core.Internal.TaskAsyncOperation`1/<>c::<.ctor>b__11_0(System.Threading.Tasks.Task`1<T>,System.Object)
+// 0x000000E4 System.Void Unity.Services.Core.Internal.CoreLogger::Log(System.Object)
 extern void CoreLogger_Log_m6FC47A07A7D20D4F55F05B3541545487BB28BC37 (void);
-// 0x000000E3 System.Void Unity.Services.Core.Internal.CoreLogger::LogWarning(System.Object)
+// 0x000000E5 System.Void Unity.Services.Core.Internal.CoreLogger::LogWarning(System.Object)
 extern void CoreLogger_LogWarning_m0ADFEA332A24159D7EBDE589D840C9F563736073 (void);
-// 0x000000E4 System.Void Unity.Services.Core.Internal.CoreLogger::LogError(System.Object)
+// 0x000000E6 System.Void Unity.Services.Core.Internal.CoreLogger::LogError(System.Object)
 extern void CoreLogger_LogError_mC9B6F1572E693EEAE0A8C72A539C8E75AD967D8E (void);
-// 0x000000E5 System.Void Unity.Services.Core.Internal.CoreLogger::LogException(System.Exception)
+// 0x000000E7 System.Void Unity.Services.Core.Internal.CoreLogger::LogException(System.Exception)
 extern void CoreLogger_LogException_m7129C6F678E086232211CBC0347F2300D0A42F3C (void);
-// 0x000000E6 System.Void Unity.Services.Core.Internal.CoreLogger::LogAssertion(System.Object)
+// 0x000000E8 System.Void Unity.Services.Core.Internal.CoreLogger::LogAssertion(System.Object)
 extern void CoreLogger_LogAssertion_mA1D5FDC81D8C375FAD49BC166A9D6740C0177788 (void);
-// 0x000000E7 System.Void Unity.Services.Core.Internal.CoreLogger::LogVerbose(System.Object)
+// 0x000000E9 System.Void Unity.Services.Core.Internal.CoreLogger::LogVerbose(System.Object)
 extern void CoreLogger_LogVerbose_m79E9198201A20B309BC6B3D469F1305333C8A26A (void);
-// 0x000000E8 System.Void Unity.Services.Core.Internal.CoreLogger::LogTelemetry(System.Object)
+// 0x000000EA System.Void Unity.Services.Core.Internal.CoreLogger::LogTelemetry(System.Object)
 extern void CoreLogger_LogTelemetry_m048576E4285063DF7C9B189C25D7FDF61085B948 (void);
-// 0x000000E9 System.Void Unity.Services.Core.Internal.CircularDependencyException::.ctor()
+// 0x000000EB System.Void Unity.Services.Core.Internal.CircularDependencyException::.ctor()
 extern void CircularDependencyException__ctor_m4C48FC29A6765759CEF10843D5A98C43F100B2E2 (void);
-// 0x000000EA System.Void Unity.Services.Core.Internal.CircularDependencyException::.ctor(System.String)
+// 0x000000EC System.Void Unity.Services.Core.Internal.CircularDependencyException::.ctor(System.String)
 extern void CircularDependencyException__ctor_m3D8DEB3AB4C12EFA05800264FF203F8DBB8F5D62 (void);
-// 0x000000EB System.Collections.Generic.Dictionary`2<System.Int32,Unity.Services.Core.Internal.IServiceComponent> Unity.Services.Core.Internal.ComponentRegistry::get_ComponentTypeHashToInstance()
+// 0x000000ED System.Collections.Generic.Dictionary`2<System.Int32,Unity.Services.Core.Internal.IServiceComponent> Unity.Services.Core.Internal.ComponentRegistry::get_ComponentTypeHashToInstance()
 extern void ComponentRegistry_get_ComponentTypeHashToInstance_mC29AAC6141CC7C8A088B1083CD07A802BF281F20 (void);
-// 0x000000EC System.Void Unity.Services.Core.Internal.ComponentRegistry::.ctor(System.Collections.Generic.Dictionary`2<System.Int32,Unity.Services.Core.Internal.IServiceComponent>)
+// 0x000000EE System.Void Unity.Services.Core.Internal.ComponentRegistry::.ctor(System.Collections.Generic.Dictionary`2<System.Int32,Unity.Services.Core.Internal.IServiceComponent>)
 extern void ComponentRegistry__ctor_m3FF6CDF744DAFB26FFAF27867B8D5BE8DDC0D43A (void);
-// 0x000000ED System.Void Unity.Services.Core.Internal.ComponentRegistry::RegisterServiceComponent(TComponent)
-// 0x000000EE TComponent Unity.Services.Core.Internal.ComponentRegistry::GetServiceComponent()
-// 0x000000EF System.Boolean Unity.Services.Core.Internal.ComponentRegistry::IsComponentTypeRegistered(System.Int32)
+// 0x000000EF System.Void Unity.Services.Core.Internal.ComponentRegistry::RegisterServiceComponent(TComponent)
+// 0x000000F0 TComponent Unity.Services.Core.Internal.ComponentRegistry::GetServiceComponent()
+// 0x000000F1 System.Boolean Unity.Services.Core.Internal.ComponentRegistry::IsComponentTypeRegistered(System.Int32)
 extern void ComponentRegistry_IsComponentTypeRegistered_m71D21117B9314CB1CA28F75B0246E215888228F8 (void);
-// 0x000000F0 System.Void Unity.Services.Core.Internal.ComponentRegistry::ResetProvidedComponents(System.Collections.Generic.IDictionary`2<System.Int32,Unity.Services.Core.Internal.IServiceComponent>)
+// 0x000000F2 System.Void Unity.Services.Core.Internal.ComponentRegistry::ResetProvidedComponents(System.Collections.Generic.IDictionary`2<System.Int32,Unity.Services.Core.Internal.IServiceComponent>)
 extern void ComponentRegistry_ResetProvidedComponents_m58F818C1716DBB973137A543DE880D24E2F25908 (void);
-// 0x000000F1 System.Void Unity.Services.Core.Internal.IComponentRegistry::RegisterServiceComponent(TComponent)
-// 0x000000F2 TComponent Unity.Services.Core.Internal.IComponentRegistry::GetServiceComponent()
-// 0x000000F3 System.Void Unity.Services.Core.Internal.IComponentRegistry::ResetProvidedComponents(System.Collections.Generic.IDictionary`2<System.Int32,Unity.Services.Core.Internal.IServiceComponent>)
-// 0x000000F4 Unity.Services.Core.Internal.IComponentRegistry Unity.Services.Core.Internal.LockedComponentRegistry::get_Registry()
+// 0x000000F3 System.Void Unity.Services.Core.Internal.IComponentRegistry::RegisterServiceComponent(TComponent)
+// 0x000000F4 TComponent Unity.Services.Core.Internal.IComponentRegistry::GetServiceComponent()
+// 0x000000F5 System.Void Unity.Services.Core.Internal.IComponentRegistry::ResetProvidedComponents(System.Collections.Generic.IDictionary`2<System.Int32,Unity.Services.Core.Internal.IServiceComponent>)
+// 0x000000F6 Unity.Services.Core.Internal.IComponentRegistry Unity.Services.Core.Internal.LockedComponentRegistry::get_Registry()
 extern void LockedComponentRegistry_get_Registry_m2170B5DB74B027249B53D07BF8A05D530956F941 (void);
-// 0x000000F5 System.Void Unity.Services.Core.Internal.LockedComponentRegistry::.ctor(Unity.Services.Core.Internal.IComponentRegistry)
+// 0x000000F7 System.Void Unity.Services.Core.Internal.LockedComponentRegistry::.ctor(Unity.Services.Core.Internal.IComponentRegistry)
 extern void LockedComponentRegistry__ctor_m3630AF00C5DA0EC485544F72503B50D95E871BE1 (void);
-// 0x000000F6 System.Void Unity.Services.Core.Internal.LockedComponentRegistry::RegisterServiceComponent(TComponent)
-// 0x000000F7 TComponent Unity.Services.Core.Internal.LockedComponentRegistry::GetServiceComponent()
-// 0x000000F8 System.Void Unity.Services.Core.Internal.LockedComponentRegistry::ResetProvidedComponents(System.Collections.Generic.IDictionary`2<System.Int32,Unity.Services.Core.Internal.IServiceComponent>)
+// 0x000000F8 System.Void Unity.Services.Core.Internal.LockedComponentRegistry::RegisterServiceComponent(TComponent)
+// 0x000000F9 TComponent Unity.Services.Core.Internal.LockedComponentRegistry::GetServiceComponent()
+// 0x000000FA System.Void Unity.Services.Core.Internal.LockedComponentRegistry::ResetProvidedComponents(System.Collections.Generic.IDictionary`2<System.Int32,Unity.Services.Core.Internal.IServiceComponent>)
 extern void LockedComponentRegistry_ResetProvidedComponents_mA0A7565D5FB2DA9D4938EE1631E60AF9AA4F293D (void);
-// 0x000000F9 System.Void Unity.Services.Core.Internal.CoreRegistration::.ctor(Unity.Services.Core.Internal.IPackageRegistry,System.Int32)
+// 0x000000FB System.Void Unity.Services.Core.Internal.CoreRegistration::.ctor(Unity.Services.Core.Internal.IPackageRegistry,System.Int32)
 extern void CoreRegistration__ctor_mBD89C7177367442E29CDDB5C17527B9C556256E1 (void);
-// 0x000000FA Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.CoreRegistration::DependsOn()
-// 0x000000FB Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.CoreRegistration::OptionallyDependsOn()
-// 0x000000FC Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.CoreRegistration::ProvidesComponent()
-// 0x000000FD Unity.Services.Core.Internal.CoreRegistry Unity.Services.Core.Internal.CoreRegistry::get_Instance()
+// 0x000000FC Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.CoreRegistration::DependsOn()
+// 0x000000FD Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.CoreRegistration::OptionallyDependsOn()
+// 0x000000FE Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.CoreRegistration::ProvidesComponent()
+// 0x000000FF Unity.Services.Core.Internal.CoreRegistry Unity.Services.Core.Internal.CoreRegistry::get_Instance()
 extern void CoreRegistry_get_Instance_m73A64BD3CB78EF5AC698D1635B5872CEB9F9AFE2 (void);
-// 0x000000FE System.Void Unity.Services.Core.Internal.CoreRegistry::set_Instance(Unity.Services.Core.Internal.CoreRegistry)
+// 0x00000100 System.Void Unity.Services.Core.Internal.CoreRegistry::set_Instance(Unity.Services.Core.Internal.CoreRegistry)
 extern void CoreRegistry_set_Instance_mBFC9CEE6661027ED4103B95A82ABD453555803D7 (void);
-// 0x000000FF Unity.Services.Core.Internal.IPackageRegistry Unity.Services.Core.Internal.CoreRegistry::get_PackageRegistry()
+// 0x00000101 Unity.Services.Core.Internal.IPackageRegistry Unity.Services.Core.Internal.CoreRegistry::get_PackageRegistry()
 extern void CoreRegistry_get_PackageRegistry_m0A95E6723D8237E6E9D6D0067FB0EDFCC3C29063 (void);
-// 0x00000100 System.Void Unity.Services.Core.Internal.CoreRegistry::set_PackageRegistry(Unity.Services.Core.Internal.IPackageRegistry)
+// 0x00000102 System.Void Unity.Services.Core.Internal.CoreRegistry::set_PackageRegistry(Unity.Services.Core.Internal.IPackageRegistry)
 extern void CoreRegistry_set_PackageRegistry_mCA3C399854251D17A72BBE1E9121AF7050A46D0B (void);
-// 0x00000101 Unity.Services.Core.Internal.IComponentRegistry Unity.Services.Core.Internal.CoreRegistry::get_ComponentRegistry()
+// 0x00000103 Unity.Services.Core.Internal.IComponentRegistry Unity.Services.Core.Internal.CoreRegistry::get_ComponentRegistry()
 extern void CoreRegistry_get_ComponentRegistry_mF7CA9E9CEEFF316027E6D59B2AA30AEBA7FAAC13 (void);
-// 0x00000102 System.Void Unity.Services.Core.Internal.CoreRegistry::set_ComponentRegistry(Unity.Services.Core.Internal.IComponentRegistry)
+// 0x00000104 System.Void Unity.Services.Core.Internal.CoreRegistry::set_ComponentRegistry(Unity.Services.Core.Internal.IComponentRegistry)
 extern void CoreRegistry_set_ComponentRegistry_mF5BBBCDFF2103D1F60E6FA3A7779B06AF3838D8E (void);
-// 0x00000103 System.Void Unity.Services.Core.Internal.CoreRegistry::.ctor()
+// 0x00000105 System.Void Unity.Services.Core.Internal.CoreRegistry::.ctor()
 extern void CoreRegistry__ctor_m507734CEE1C34622E217894B3D29D7AE0EC45314 (void);
-// 0x00000104 System.Void Unity.Services.Core.Internal.CoreRegistry::.ctor(Unity.Services.Core.Internal.IPackageRegistry,Unity.Services.Core.Internal.IComponentRegistry)
+// 0x00000106 System.Void Unity.Services.Core.Internal.CoreRegistry::.ctor(Unity.Services.Core.Internal.IPackageRegistry,Unity.Services.Core.Internal.IComponentRegistry)
 extern void CoreRegistry__ctor_m210E3AE3F6BAF2AB54B45EC734EA77D15C86EC23 (void);
-// 0x00000105 Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.CoreRegistry::RegisterPackage(TPackage)
-// 0x00000106 System.Void Unity.Services.Core.Internal.CoreRegistry::RegisterServiceComponent(TComponent)
-// 0x00000107 TComponent Unity.Services.Core.Internal.CoreRegistry::GetServiceComponent()
-// 0x00000108 System.Void Unity.Services.Core.Internal.CoreRegistry::LockPackageRegistration()
+// 0x00000107 Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.CoreRegistry::RegisterPackage(TPackage)
+// 0x00000108 System.Void Unity.Services.Core.Internal.CoreRegistry::RegisterServiceComponent(TComponent)
+// 0x00000109 TComponent Unity.Services.Core.Internal.CoreRegistry::GetServiceComponent()
+// 0x0000010A System.Void Unity.Services.Core.Internal.CoreRegistry::LockPackageRegistration()
 extern void CoreRegistry_LockPackageRegistration_m031751BE6E5CBB6D30AAE2B64DAF04FC0EEA5A0B (void);
-// 0x00000109 System.Void Unity.Services.Core.Internal.CoreRegistry::LockComponentRegistration()
+// 0x0000010B System.Void Unity.Services.Core.Internal.CoreRegistry::LockComponentRegistration()
 extern void CoreRegistry_LockComponentRegistration_mB4ED90ED4F7621588195C9922C9A669C69C831BC (void);
-// 0x0000010A System.Void Unity.Services.Core.Internal.CoreRegistryInitializer::.ctor(Unity.Services.Core.Internal.CoreRegistry,System.Collections.Generic.List`1<System.Int32>)
+// 0x0000010C System.Void Unity.Services.Core.Internal.CoreRegistryInitializer::.ctor(Unity.Services.Core.Internal.CoreRegistry,System.Collections.Generic.List`1<System.Int32>)
 extern void CoreRegistryInitializer__ctor_mBE9C46715DF41A8B1CF31CCAC9166A212318B156 (void);
-// 0x0000010B System.Threading.Tasks.Task`1<System.Collections.Generic.List`1<Unity.Services.Core.Internal.PackageInitializationInfo>> Unity.Services.Core.Internal.CoreRegistryInitializer::InitializeRegistryAsync()
+// 0x0000010D System.Threading.Tasks.Task`1<System.Collections.Generic.List`1<Unity.Services.Core.Internal.PackageInitializationInfo>> Unity.Services.Core.Internal.CoreRegistryInitializer::InitializeRegistryAsync()
 extern void CoreRegistryInitializer_InitializeRegistryAsync_m3E1030C1B0E033F76CF20DC208555AB915C62BF8 (void);
-// 0x0000010C System.Void Unity.Services.Core.Internal.CoreRegistryInitializer/<>c__DisplayClass3_0::.ctor()
+// 0x0000010E System.Void Unity.Services.Core.Internal.CoreRegistryInitializer/<>c__DisplayClass3_0::.ctor()
 extern void U3CU3Ec__DisplayClass3_0__ctor_m6F552D21A7795194E9AB8D5D042CF8D7B3975EE9 (void);
-// 0x0000010D System.Threading.Tasks.Task Unity.Services.Core.Internal.CoreRegistryInitializer/<>c__DisplayClass3_0::<InitializeRegistryAsync>g__TryInitializePackageAsync|0(Unity.Services.Core.Internal.IInitializablePackage)
+// 0x0000010F System.Threading.Tasks.Task Unity.Services.Core.Internal.CoreRegistryInitializer/<>c__DisplayClass3_0::<InitializeRegistryAsync>g__TryInitializePackageAsync|0(Unity.Services.Core.Internal.IInitializablePackage)
 extern void U3CU3Ec__DisplayClass3_0_U3CInitializeRegistryAsyncU3Eg__TryInitializePackageAsyncU7C0_m56337B98B3CFDB562165FEE8B41F8987D91B7327 (void);
-// 0x0000010E Unity.Services.Core.Internal.IInitializablePackage Unity.Services.Core.Internal.CoreRegistryInitializer/<>c__DisplayClass3_0::<InitializeRegistryAsync>g__GetPackageAt|1(System.Int32)
+// 0x00000110 Unity.Services.Core.Internal.IInitializablePackage Unity.Services.Core.Internal.CoreRegistryInitializer/<>c__DisplayClass3_0::<InitializeRegistryAsync>g__GetPackageAt|1(System.Int32)
 extern void U3CU3Ec__DisplayClass3_0_U3CInitializeRegistryAsyncU3Eg__GetPackageAtU7C1_m68BD38748C7FE0D2105C0AB91F6F8E5737F8D016 (void);
-// 0x0000010F System.Void Unity.Services.Core.Internal.CoreRegistryInitializer/<>c__DisplayClass3_0::<InitializeRegistryAsync>g__Fail|2()
+// 0x00000111 System.Void Unity.Services.Core.Internal.CoreRegistryInitializer/<>c__DisplayClass3_0::<InitializeRegistryAsync>g__Fail|2()
 extern void U3CU3Ec__DisplayClass3_0_U3CInitializeRegistryAsyncU3Eg__FailU7C2_mB66A52FC680C0D6D34C45425B8D8838A9576BF63 (void);
-// 0x00000110 System.Void Unity.Services.Core.Internal.CoreRegistryInitializer/<>c__DisplayClass3_0/<<InitializeRegistryAsync>g__TryInitializePackageAsync|0>d::MoveNext()
+// 0x00000112 System.Void Unity.Services.Core.Internal.CoreRegistryInitializer/<>c__DisplayClass3_0/<<InitializeRegistryAsync>g__TryInitializePackageAsync|0>d::MoveNext()
 extern void U3CU3CInitializeRegistryAsyncU3Eg__TryInitializePackageAsyncU7C0U3Ed_MoveNext_m5E60799930DE5F81F77BBABBF177E4BF259BEE52 (void);
-// 0x00000111 System.Void Unity.Services.Core.Internal.CoreRegistryInitializer/<>c__DisplayClass3_0/<<InitializeRegistryAsync>g__TryInitializePackageAsync|0>d::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000113 System.Void Unity.Services.Core.Internal.CoreRegistryInitializer/<>c__DisplayClass3_0/<<InitializeRegistryAsync>g__TryInitializePackageAsync|0>d::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CU3CInitializeRegistryAsyncU3Eg__TryInitializePackageAsyncU7C0U3Ed_SetStateMachine_m0D4B0934A0549E32EB5FED93883CC1F3E413EEB7 (void);
-// 0x00000112 System.Void Unity.Services.Core.Internal.CoreRegistryInitializer/<InitializeRegistryAsync>d__3::MoveNext()
+// 0x00000114 System.Void Unity.Services.Core.Internal.CoreRegistryInitializer/<InitializeRegistryAsync>d__3::MoveNext()
 extern void U3CInitializeRegistryAsyncU3Ed__3_MoveNext_m5F259043D6E1638605E2E02C7CF4B08C733FFC23 (void);
-// 0x00000113 System.Void Unity.Services.Core.Internal.CoreRegistryInitializer/<InitializeRegistryAsync>d__3::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000115 System.Void Unity.Services.Core.Internal.CoreRegistryInitializer/<InitializeRegistryAsync>d__3::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CInitializeRegistryAsyncU3Ed__3_SetStateMachine_m2129B81BA5F7EE6BA5AAFB086161A32FBECDE5E2 (void);
-// 0x00000114 System.Void Unity.Services.Core.Internal.DependencyTree::.ctor()
+// 0x00000116 System.Void Unity.Services.Core.Internal.DependencyTree::.ctor()
 extern void DependencyTree__ctor_mE8C447ED9582DA0A52E5F5294B424C67641AFA1C (void);
-// 0x00000115 System.Void Unity.Services.Core.Internal.DependencyTree::.ctor(System.Collections.Generic.Dictionary`2<System.Int32,Unity.Services.Core.Internal.IInitializablePackage>,System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>,System.Collections.Generic.Dictionary`2<System.Int32,System.Collections.Generic.List`1<System.Int32>>,System.Collections.Generic.Dictionary`2<System.Int32,Unity.Services.Core.Internal.IServiceComponent>)
+// 0x00000117 System.Void Unity.Services.Core.Internal.DependencyTree::.ctor(System.Collections.Generic.Dictionary`2<System.Int32,Unity.Services.Core.Internal.IInitializablePackage>,System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>,System.Collections.Generic.Dictionary`2<System.Int32,System.Collections.Generic.List`1<System.Int32>>,System.Collections.Generic.Dictionary`2<System.Int32,Unity.Services.Core.Internal.IServiceComponent>)
 extern void DependencyTree__ctor_mE33E7D31398C9CB414DFAA3F000033C0F5C2D928 (void);
-// 0x00000116 System.Void Unity.Services.Core.Internal.DependencyTreeSortFailedException::.ctor(Unity.Services.Core.Internal.DependencyTree,System.Collections.Generic.ICollection`1<System.Int32>)
+// 0x00000118 System.Void Unity.Services.Core.Internal.DependencyTreeSortFailedException::.ctor(Unity.Services.Core.Internal.DependencyTree,System.Collections.Generic.ICollection`1<System.Int32>)
 extern void DependencyTreeSortFailedException__ctor_m4AD28E1834D38336C77C1CCDA271244B84EA97ED (void);
-// 0x00000117 System.Void Unity.Services.Core.Internal.DependencyTreeSortFailedException::.ctor(Unity.Services.Core.Internal.DependencyTree,System.Collections.Generic.ICollection`1<System.Int32>,System.Exception)
+// 0x00000119 System.Void Unity.Services.Core.Internal.DependencyTreeSortFailedException::.ctor(Unity.Services.Core.Internal.DependencyTree,System.Collections.Generic.ICollection`1<System.Int32>,System.Exception)
 extern void DependencyTreeSortFailedException__ctor_m20BA3EA58FC55FCFCE5F857FA9A2EC228473891B (void);
-// 0x00000118 System.String Unity.Services.Core.Internal.DependencyTreeSortFailedException::CreateExceptionMessage(Unity.Services.Core.Internal.DependencyTree,System.Collections.Generic.ICollection`1<System.Int32>,System.Exception)
+// 0x0000011A System.String Unity.Services.Core.Internal.DependencyTreeSortFailedException::CreateExceptionMessage(Unity.Services.Core.Internal.DependencyTree,System.Collections.Generic.ICollection`1<System.Int32>,System.Exception)
 extern void DependencyTreeSortFailedException_CreateExceptionMessage_m076D757C6C201D22949EEAFEB546DA673BFD3301 (void);
-// 0x00000119 System.String Unity.Services.Core.Internal.DependencyTreeExtensions::ToJson(Unity.Services.Core.Internal.DependencyTree,System.Collections.Generic.ICollection`1<System.Int32>)
+// 0x0000011B System.String Unity.Services.Core.Internal.DependencyTreeExtensions::ToJson(Unity.Services.Core.Internal.DependencyTree,System.Collections.Generic.ICollection`1<System.Int32>)
 extern void DependencyTreeExtensions_ToJson_m7BB4E9D6A8686F3DB3BB4AE8CDA0F5126BE2FC0C (void);
-// 0x0000011A System.Boolean Unity.Services.Core.Internal.DependencyTreeExtensions::IsOptional(Unity.Services.Core.Internal.DependencyTree,System.Int32)
+// 0x0000011C System.Boolean Unity.Services.Core.Internal.DependencyTreeExtensions::IsOptional(Unity.Services.Core.Internal.DependencyTree,System.Int32)
 extern void DependencyTreeExtensions_IsOptional_m291995614CC4AA79B75123A32569FF7194759FB7 (void);
-// 0x0000011B System.Boolean Unity.Services.Core.Internal.DependencyTreeExtensions::IsProvided(Unity.Services.Core.Internal.DependencyTree,System.Int32)
+// 0x0000011D System.Boolean Unity.Services.Core.Internal.DependencyTreeExtensions::IsProvided(Unity.Services.Core.Internal.DependencyTree,System.Int32)
 extern void DependencyTreeExtensions_IsProvided_m5CF82CE2D83F9EED333ABC06783E1902E30EA86A (void);
-// 0x0000011C Newtonsoft.Json.Linq.JObject Unity.Services.Core.Internal.DependencyTreeExtensions::GetPackageJObject(Unity.Services.Core.Internal.DependencyTree,System.Int32)
+// 0x0000011E Newtonsoft.Json.Linq.JObject Unity.Services.Core.Internal.DependencyTreeExtensions::GetPackageJObject(Unity.Services.Core.Internal.DependencyTree,System.Int32)
 extern void DependencyTreeExtensions_GetPackageJObject_m2D3CA37C10CFAE312157DA12D6BD189FE6C41F65 (void);
-// 0x0000011D Newtonsoft.Json.Linq.JObject Unity.Services.Core.Internal.DependencyTreeExtensions::GetComponentJObject(Unity.Services.Core.Internal.DependencyTree,System.Int32)
+// 0x0000011F Newtonsoft.Json.Linq.JObject Unity.Services.Core.Internal.DependencyTreeExtensions::GetComponentJObject(Unity.Services.Core.Internal.DependencyTree,System.Int32)
 extern void DependencyTreeExtensions_GetComponentJObject_mF466234CAEE808134510C6D6D29CCFB6D7EEF4B5 (void);
-// 0x0000011E System.String Unity.Services.Core.Internal.DependencyTreeExtensions::GetComponentIdentifier(Unity.Services.Core.Internal.IServiceComponent)
+// 0x00000120 System.String Unity.Services.Core.Internal.DependencyTreeExtensions::GetComponentIdentifier(Unity.Services.Core.Internal.IServiceComponent)
 extern void DependencyTreeExtensions_GetComponentIdentifier_mA42A0F2ED2930B38CD6BD6ADB5EB4564B1888CAD (void);
-// 0x0000011F System.Void Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::.ctor(Unity.Services.Core.Internal.DependencyTree,System.Collections.Generic.ICollection`1<System.Int32>)
+// 0x00000121 System.Void Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::.ctor(Unity.Services.Core.Internal.DependencyTree,System.Collections.Generic.ICollection`1<System.Int32>)
 extern void DependencyTreeInitializeOrderSorter__ctor_m7FCD5445FC15A72A328BDE0828D9EFF109C4EBE7 (void);
-// 0x00000120 System.Void Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::SortRegisteredPackagesIntoTarget()
+// 0x00000122 System.Void Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::SortRegisteredPackagesIntoTarget()
 extern void DependencyTreeInitializeOrderSorter_SortRegisteredPackagesIntoTarget_m50FFB4AE5A3282877E8541CAAD905CD7C2D8F831 (void);
-// 0x00000121 System.Void Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::RemoveUnprovidedOptionalDependenciesFromTree()
+// 0x00000123 System.Void Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::RemoveUnprovidedOptionalDependenciesFromTree()
 extern void DependencyTreeInitializeOrderSorter_RemoveUnprovidedOptionalDependenciesFromTree_mD7E3080BAD1D57E3AF5F8B8258DABCE48E174183 (void);
-// 0x00000122 System.Void Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::RemoveUnprovidedOptionalDependencies(System.Collections.Generic.IList`1<System.Int32>)
+// 0x00000124 System.Void Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::RemoveUnprovidedOptionalDependencies(System.Collections.Generic.IList`1<System.Int32>)
 extern void DependencyTreeInitializeOrderSorter_RemoveUnprovidedOptionalDependencies_mA453D5055F260CB080F6EE69A2F0F7CB71DB975B (void);
-// 0x00000123 System.Void Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::SortTreeThrough(System.Int32)
+// 0x00000125 System.Void Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::SortTreeThrough(System.Int32)
 extern void DependencyTreeInitializeOrderSorter_SortTreeThrough_m2B43FBB987275FC528AD1B28C7B78A24E9FE088C (void);
-// 0x00000124 System.Void Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::SortTreeThrough(System.Collections.Generic.IEnumerable`1<System.Int32>)
+// 0x00000126 System.Void Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::SortTreeThrough(System.Collections.Generic.IEnumerable`1<System.Int32>)
 extern void DependencyTreeInitializeOrderSorter_SortTreeThrough_m18D24A10B30F955EE42B8E82C104B8B8B8799F6D (void);
-// 0x00000125 System.Void Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::MarkPackage(System.Int32,Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter/ExplorationMark)
+// 0x00000127 System.Void Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::MarkPackage(System.Int32,Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter/ExplorationMark)
 extern void DependencyTreeInitializeOrderSorter_MarkPackage_m4B61E4A24ECB477D9ED1CE54FA232D5C6B01FD31 (void);
-// 0x00000126 System.Collections.Generic.IReadOnlyCollection`1<System.Int32> Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::GetPackageTypeHashes()
+// 0x00000128 System.Collections.Generic.IReadOnlyCollection`1<System.Int32> Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::GetPackageTypeHashes()
 extern void DependencyTreeInitializeOrderSorter_GetPackageTypeHashes_mF3163B612844917C07D74BB7B78FD5C48ECE4653 (void);
-// 0x00000127 System.Int32 Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::GetPackageTypeHashFor(System.Int32)
+// 0x00000129 System.Int32 Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::GetPackageTypeHashFor(System.Int32)
 extern void DependencyTreeInitializeOrderSorter_GetPackageTypeHashFor_mD0F3091C18741606134FBB1F6F1465F5EB8C0634 (void);
-// 0x00000128 System.Collections.Generic.IEnumerable`1<System.Int32> Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::GetDependencyTypeHashesFor(System.Int32)
+// 0x0000012A System.Collections.Generic.IEnumerable`1<System.Int32> Unity.Services.Core.Internal.DependencyTreeInitializeOrderSorter::GetDependencyTypeHashesFor(System.Int32)
 extern void DependencyTreeInitializeOrderSorter_GetDependencyTypeHashesFor_mE4896E6FD46EC6A8D6E60540C9036B58ABC124AF (void);
-// 0x00000129 System.Int32 Unity.Services.Core.Internal.HashException::get_Hash()
+// 0x0000012B System.Int32 Unity.Services.Core.Internal.HashException::get_Hash()
 extern void HashException_get_Hash_mFCB1368E904EFFF479EB757C721CBB832D50E023 (void);
-// 0x0000012A System.Void Unity.Services.Core.Internal.HashException::.ctor(System.Int32)
+// 0x0000012C System.Void Unity.Services.Core.Internal.HashException::.ctor(System.Int32)
 extern void HashException__ctor_m5D99D5AC9A02DE153D481AA8BE5DF9D41FA0348E (void);
-// 0x0000012B System.Void Unity.Services.Core.Internal.HashException::.ctor(System.Int32,System.String)
+// 0x0000012D System.Void Unity.Services.Core.Internal.HashException::.ctor(System.Int32,System.String)
 extern void HashException__ctor_m5FBEC719A3F7F72B31F0C78070EB4D3129BFDA5B (void);
-// 0x0000012C System.Void Unity.Services.Core.Internal.HashException::.ctor(System.Int32,System.String,System.Exception)
+// 0x0000012E System.Void Unity.Services.Core.Internal.HashException::.ctor(System.Int32,System.String,System.Exception)
 extern void HashException__ctor_m945EE76429F8A65F885AD4F0AADAC0DD9BC01655 (void);
-// 0x0000012D System.Void Unity.Services.Core.Internal.DependencyTreePackageHashException::.ctor(System.Int32)
+// 0x0000012F System.Void Unity.Services.Core.Internal.DependencyTreePackageHashException::.ctor(System.Int32)
 extern void DependencyTreePackageHashException__ctor_mE0682581DB0B7C459509731055254FB1DD746A18 (void);
-// 0x0000012E System.Void Unity.Services.Core.Internal.DependencyTreePackageHashException::.ctor(System.Int32,System.String)
+// 0x00000130 System.Void Unity.Services.Core.Internal.DependencyTreePackageHashException::.ctor(System.Int32,System.String)
 extern void DependencyTreePackageHashException__ctor_m923C53FC638F20CEC12103AF32A773C7164D0E33 (void);
-// 0x0000012F System.Void Unity.Services.Core.Internal.DependencyTreePackageHashException::.ctor(System.Int32,System.String,System.Exception)
+// 0x00000131 System.Void Unity.Services.Core.Internal.DependencyTreePackageHashException::.ctor(System.Int32,System.String,System.Exception)
 extern void DependencyTreePackageHashException__ctor_m5BF0D7C8B38D9F1E14F2AB38FB5D420528DB10E7 (void);
-// 0x00000130 System.Void Unity.Services.Core.Internal.DependencyTreeComponentHashException::.ctor(System.Int32)
+// 0x00000132 System.Void Unity.Services.Core.Internal.DependencyTreeComponentHashException::.ctor(System.Int32)
 extern void DependencyTreeComponentHashException__ctor_m552C601C7E53E8ADCAC67541D9D4F2DA75EDFD26 (void);
-// 0x00000131 System.Void Unity.Services.Core.Internal.DependencyTreeComponentHashException::.ctor(System.Int32,System.String)
+// 0x00000133 System.Void Unity.Services.Core.Internal.DependencyTreeComponentHashException::.ctor(System.Int32,System.String)
 extern void DependencyTreeComponentHashException__ctor_mAE32DD2275602F7BC17EE37475304781149BCBC4 (void);
-// 0x00000132 System.Void Unity.Services.Core.Internal.DependencyTreeComponentHashException::.ctor(System.Int32,System.String,System.Exception)
+// 0x00000134 System.Void Unity.Services.Core.Internal.DependencyTreeComponentHashException::.ctor(System.Int32,System.String,System.Exception)
 extern void DependencyTreeComponentHashException__ctor_mD0DF4D7831FECB6F2372624B0C6870D6D8D04FBE (void);
-// 0x00000133 System.Threading.Tasks.Task Unity.Services.Core.Internal.IInitializablePackage::Initialize(Unity.Services.Core.Internal.CoreRegistry)
-// 0x00000134 System.Type Unity.Services.Core.Internal.MissingComponent::get_IntendedType()
+// 0x00000135 System.Threading.Tasks.Task Unity.Services.Core.Internal.IInitializablePackage::Initialize(Unity.Services.Core.Internal.CoreRegistry)
+// 0x00000136 System.Type Unity.Services.Core.Internal.MissingComponent::get_IntendedType()
 extern void MissingComponent_get_IntendedType_m97B07B28AD54A741B376A917DCE3635E9479CB59 (void);
-// 0x00000135 System.Void Unity.Services.Core.Internal.MissingComponent::.ctor(System.Type)
+// 0x00000137 System.Void Unity.Services.Core.Internal.MissingComponent::.ctor(System.Type)
 extern void MissingComponent__ctor_m2D280CE147B980C7656E897F5F237EB2A50A517B (void);
-// 0x00000136 System.Void Unity.Services.Core.Internal.PackageInitializationInfo::.ctor()
+// 0x00000138 System.Void Unity.Services.Core.Internal.PackageInitializationInfo::.ctor()
 extern void PackageInitializationInfo__ctor_mA13323855BBE265A977A230EE6F62B586D9C84D4 (void);
-// 0x00000137 Unity.Services.Core.Internal.DependencyTree Unity.Services.Core.Internal.IPackageRegistry::get_Tree()
-// 0x00000138 System.Void Unity.Services.Core.Internal.IPackageRegistry::set_Tree(Unity.Services.Core.Internal.DependencyTree)
-// 0x00000139 Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.IPackageRegistry::RegisterPackage(TPackage)
-// 0x0000013A System.Void Unity.Services.Core.Internal.IPackageRegistry::RegisterDependency(System.Int32)
-// 0x0000013B System.Void Unity.Services.Core.Internal.IPackageRegistry::RegisterOptionalDependency(System.Int32)
-// 0x0000013C System.Void Unity.Services.Core.Internal.IPackageRegistry::RegisterProvision(System.Int32)
-// 0x0000013D Unity.Services.Core.Internal.IPackageRegistry Unity.Services.Core.Internal.LockedPackageRegistry::get_Registry()
+// 0x00000139 Unity.Services.Core.Internal.DependencyTree Unity.Services.Core.Internal.IPackageRegistry::get_Tree()
+// 0x0000013A System.Void Unity.Services.Core.Internal.IPackageRegistry::set_Tree(Unity.Services.Core.Internal.DependencyTree)
+// 0x0000013B Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.IPackageRegistry::RegisterPackage(TPackage)
+// 0x0000013C System.Void Unity.Services.Core.Internal.IPackageRegistry::RegisterDependency(System.Int32)
+// 0x0000013D System.Void Unity.Services.Core.Internal.IPackageRegistry::RegisterOptionalDependency(System.Int32)
+// 0x0000013E System.Void Unity.Services.Core.Internal.IPackageRegistry::RegisterProvision(System.Int32)
+// 0x0000013F Unity.Services.Core.Internal.IPackageRegistry Unity.Services.Core.Internal.LockedPackageRegistry::get_Registry()
 extern void LockedPackageRegistry_get_Registry_m4B850C75E991B690CBE9F6E18E50DD0B8C93B51A (void);
-// 0x0000013E System.Void Unity.Services.Core.Internal.LockedPackageRegistry::.ctor(Unity.Services.Core.Internal.IPackageRegistry)
+// 0x00000140 System.Void Unity.Services.Core.Internal.LockedPackageRegistry::.ctor(Unity.Services.Core.Internal.IPackageRegistry)
 extern void LockedPackageRegistry__ctor_m98CE0389216302BCF17DF91BC8B76CAA121D8927 (void);
-// 0x0000013F Unity.Services.Core.Internal.DependencyTree Unity.Services.Core.Internal.LockedPackageRegistry::get_Tree()
+// 0x00000141 Unity.Services.Core.Internal.DependencyTree Unity.Services.Core.Internal.LockedPackageRegistry::get_Tree()
 extern void LockedPackageRegistry_get_Tree_m29C509F6076AB2B4910AA7E2413385AD3523123D (void);
-// 0x00000140 System.Void Unity.Services.Core.Internal.LockedPackageRegistry::set_Tree(Unity.Services.Core.Internal.DependencyTree)
+// 0x00000142 System.Void Unity.Services.Core.Internal.LockedPackageRegistry::set_Tree(Unity.Services.Core.Internal.DependencyTree)
 extern void LockedPackageRegistry_set_Tree_m51DD9195FEE8F0E7366F915B039495A797BC1C11 (void);
-// 0x00000141 Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.LockedPackageRegistry::RegisterPackage(TPackage)
-// 0x00000142 System.Void Unity.Services.Core.Internal.LockedPackageRegistry::RegisterDependency(System.Int32)
-// 0x00000143 System.Void Unity.Services.Core.Internal.LockedPackageRegistry::RegisterOptionalDependency(System.Int32)
-// 0x00000144 System.Void Unity.Services.Core.Internal.LockedPackageRegistry::RegisterProvision(System.Int32)
-// 0x00000145 Unity.Services.Core.Internal.DependencyTree Unity.Services.Core.Internal.PackageRegistry::get_Tree()
+// 0x00000143 Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.LockedPackageRegistry::RegisterPackage(TPackage)
+// 0x00000144 System.Void Unity.Services.Core.Internal.LockedPackageRegistry::RegisterDependency(System.Int32)
+// 0x00000145 System.Void Unity.Services.Core.Internal.LockedPackageRegistry::RegisterOptionalDependency(System.Int32)
+// 0x00000146 System.Void Unity.Services.Core.Internal.LockedPackageRegistry::RegisterProvision(System.Int32)
+// 0x00000147 Unity.Services.Core.Internal.DependencyTree Unity.Services.Core.Internal.PackageRegistry::get_Tree()
 extern void PackageRegistry_get_Tree_m346DB9D9068093E382434951B623D2593072E31B (void);
-// 0x00000146 System.Void Unity.Services.Core.Internal.PackageRegistry::set_Tree(Unity.Services.Core.Internal.DependencyTree)
+// 0x00000148 System.Void Unity.Services.Core.Internal.PackageRegistry::set_Tree(Unity.Services.Core.Internal.DependencyTree)
 extern void PackageRegistry_set_Tree_m812C188D419BEE03291B07E2F0CF20D7BFA6AE0C (void);
-// 0x00000147 System.Void Unity.Services.Core.Internal.PackageRegistry::.ctor(Unity.Services.Core.Internal.DependencyTree)
+// 0x00000149 System.Void Unity.Services.Core.Internal.PackageRegistry::.ctor(Unity.Services.Core.Internal.DependencyTree)
 extern void PackageRegistry__ctor_m42324D73BCB367393F2C200E417CA235BDB91330 (void);
-// 0x00000148 Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.PackageRegistry::RegisterPackage(TPackage)
-// 0x00000149 System.Void Unity.Services.Core.Internal.PackageRegistry::RegisterDependency(System.Int32)
-// 0x0000014A System.Void Unity.Services.Core.Internal.PackageRegistry::RegisterOptionalDependency(System.Int32)
-// 0x0000014B System.Void Unity.Services.Core.Internal.PackageRegistry::RegisterProvision(System.Int32)
-// 0x0000014C System.Void Unity.Services.Core.Internal.PackageRegistry::AddComponentDependencyToPackage(System.Int32,System.Int32)
+// 0x0000014A Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.PackageRegistry::RegisterPackage(TPackage)
+// 0x0000014B System.Void Unity.Services.Core.Internal.PackageRegistry::RegisterDependency(System.Int32)
+// 0x0000014C System.Void Unity.Services.Core.Internal.PackageRegistry::RegisterOptionalDependency(System.Int32)
+// 0x0000014D System.Void Unity.Services.Core.Internal.PackageRegistry::RegisterProvision(System.Int32)
+// 0x0000014E System.Void Unity.Services.Core.Internal.PackageRegistry::AddComponentDependencyToPackage(System.Int32,System.Int32)
 extern void PackageRegistry_AddComponentDependencyToPackage_m930F30EC365AAEE8596E7458AD8C86E73D445812 (void);
-// 0x0000014D Unity.Services.Core.Internal.CoreDiagnostics Unity.Services.Core.Internal.CoreDiagnostics::get_Instance()
+// 0x0000014F Unity.Services.Core.Internal.CoreDiagnostics Unity.Services.Core.Internal.CoreDiagnostics::get_Instance()
 extern void CoreDiagnostics_get_Instance_m190590CB1205EE50B22E6BA144371BD3976C0963 (void);
-// 0x0000014E System.Void Unity.Services.Core.Internal.CoreDiagnostics::set_Instance(Unity.Services.Core.Internal.CoreDiagnostics)
+// 0x00000150 System.Void Unity.Services.Core.Internal.CoreDiagnostics::set_Instance(Unity.Services.Core.Internal.CoreDiagnostics)
 extern void CoreDiagnostics_set_Instance_mFEA5BC5137F5C737B49419FA33F79339B1D43F2C (void);
-// 0x0000014F System.Collections.Generic.IDictionary`2<System.String,System.String> Unity.Services.Core.Internal.CoreDiagnostics::get_CoreTags()
+// 0x00000151 System.Collections.Generic.IDictionary`2<System.String,System.String> Unity.Services.Core.Internal.CoreDiagnostics::get_CoreTags()
 extern void CoreDiagnostics_get_CoreTags_mC54A82C01F2093E739ED3991670E8E61ACBE1C20 (void);
-// 0x00000150 Unity.Services.Core.Telemetry.Internal.IDiagnosticsComponentProvider Unity.Services.Core.Internal.CoreDiagnostics::get_DiagnosticsComponentProvider()
+// 0x00000152 Unity.Services.Core.Telemetry.Internal.IDiagnosticsComponentProvider Unity.Services.Core.Internal.CoreDiagnostics::get_DiagnosticsComponentProvider()
 extern void CoreDiagnostics_get_DiagnosticsComponentProvider_m3BC40B07EE22926D3F63B98F8F6858C382A253A7 (void);
-// 0x00000151 System.Void Unity.Services.Core.Internal.CoreDiagnostics::set_DiagnosticsComponentProvider(Unity.Services.Core.Telemetry.Internal.IDiagnosticsComponentProvider)
+// 0x00000153 System.Void Unity.Services.Core.Internal.CoreDiagnostics::set_DiagnosticsComponentProvider(Unity.Services.Core.Telemetry.Internal.IDiagnosticsComponentProvider)
 extern void CoreDiagnostics_set_DiagnosticsComponentProvider_m4980F8DAE6FC5015B00AB0A083327BDAB8F8A5B3 (void);
-// 0x00000152 Unity.Services.Core.Telemetry.Internal.IDiagnostics Unity.Services.Core.Internal.CoreDiagnostics::get_Diagnostics()
+// 0x00000154 Unity.Services.Core.Telemetry.Internal.IDiagnostics Unity.Services.Core.Internal.CoreDiagnostics::get_Diagnostics()
 extern void CoreDiagnostics_get_Diagnostics_m0BCD0E90698D2D4CC6032CF9B747FC95B0C5CE48 (void);
-// 0x00000153 System.Void Unity.Services.Core.Internal.CoreDiagnostics::set_Diagnostics(Unity.Services.Core.Telemetry.Internal.IDiagnostics)
+// 0x00000155 System.Void Unity.Services.Core.Internal.CoreDiagnostics::set_Diagnostics(Unity.Services.Core.Telemetry.Internal.IDiagnostics)
 extern void CoreDiagnostics_set_Diagnostics_m2AF9AFE612FFCA542EFDB30AC5C15494D2E3982C (void);
-// 0x00000154 System.Void Unity.Services.Core.Internal.CoreDiagnostics::SetProjectConfiguration(System.String)
+// 0x00000156 System.Void Unity.Services.Core.Internal.CoreDiagnostics::SetProjectConfiguration(System.String)
 extern void CoreDiagnostics_SetProjectConfiguration_mA70A7004CE8C36FA8E0F17E5529F666D536CF987 (void);
-// 0x00000155 System.Void Unity.Services.Core.Internal.CoreDiagnostics::SendCircularDependencyDiagnostics(System.Exception)
+// 0x00000157 System.Void Unity.Services.Core.Internal.CoreDiagnostics::SendCircularDependencyDiagnostics(System.Exception)
 extern void CoreDiagnostics_SendCircularDependencyDiagnostics_m9A32DD117AC9C01104B3B3EA17A886C46F6EA858 (void);
-// 0x00000156 System.Void Unity.Services.Core.Internal.CoreDiagnostics::SendCorePackageInitDiagnostics(System.Exception)
+// 0x00000158 System.Void Unity.Services.Core.Internal.CoreDiagnostics::SendCorePackageInitDiagnostics(System.Exception)
 extern void CoreDiagnostics_SendCorePackageInitDiagnostics_m70FFDD2D365654029B3C75CCDE12A384ED7C1397 (void);
-// 0x00000157 System.Void Unity.Services.Core.Internal.CoreDiagnostics::SendOperateServicesInitDiagnostics(System.Exception)
+// 0x00000159 System.Void Unity.Services.Core.Internal.CoreDiagnostics::SendOperateServicesInitDiagnostics(System.Exception)
 extern void CoreDiagnostics_SendOperateServicesInitDiagnostics_m01E3A52B731604F17403740C31004A83104E8461 (void);
-// 0x00000158 System.Threading.Tasks.Task Unity.Services.Core.Internal.CoreDiagnostics::SendCoreDiagnosticsAsync(System.String,System.Exception)
+// 0x0000015A System.Threading.Tasks.Task Unity.Services.Core.Internal.CoreDiagnostics::SendCoreDiagnosticsAsync(System.String,System.Exception)
 extern void CoreDiagnostics_SendCoreDiagnosticsAsync_m384C35BCC6830722891A162716770A5D70A41AE7 (void);
-// 0x00000159 System.Void Unity.Services.Core.Internal.CoreDiagnostics::OnSendFailed(System.Threading.Tasks.Task)
+// 0x0000015B System.Void Unity.Services.Core.Internal.CoreDiagnostics::OnSendFailed(System.Threading.Tasks.Task)
 extern void CoreDiagnostics_OnSendFailed_mAD6109FFF9114433011F68EA25A054263EA0AE21 (void);
-// 0x0000015A System.Threading.Tasks.Task`1<Unity.Services.Core.Telemetry.Internal.IDiagnostics> Unity.Services.Core.Internal.CoreDiagnostics::GetOrCreateDiagnosticsAsync()
+// 0x0000015C System.Threading.Tasks.Task`1<Unity.Services.Core.Telemetry.Internal.IDiagnostics> Unity.Services.Core.Internal.CoreDiagnostics::GetOrCreateDiagnosticsAsync()
 extern void CoreDiagnostics_GetOrCreateDiagnosticsAsync_mA2C6BC3077D3EF4104FDE4C9BA26D4B8E640CFE2 (void);
-// 0x0000015B System.Void Unity.Services.Core.Internal.CoreDiagnostics::.ctor()
+// 0x0000015D System.Void Unity.Services.Core.Internal.CoreDiagnostics::.ctor()
 extern void CoreDiagnostics__ctor_mFCD549A6812E3CEAB8A7E42B75A777F9061B3330 (void);
-// 0x0000015C System.Void Unity.Services.Core.Internal.CoreDiagnostics/<SendCoreDiagnosticsAsync>d__24::MoveNext()
+// 0x0000015E System.Void Unity.Services.Core.Internal.CoreDiagnostics/<SendCoreDiagnosticsAsync>d__24::MoveNext()
 extern void U3CSendCoreDiagnosticsAsyncU3Ed__24_MoveNext_m814AC3E16A712FE76D7F4751D1FC7ED0DC4A1BF0 (void);
-// 0x0000015D System.Void Unity.Services.Core.Internal.CoreDiagnostics/<SendCoreDiagnosticsAsync>d__24::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000015F System.Void Unity.Services.Core.Internal.CoreDiagnostics/<SendCoreDiagnosticsAsync>d__24::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CSendCoreDiagnosticsAsyncU3Ed__24_SetStateMachine_m001FBAB9203E0C0F8DA04AB2EB57966CDE5FD838 (void);
-// 0x0000015E System.Void Unity.Services.Core.Internal.CoreDiagnostics/<GetOrCreateDiagnosticsAsync>d__26::MoveNext()
+// 0x00000160 System.Void Unity.Services.Core.Internal.CoreDiagnostics/<GetOrCreateDiagnosticsAsync>d__26::MoveNext()
 extern void U3CGetOrCreateDiagnosticsAsyncU3Ed__26_MoveNext_m49BB8D9D5179C83C852EA6F9FD5A269613153ECC (void);
-// 0x0000015F System.Void Unity.Services.Core.Internal.CoreDiagnostics/<GetOrCreateDiagnosticsAsync>d__26::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000161 System.Void Unity.Services.Core.Internal.CoreDiagnostics/<GetOrCreateDiagnosticsAsync>d__26::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CGetOrCreateDiagnosticsAsyncU3Ed__26_SetStateMachine_m585A57FDF4B14229883605019BE52545E830F839 (void);
-// 0x00000160 Unity.Services.Core.Internal.CoreMetrics Unity.Services.Core.Internal.CoreMetrics::get_Instance()
+// 0x00000162 Unity.Services.Core.Internal.CoreMetrics Unity.Services.Core.Internal.CoreMetrics::get_Instance()
 extern void CoreMetrics_get_Instance_mE2CA807AAB4F16D20C28256A23E407E5DF5DE74E (void);
-// 0x00000161 System.Void Unity.Services.Core.Internal.CoreMetrics::set_Instance(Unity.Services.Core.Internal.CoreMetrics)
+// 0x00000163 System.Void Unity.Services.Core.Internal.CoreMetrics::set_Instance(Unity.Services.Core.Internal.CoreMetrics)
 extern void CoreMetrics_set_Instance_mC18703DE5A475E77CBA000AA1602A2A9305AEFD2 (void);
-// 0x00000162 Unity.Services.Core.Telemetry.Internal.IMetrics Unity.Services.Core.Internal.CoreMetrics::get_Metrics()
+// 0x00000164 Unity.Services.Core.Telemetry.Internal.IMetrics Unity.Services.Core.Internal.CoreMetrics::get_Metrics()
 extern void CoreMetrics_get_Metrics_m083DD23C26E29687AE75738D8C57A507082F5329 (void);
-// 0x00000163 System.Void Unity.Services.Core.Internal.CoreMetrics::set_Metrics(Unity.Services.Core.Telemetry.Internal.IMetrics)
+// 0x00000165 System.Void Unity.Services.Core.Internal.CoreMetrics::set_Metrics(Unity.Services.Core.Telemetry.Internal.IMetrics)
 extern void CoreMetrics_set_Metrics_mCC95B75592115A7250E45CDCBF77A62DDED6F1FB (void);
-// 0x00000164 System.Collections.Generic.IDictionary`2<System.Type,Unity.Services.Core.Telemetry.Internal.IMetrics> Unity.Services.Core.Internal.CoreMetrics::get_AllPackageMetrics()
+// 0x00000166 System.Collections.Generic.IDictionary`2<System.Type,Unity.Services.Core.Telemetry.Internal.IMetrics> Unity.Services.Core.Internal.CoreMetrics::get_AllPackageMetrics()
 extern void CoreMetrics_get_AllPackageMetrics_mAD22D81A59A7B591E50AAF078BF97FFD55E61AF0 (void);
-// 0x00000165 System.Void Unity.Services.Core.Internal.CoreMetrics::SendAllPackagesInitSuccessMetric()
+// 0x00000167 System.Void Unity.Services.Core.Internal.CoreMetrics::SendAllPackagesInitSuccessMetric()
 extern void CoreMetrics_SendAllPackagesInitSuccessMetric_m6A0C4AD97DA5F22FCA1723F91096E1AC63400AC1 (void);
-// 0x00000166 System.Void Unity.Services.Core.Internal.CoreMetrics::SendAllPackagesInitTimeMetric(System.Double)
+// 0x00000168 System.Void Unity.Services.Core.Internal.CoreMetrics::SendAllPackagesInitTimeMetric(System.Double)
 extern void CoreMetrics_SendAllPackagesInitTimeMetric_m28BB6D84801BEFC36F21D22D148C2C53C19456C6 (void);
-// 0x00000167 System.Void Unity.Services.Core.Internal.CoreMetrics::SendInitTimeMetricForPackage(System.Type,System.Double)
+// 0x00000169 System.Void Unity.Services.Core.Internal.CoreMetrics::SendInitTimeMetricForPackage(System.Type,System.Double)
 extern void CoreMetrics_SendInitTimeMetricForPackage_m20190AC644BB9982E2833904EFE519C088EA566F (void);
-// 0x00000168 System.Void Unity.Services.Core.Internal.CoreMetrics::Initialize(Unity.Services.Core.Configuration.Internal.IProjectConfiguration,Unity.Services.Core.Telemetry.Internal.IMetricsFactory,System.Type)
+// 0x0000016A System.Void Unity.Services.Core.Internal.CoreMetrics::Initialize(Unity.Services.Core.Configuration.Internal.IProjectConfiguration,Unity.Services.Core.Telemetry.Internal.IMetricsFactory,System.Type)
 extern void CoreMetrics_Initialize_m7F3B9703FBA1138C36F4C3FE4838443B772B9AE7 (void);
-// 0x00000169 System.Void Unity.Services.Core.Internal.CoreMetrics::FindAndCacheAllPackageMetrics(Unity.Services.Core.Configuration.Internal.IProjectConfiguration,Unity.Services.Core.Telemetry.Internal.IMetricsFactory)
+// 0x0000016B System.Void Unity.Services.Core.Internal.CoreMetrics::FindAndCacheAllPackageMetrics(Unity.Services.Core.Configuration.Internal.IProjectConfiguration,Unity.Services.Core.Telemetry.Internal.IMetricsFactory)
 extern void CoreMetrics_FindAndCacheAllPackageMetrics_m1CAE6AD821223E7333BC0E0888F347B7C5DF82E2 (void);
-// 0x0000016A System.Void Unity.Services.Core.Internal.CoreMetrics::.ctor()
+// 0x0000016C System.Void Unity.Services.Core.Internal.CoreMetrics::.ctor()
 extern void CoreMetrics__ctor_mF17592A929926B30C9FC2D17569B55740B15D7D2 (void);
-// 0x0000016B System.Void Unity.Services.Core.Internal.UnityServicesInitializer::CreateStaticInstance()
+// 0x0000016D System.Void Unity.Services.Core.Internal.UnityServicesInitializer::CreateStaticInstance()
 extern void UnityServicesInitializer_CreateStaticInstance_m11C921F54756626B2102628C99180975D8907EB9 (void);
-// 0x0000016C System.Void Unity.Services.Core.Internal.UnityServicesInitializer::EnableServicesInitializationAsync()
+// 0x0000016E System.Void Unity.Services.Core.Internal.UnityServicesInitializer::EnableServicesInitializationAsync()
 extern void UnityServicesInitializer_EnableServicesInitializationAsync_m16A565849C8E0FC0A11F2ADE7AA87B6EAA29B890 (void);
-// 0x0000016D System.Void Unity.Services.Core.Internal.UnityServicesInitializer/<EnableServicesInitializationAsync>d__1::MoveNext()
+// 0x0000016F System.Void Unity.Services.Core.Internal.UnityServicesInitializer/<EnableServicesInitializationAsync>d__1::MoveNext()
 extern void U3CEnableServicesInitializationAsyncU3Ed__1_MoveNext_mE98AC7044CBFAF74DE70A249383A271C2018B81E (void);
-// 0x0000016E System.Void Unity.Services.Core.Internal.UnityServicesInitializer/<EnableServicesInitializationAsync>d__1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000170 System.Void Unity.Services.Core.Internal.UnityServicesInitializer/<EnableServicesInitializationAsync>d__1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CEnableServicesInitializationAsyncU3Ed__1_SetStateMachine_mF049794791F6718DA52FC0A1861464C37CBBD553 (void);
-// 0x0000016F Unity.Services.Core.ServicesInitializationState Unity.Services.Core.Internal.UnityServicesInternal::get_State()
+// 0x00000171 Unity.Services.Core.ServicesInitializationState Unity.Services.Core.Internal.UnityServicesInternal::get_State()
 extern void UnityServicesInternal_get_State_mDBBCB10039E6F2A9E04A054AD914C7204E5D39D4 (void);
-// 0x00000170 System.Void Unity.Services.Core.Internal.UnityServicesInternal::set_State(Unity.Services.Core.ServicesInitializationState)
+// 0x00000172 System.Void Unity.Services.Core.Internal.UnityServicesInternal::set_State(Unity.Services.Core.ServicesInitializationState)
 extern void UnityServicesInternal_set_State_mE9661C52A8B99CE53279A6D197F263F082A114D4 (void);
-// 0x00000171 Unity.Services.Core.InitializationOptions Unity.Services.Core.Internal.UnityServicesInternal::get_Options()
+// 0x00000173 Unity.Services.Core.InitializationOptions Unity.Services.Core.Internal.UnityServicesInternal::get_Options()
 extern void UnityServicesInternal_get_Options_mF08FB9CE83332107302744620D7A459CC581C54F (void);
-// 0x00000172 System.Void Unity.Services.Core.Internal.UnityServicesInternal::set_Options(Unity.Services.Core.InitializationOptions)
+// 0x00000174 System.Void Unity.Services.Core.Internal.UnityServicesInternal::set_Options(Unity.Services.Core.InitializationOptions)
 extern void UnityServicesInternal_set_Options_mE929B5A9BAFF0C56FE3ADA56904DB80BA1A08E9E (void);
-// 0x00000173 Unity.Services.Core.Internal.CoreRegistry Unity.Services.Core.Internal.UnityServicesInternal::get_Registry()
+// 0x00000175 Unity.Services.Core.Internal.CoreRegistry Unity.Services.Core.Internal.UnityServicesInternal::get_Registry()
 extern void UnityServicesInternal_get_Registry_m523CDA2793D02C2E7966D8B25FF533248D8437A4 (void);
-// 0x00000174 Unity.Services.Core.Internal.CoreMetrics Unity.Services.Core.Internal.UnityServicesInternal::get_Metrics()
+// 0x00000176 Unity.Services.Core.Internal.CoreMetrics Unity.Services.Core.Internal.UnityServicesInternal::get_Metrics()
 extern void UnityServicesInternal_get_Metrics_m0052DC91F8B8F1CE98E2A38F979D96C9A2D47750 (void);
-// 0x00000175 Unity.Services.Core.Internal.CoreDiagnostics Unity.Services.Core.Internal.UnityServicesInternal::get_Diagnostics()
+// 0x00000177 Unity.Services.Core.Internal.CoreDiagnostics Unity.Services.Core.Internal.UnityServicesInternal::get_Diagnostics()
 extern void UnityServicesInternal_get_Diagnostics_m54973089DA076B6D42CA7E9143F2A10BBC508FA3 (void);
-// 0x00000176 System.Void Unity.Services.Core.Internal.UnityServicesInternal::.ctor(Unity.Services.Core.Internal.CoreRegistry,Unity.Services.Core.Internal.CoreMetrics,Unity.Services.Core.Internal.CoreDiagnostics)
+// 0x00000178 System.Void Unity.Services.Core.Internal.UnityServicesInternal::.ctor(Unity.Services.Core.Internal.CoreRegistry,Unity.Services.Core.Internal.CoreMetrics,Unity.Services.Core.Internal.CoreDiagnostics)
 extern void UnityServicesInternal__ctor_mDA89BB80FC660F4AAE12F656B10C5A3EAB719252 (void);
-// 0x00000177 System.Threading.Tasks.Task Unity.Services.Core.Internal.UnityServicesInternal::InitializeAsync(Unity.Services.Core.InitializationOptions)
+// 0x00000179 System.Threading.Tasks.Task Unity.Services.Core.Internal.UnityServicesInternal::InitializeAsync(Unity.Services.Core.InitializationOptions)
 extern void UnityServicesInternal_InitializeAsync_m964BF1654D9A647F2216029243F3CB1ED6F600C4 (void);
-// 0x00000178 System.Boolean Unity.Services.Core.Internal.UnityServicesInternal::HasRequestedInitialization()
+// 0x0000017A System.Boolean Unity.Services.Core.Internal.UnityServicesInternal::HasRequestedInitialization()
 extern void UnityServicesInternal_HasRequestedInitialization_m1E00108399C4206684219675F75D7269F06C5A03 (void);
-// 0x00000179 System.Threading.Tasks.Task Unity.Services.Core.Internal.UnityServicesInternal::InitializeServicesAsync()
+// 0x0000017B System.Threading.Tasks.Task Unity.Services.Core.Internal.UnityServicesInternal::InitializeServicesAsync()
 extern void UnityServicesInternal_InitializeServicesAsync_mD1A530783D1BAC5937E64849348EFFCD3B26AB9E (void);
-// 0x0000017A System.Void Unity.Services.Core.Internal.UnityServicesInternal::SendInitializationMetrics(System.Collections.Generic.List`1<Unity.Services.Core.Internal.PackageInitializationInfo>)
+// 0x0000017C System.Void Unity.Services.Core.Internal.UnityServicesInternal::SendInitializationMetrics(System.Collections.Generic.List`1<Unity.Services.Core.Internal.PackageInitializationInfo>)
 extern void UnityServicesInternal_SendInitializationMetrics_m130644476F26813A9527EC8DF92DF8AE0CA33996 (void);
-// 0x0000017B System.Threading.Tasks.Task Unity.Services.Core.Internal.UnityServicesInternal::EnableInitializationAsync()
+// 0x0000017D System.Threading.Tasks.Task Unity.Services.Core.Internal.UnityServicesInternal::EnableInitializationAsync()
 extern void UnityServicesInternal_EnableInitializationAsync_m55FC6F901CD841698285288DA3F2AC772F2B7E35 (void);
-// 0x0000017C System.Boolean Unity.Services.Core.Internal.UnityServicesInternal::<InitializeAsync>g__HasInitializationFailed|20_0()
+// 0x0000017E System.Boolean Unity.Services.Core.Internal.UnityServicesInternal::<InitializeAsync>g__HasInitializationFailed|20_0()
 extern void UnityServicesInternal_U3CInitializeAsyncU3Eg__HasInitializationFailedU7C20_0_m6BEA3DDEB222184655852BBAD3EFC4952FA36F4A (void);
-// 0x0000017D System.Void Unity.Services.Core.Internal.UnityServicesInternal/<InitializeAsync>d__20::MoveNext()
+// 0x0000017F System.Void Unity.Services.Core.Internal.UnityServicesInternal/<InitializeAsync>d__20::MoveNext()
 extern void U3CInitializeAsyncU3Ed__20_MoveNext_mC86B42FFB62B75BA4BDC04EEC24FE48669B38FE2 (void);
-// 0x0000017E System.Void Unity.Services.Core.Internal.UnityServicesInternal/<InitializeAsync>d__20::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000180 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<InitializeAsync>d__20::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CInitializeAsyncU3Ed__20_SetStateMachine_m7869FD9483382585C71C67B4F0A1AF69067E7E1D (void);
-// 0x0000017F System.Void Unity.Services.Core.Internal.UnityServicesInternal/<>c__DisplayClass22_0::.ctor()
+// 0x00000181 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<>c__DisplayClass22_0::.ctor()
 extern void U3CU3Ec__DisplayClass22_0__ctor_mDBB05CBB8FBBCD2F03D5B8743AFC609009C0CCEC (void);
-// 0x00000180 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<>c__DisplayClass22_0::<InitializeServicesAsync>g__SortPackages|0()
+// 0x00000182 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<>c__DisplayClass22_0::<InitializeServicesAsync>g__SortPackages|0()
 extern void U3CU3Ec__DisplayClass22_0_U3CInitializeServicesAsyncU3Eg__SortPackagesU7C0_m3EF4EFD7DF837E39D66E554ED45A6057383A3162 (void);
-// 0x00000181 System.Threading.Tasks.Task`1<System.Collections.Generic.List`1<Unity.Services.Core.Internal.PackageInitializationInfo>> Unity.Services.Core.Internal.UnityServicesInternal/<>c__DisplayClass22_0::<InitializeServicesAsync>g__InitializePackagesAsync|1()
+// 0x00000183 System.Threading.Tasks.Task`1<System.Collections.Generic.List`1<Unity.Services.Core.Internal.PackageInitializationInfo>> Unity.Services.Core.Internal.UnityServicesInternal/<>c__DisplayClass22_0::<InitializeServicesAsync>g__InitializePackagesAsync|1()
 extern void U3CU3Ec__DisplayClass22_0_U3CInitializeServicesAsyncU3Eg__InitializePackagesAsyncU7C1_m585E1B8F7070EDDBA40606D3425F8E36FDF8ECD5 (void);
-// 0x00000182 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<>c__DisplayClass22_0::<InitializeServicesAsync>g__FailServicesInitialization|2(System.Exception)
+// 0x00000184 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<>c__DisplayClass22_0::<InitializeServicesAsync>g__FailServicesInitialization|2(System.Exception)
 extern void U3CU3Ec__DisplayClass22_0_U3CInitializeServicesAsyncU3Eg__FailServicesInitializationU7C2_mBFC7350F4146AB29FE8C595C05249A3595824B04 (void);
-// 0x00000183 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<>c__DisplayClass22_0::<InitializeServicesAsync>g__SucceedServicesInitialization|3()
+// 0x00000185 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<>c__DisplayClass22_0::<InitializeServicesAsync>g__SucceedServicesInitialization|3()
 extern void U3CU3Ec__DisplayClass22_0_U3CInitializeServicesAsyncU3Eg__SucceedServicesInitializationU7C3_m405CF9855B1CEED7DF649B633CB7F269244F15A3 (void);
-// 0x00000184 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<>c__DisplayClass22_0/<<InitializeServicesAsync>g__InitializePackagesAsync|1>d::MoveNext()
+// 0x00000186 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<>c__DisplayClass22_0/<<InitializeServicesAsync>g__InitializePackagesAsync|1>d::MoveNext()
 extern void U3CU3CInitializeServicesAsyncU3Eg__InitializePackagesAsyncU7C1U3Ed_MoveNext_m1A0F587F4E5C48CFBB69476DC6FF0E8D71A8C89E (void);
-// 0x00000185 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<>c__DisplayClass22_0/<<InitializeServicesAsync>g__InitializePackagesAsync|1>d::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000187 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<>c__DisplayClass22_0/<<InitializeServicesAsync>g__InitializePackagesAsync|1>d::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CU3CInitializeServicesAsyncU3Eg__InitializePackagesAsyncU7C1U3Ed_SetStateMachine_mAAD9750957C9D2A753833C40E201F4141C56143D (void);
-// 0x00000186 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<InitializeServicesAsync>d__22::MoveNext()
+// 0x00000188 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<InitializeServicesAsync>d__22::MoveNext()
 extern void U3CInitializeServicesAsyncU3Ed__22_MoveNext_m8CBE33D50A5251F774381D3A21B3B78F1F3B439B (void);
-// 0x00000187 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<InitializeServicesAsync>d__22::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000189 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<InitializeServicesAsync>d__22::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CInitializeServicesAsyncU3Ed__22_SetStateMachine_mFC5FA0E2CD3782B01DA1B4624BD5E80D966BFF33 (void);
-// 0x00000188 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<EnableInitializationAsync>d__24::MoveNext()
+// 0x0000018A System.Void Unity.Services.Core.Internal.UnityServicesInternal/<EnableInitializationAsync>d__24::MoveNext()
 extern void U3CEnableInitializationAsyncU3Ed__24_MoveNext_m248BD737D6BA2E63C2EF30305A5A4323F7AF3612 (void);
-// 0x00000189 System.Void Unity.Services.Core.Internal.UnityServicesInternal/<EnableInitializationAsync>d__24::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000018B System.Void Unity.Services.Core.Internal.UnityServicesInternal/<EnableInitializationAsync>d__24::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CEnableInitializationAsyncU3Ed__24_SetStateMachine_m3D96F983B264B355592C3D4FFC2C36082AA39FA0 (void);
-// 0x0000018A TDictionary Unity.Services.Core.Internal.DictionaryExtensions::MergeNoOverride(TDictionary,System.Collections.Generic.IDictionary`2<TKey,TValue>)
-// 0x0000018B TDictionary Unity.Services.Core.Internal.DictionaryExtensions::MergeAllowOverride(TDictionary,System.Collections.Generic.IDictionary`2<TKey,TValue>)
-// 0x0000018C System.Boolean Unity.Services.Core.Internal.DictionaryExtensions::ValueEquals(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IDictionary`2<TKey,TValue>)
-// 0x0000018D System.Boolean Unity.Services.Core.Internal.DictionaryExtensions::ValueEquals(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IDictionary`2<TKey,TValue>,TComparer)
-// 0x0000018E System.Boolean Unity.Services.Core.Internal.UnityWebRequestUtils::HasSucceeded(UnityEngine.Networking.UnityWebRequest)
+// 0x0000018C TDictionary Unity.Services.Core.Internal.DictionaryExtensions::MergeNoOverride(TDictionary,System.Collections.Generic.IDictionary`2<TKey,TValue>)
+// 0x0000018D TDictionary Unity.Services.Core.Internal.DictionaryExtensions::MergeAllowOverride(TDictionary,System.Collections.Generic.IDictionary`2<TKey,TValue>)
+// 0x0000018E System.Boolean Unity.Services.Core.Internal.DictionaryExtensions::ValueEquals(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IDictionary`2<TKey,TValue>)
+// 0x0000018F System.Boolean Unity.Services.Core.Internal.DictionaryExtensions::ValueEquals(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IDictionary`2<TKey,TValue>,TComparer)
+// 0x00000190 System.Boolean Unity.Services.Core.Internal.UnityWebRequestUtils::HasSucceeded(UnityEngine.Networking.UnityWebRequest)
 extern void UnityWebRequestUtils_HasSucceeded_m06CCE15DA3423C35C7629483DD6BEB166AE4C32D (void);
-// 0x0000018F System.Threading.Tasks.Task`1<System.String> Unity.Services.Core.Internal.UnityWebRequestUtils::GetTextAsync(System.String)
+// 0x00000191 System.Threading.Tasks.Task`1<System.String> Unity.Services.Core.Internal.UnityWebRequestUtils::GetTextAsync(System.String)
 extern void UnityWebRequestUtils_GetTextAsync_m2503C3E630F795B5151BBD61295F45AE38AD7EC2 (void);
-// 0x00000190 System.Void Unity.Services.Core.Internal.UnityWebRequestUtils/<>c__DisplayClass2_0::.ctor()
+// 0x00000192 System.Void Unity.Services.Core.Internal.UnityWebRequestUtils/<>c__DisplayClass2_0::.ctor()
 extern void U3CU3Ec__DisplayClass2_0__ctor_m075F5F3DE1F9440556035D45480BD01F7A8932C1 (void);
-// 0x00000191 System.Void Unity.Services.Core.Internal.UnityWebRequestUtils/<>c__DisplayClass2_0::<GetTextAsync>g__CompleteFetchTaskOnRequestCompleted|0(UnityEngine.AsyncOperation)
+// 0x00000193 System.Void Unity.Services.Core.Internal.UnityWebRequestUtils/<>c__DisplayClass2_0::<GetTextAsync>g__CompleteFetchTaskOnRequestCompleted|0(UnityEngine.AsyncOperation)
 extern void U3CU3Ec__DisplayClass2_0_U3CGetTextAsyncU3Eg__CompleteFetchTaskOnRequestCompletedU7C0_mFF438AD39102AD7C40D5BB5BE65A4E3AD3AFE759 (void);
-static Il2CppMethodPointer s_methodPointers[401] = 
+// 0x00000194 System.String Unity.Services.Core.Internal.Serialization.IJsonSerializer::SerializeObject(T)
+// 0x00000195 T Unity.Services.Core.Internal.Serialization.IJsonSerializer::DeserializeObject(System.String)
+// 0x00000196 System.Void Unity.Services.Core.Internal.Serialization.NewtonsoftSerializer::.ctor(Newtonsoft.Json.JsonSerializerSettings)
+extern void NewtonsoftSerializer__ctor_mB0CCDC64B219681F77D699C1E806E595491B1875 (void);
+// 0x00000197 System.Void Unity.Services.Core.Internal.Serialization.NewtonsoftSerializer::.ctor(Newtonsoft.Json.JsonSerializer)
+extern void NewtonsoftSerializer__ctor_mE05B438480C96C31986036D084A95025C5E5D563 (void);
+// 0x00000198 System.String Unity.Services.Core.Internal.Serialization.NewtonsoftSerializer::SerializeObject(T)
+// 0x00000199 T Unity.Services.Core.Internal.Serialization.NewtonsoftSerializer::DeserializeObject(System.String)
+static Il2CppMethodPointer s_methodPointers[409] = 
 {
 	NULL,
 	NULL,
@@ -739,6 +749,8 @@ static Il2CppMethodPointer s_methodPointers[401] =
 	ReadOnlyHttpResponse_get_ErrorMessage_m6A3B681BB1EF9FB9BF2915B65A43734BEECDA5E4,
 	ReadOnlyHttpResponse_get_IsHttpError_mB9254614A798E52CEE760E7ECFB1C8596E3CEE89,
 	ReadOnlyHttpResponse_get_IsNetworkError_mF41792AD3A3B43F941089D0D1694D217C1227068,
+	NULL,
+	NULL,
 	NULL,
 	NULL,
 	NULL,
@@ -1051,6 +1063,12 @@ static Il2CppMethodPointer s_methodPointers[401] =
 	UnityWebRequestUtils_GetTextAsync_m2503C3E630F795B5151BBD61295F45AE38AD7EC2,
 	U3CU3Ec__DisplayClass2_0__ctor_m075F5F3DE1F9440556035D45480BD01F7A8932C1,
 	U3CU3Ec__DisplayClass2_0_U3CGetTextAsyncU3Eg__CompleteFetchTaskOnRequestCompletedU7C0_mFF438AD39102AD7C40D5BB5BE65A4E3AD3AFE759,
+	NULL,
+	NULL,
+	NewtonsoftSerializer__ctor_mB0CCDC64B219681F77D699C1E806E595491B1875,
+	NewtonsoftSerializer__ctor_mE05B438480C96C31986036D084A95025C5E5D563,
+	NULL,
+	NULL,
 };
 extern void ReadOnlyHttpRequest__ctor_m11EF41B8A37DC43254E609870527C583D1F3370B_AdjustorThunk (void);
 extern void ReadOnlyHttpRequest_get_Method_mDF650B95030089C935E80108E27FCF52173EED6C_AdjustorThunk (void);
@@ -1114,42 +1132,42 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[47] =
 	{ 0x06000057, ReadOnlyHttpResponse_get_ErrorMessage_m6A3B681BB1EF9FB9BF2915B65A43734BEECDA5E4_AdjustorThunk },
 	{ 0x06000058, ReadOnlyHttpResponse_get_IsHttpError_mB9254614A798E52CEE760E7ECFB1C8596E3CEE89_AdjustorThunk },
 	{ 0x06000059, ReadOnlyHttpResponse_get_IsNetworkError_mF41792AD3A3B43F941089D0D1694D217C1227068_AdjustorThunk },
-	{ 0x06000086, AsyncOperationAwaiter__ctor_mDA5FDE70CB821282BE1B34988F035D089E5C4668_AdjustorThunk },
-	{ 0x06000087, AsyncOperationAwaiter_OnCompleted_m0DF5C7321350B0496AEA75861A16292D35202EA0_AdjustorThunk },
-	{ 0x06000088, AsyncOperationAwaiter_UnsafeOnCompleted_m0E5A4D81E41FBECC6E58B673E068F6B896670957_AdjustorThunk },
-	{ 0x06000089, AsyncOperationAwaiter_get_IsCompleted_mE9AE20B408EE81FF5F8CFE8EF686B71AF51469A4_AdjustorThunk },
-	{ 0x0600008A, AsyncOperationAwaiter_GetResult_m04CD1981674B6AC7A9236E9E5D1F3B9814066504_AdjustorThunk },
-	{ 0x060000F9, CoreRegistration__ctor_mBD89C7177367442E29CDDB5C17527B9C556256E1_AdjustorThunk },
-	{ 0x06000110, U3CU3CInitializeRegistryAsyncU3Eg__TryInitializePackageAsyncU7C0U3Ed_MoveNext_m5E60799930DE5F81F77BBABBF177E4BF259BEE52_AdjustorThunk },
-	{ 0x06000111, U3CU3CInitializeRegistryAsyncU3Eg__TryInitializePackageAsyncU7C0U3Ed_SetStateMachine_m0D4B0934A0549E32EB5FED93883CC1F3E413EEB7_AdjustorThunk },
-	{ 0x06000112, U3CInitializeRegistryAsyncU3Ed__3_MoveNext_m5F259043D6E1638605E2E02C7CF4B08C733FFC23_AdjustorThunk },
-	{ 0x06000113, U3CInitializeRegistryAsyncU3Ed__3_SetStateMachine_m2129B81BA5F7EE6BA5AAFB086161A32FBECDE5E2_AdjustorThunk },
-	{ 0x0600011F, DependencyTreeInitializeOrderSorter__ctor_m7FCD5445FC15A72A328BDE0828D9EFF109C4EBE7_AdjustorThunk },
-	{ 0x06000120, DependencyTreeInitializeOrderSorter_SortRegisteredPackagesIntoTarget_m50FFB4AE5A3282877E8541CAAD905CD7C2D8F831_AdjustorThunk },
-	{ 0x06000121, DependencyTreeInitializeOrderSorter_RemoveUnprovidedOptionalDependenciesFromTree_mD7E3080BAD1D57E3AF5F8B8258DABCE48E174183_AdjustorThunk },
-	{ 0x06000122, DependencyTreeInitializeOrderSorter_RemoveUnprovidedOptionalDependencies_mA453D5055F260CB080F6EE69A2F0F7CB71DB975B_AdjustorThunk },
-	{ 0x06000123, DependencyTreeInitializeOrderSorter_SortTreeThrough_m2B43FBB987275FC528AD1B28C7B78A24E9FE088C_AdjustorThunk },
-	{ 0x06000124, DependencyTreeInitializeOrderSorter_SortTreeThrough_m18D24A10B30F955EE42B8E82C104B8B8B8799F6D_AdjustorThunk },
-	{ 0x06000125, DependencyTreeInitializeOrderSorter_MarkPackage_m4B61E4A24ECB477D9ED1CE54FA232D5C6B01FD31_AdjustorThunk },
-	{ 0x06000126, DependencyTreeInitializeOrderSorter_GetPackageTypeHashes_mF3163B612844917C07D74BB7B78FD5C48ECE4653_AdjustorThunk },
-	{ 0x06000127, DependencyTreeInitializeOrderSorter_GetPackageTypeHashFor_mD0F3091C18741606134FBB1F6F1465F5EB8C0634_AdjustorThunk },
-	{ 0x06000128, DependencyTreeInitializeOrderSorter_GetDependencyTypeHashesFor_mE4896E6FD46EC6A8D6E60540C9036B58ABC124AF_AdjustorThunk },
-	{ 0x0600015C, U3CSendCoreDiagnosticsAsyncU3Ed__24_MoveNext_m814AC3E16A712FE76D7F4751D1FC7ED0DC4A1BF0_AdjustorThunk },
-	{ 0x0600015D, U3CSendCoreDiagnosticsAsyncU3Ed__24_SetStateMachine_m001FBAB9203E0C0F8DA04AB2EB57966CDE5FD838_AdjustorThunk },
-	{ 0x0600015E, U3CGetOrCreateDiagnosticsAsyncU3Ed__26_MoveNext_m49BB8D9D5179C83C852EA6F9FD5A269613153ECC_AdjustorThunk },
-	{ 0x0600015F, U3CGetOrCreateDiagnosticsAsyncU3Ed__26_SetStateMachine_m585A57FDF4B14229883605019BE52545E830F839_AdjustorThunk },
-	{ 0x0600016D, U3CEnableServicesInitializationAsyncU3Ed__1_MoveNext_mE98AC7044CBFAF74DE70A249383A271C2018B81E_AdjustorThunk },
-	{ 0x0600016E, U3CEnableServicesInitializationAsyncU3Ed__1_SetStateMachine_mF049794791F6718DA52FC0A1861464C37CBBD553_AdjustorThunk },
-	{ 0x0600017D, U3CInitializeAsyncU3Ed__20_MoveNext_mC86B42FFB62B75BA4BDC04EEC24FE48669B38FE2_AdjustorThunk },
-	{ 0x0600017E, U3CInitializeAsyncU3Ed__20_SetStateMachine_m7869FD9483382585C71C67B4F0A1AF69067E7E1D_AdjustorThunk },
-	{ 0x06000184, U3CU3CInitializeServicesAsyncU3Eg__InitializePackagesAsyncU7C1U3Ed_MoveNext_m1A0F587F4E5C48CFBB69476DC6FF0E8D71A8C89E_AdjustorThunk },
-	{ 0x06000185, U3CU3CInitializeServicesAsyncU3Eg__InitializePackagesAsyncU7C1U3Ed_SetStateMachine_mAAD9750957C9D2A753833C40E201F4141C56143D_AdjustorThunk },
-	{ 0x06000186, U3CInitializeServicesAsyncU3Ed__22_MoveNext_m8CBE33D50A5251F774381D3A21B3B78F1F3B439B_AdjustorThunk },
-	{ 0x06000187, U3CInitializeServicesAsyncU3Ed__22_SetStateMachine_mFC5FA0E2CD3782B01DA1B4624BD5E80D966BFF33_AdjustorThunk },
-	{ 0x06000188, U3CEnableInitializationAsyncU3Ed__24_MoveNext_m248BD737D6BA2E63C2EF30305A5A4323F7AF3612_AdjustorThunk },
-	{ 0x06000189, U3CEnableInitializationAsyncU3Ed__24_SetStateMachine_m3D96F983B264B355592C3D4FFC2C36082AA39FA0_AdjustorThunk },
+	{ 0x06000088, AsyncOperationAwaiter__ctor_mDA5FDE70CB821282BE1B34988F035D089E5C4668_AdjustorThunk },
+	{ 0x06000089, AsyncOperationAwaiter_OnCompleted_m0DF5C7321350B0496AEA75861A16292D35202EA0_AdjustorThunk },
+	{ 0x0600008A, AsyncOperationAwaiter_UnsafeOnCompleted_m0E5A4D81E41FBECC6E58B673E068F6B896670957_AdjustorThunk },
+	{ 0x0600008B, AsyncOperationAwaiter_get_IsCompleted_mE9AE20B408EE81FF5F8CFE8EF686B71AF51469A4_AdjustorThunk },
+	{ 0x0600008C, AsyncOperationAwaiter_GetResult_m04CD1981674B6AC7A9236E9E5D1F3B9814066504_AdjustorThunk },
+	{ 0x060000FB, CoreRegistration__ctor_mBD89C7177367442E29CDDB5C17527B9C556256E1_AdjustorThunk },
+	{ 0x06000112, U3CU3CInitializeRegistryAsyncU3Eg__TryInitializePackageAsyncU7C0U3Ed_MoveNext_m5E60799930DE5F81F77BBABBF177E4BF259BEE52_AdjustorThunk },
+	{ 0x06000113, U3CU3CInitializeRegistryAsyncU3Eg__TryInitializePackageAsyncU7C0U3Ed_SetStateMachine_m0D4B0934A0549E32EB5FED93883CC1F3E413EEB7_AdjustorThunk },
+	{ 0x06000114, U3CInitializeRegistryAsyncU3Ed__3_MoveNext_m5F259043D6E1638605E2E02C7CF4B08C733FFC23_AdjustorThunk },
+	{ 0x06000115, U3CInitializeRegistryAsyncU3Ed__3_SetStateMachine_m2129B81BA5F7EE6BA5AAFB086161A32FBECDE5E2_AdjustorThunk },
+	{ 0x06000121, DependencyTreeInitializeOrderSorter__ctor_m7FCD5445FC15A72A328BDE0828D9EFF109C4EBE7_AdjustorThunk },
+	{ 0x06000122, DependencyTreeInitializeOrderSorter_SortRegisteredPackagesIntoTarget_m50FFB4AE5A3282877E8541CAAD905CD7C2D8F831_AdjustorThunk },
+	{ 0x06000123, DependencyTreeInitializeOrderSorter_RemoveUnprovidedOptionalDependenciesFromTree_mD7E3080BAD1D57E3AF5F8B8258DABCE48E174183_AdjustorThunk },
+	{ 0x06000124, DependencyTreeInitializeOrderSorter_RemoveUnprovidedOptionalDependencies_mA453D5055F260CB080F6EE69A2F0F7CB71DB975B_AdjustorThunk },
+	{ 0x06000125, DependencyTreeInitializeOrderSorter_SortTreeThrough_m2B43FBB987275FC528AD1B28C7B78A24E9FE088C_AdjustorThunk },
+	{ 0x06000126, DependencyTreeInitializeOrderSorter_SortTreeThrough_m18D24A10B30F955EE42B8E82C104B8B8B8799F6D_AdjustorThunk },
+	{ 0x06000127, DependencyTreeInitializeOrderSorter_MarkPackage_m4B61E4A24ECB477D9ED1CE54FA232D5C6B01FD31_AdjustorThunk },
+	{ 0x06000128, DependencyTreeInitializeOrderSorter_GetPackageTypeHashes_mF3163B612844917C07D74BB7B78FD5C48ECE4653_AdjustorThunk },
+	{ 0x06000129, DependencyTreeInitializeOrderSorter_GetPackageTypeHashFor_mD0F3091C18741606134FBB1F6F1465F5EB8C0634_AdjustorThunk },
+	{ 0x0600012A, DependencyTreeInitializeOrderSorter_GetDependencyTypeHashesFor_mE4896E6FD46EC6A8D6E60540C9036B58ABC124AF_AdjustorThunk },
+	{ 0x0600015E, U3CSendCoreDiagnosticsAsyncU3Ed__24_MoveNext_m814AC3E16A712FE76D7F4751D1FC7ED0DC4A1BF0_AdjustorThunk },
+	{ 0x0600015F, U3CSendCoreDiagnosticsAsyncU3Ed__24_SetStateMachine_m001FBAB9203E0C0F8DA04AB2EB57966CDE5FD838_AdjustorThunk },
+	{ 0x06000160, U3CGetOrCreateDiagnosticsAsyncU3Ed__26_MoveNext_m49BB8D9D5179C83C852EA6F9FD5A269613153ECC_AdjustorThunk },
+	{ 0x06000161, U3CGetOrCreateDiagnosticsAsyncU3Ed__26_SetStateMachine_m585A57FDF4B14229883605019BE52545E830F839_AdjustorThunk },
+	{ 0x0600016F, U3CEnableServicesInitializationAsyncU3Ed__1_MoveNext_mE98AC7044CBFAF74DE70A249383A271C2018B81E_AdjustorThunk },
+	{ 0x06000170, U3CEnableServicesInitializationAsyncU3Ed__1_SetStateMachine_mF049794791F6718DA52FC0A1861464C37CBBD553_AdjustorThunk },
+	{ 0x0600017F, U3CInitializeAsyncU3Ed__20_MoveNext_mC86B42FFB62B75BA4BDC04EEC24FE48669B38FE2_AdjustorThunk },
+	{ 0x06000180, U3CInitializeAsyncU3Ed__20_SetStateMachine_m7869FD9483382585C71C67B4F0A1AF69067E7E1D_AdjustorThunk },
+	{ 0x06000186, U3CU3CInitializeServicesAsyncU3Eg__InitializePackagesAsyncU7C1U3Ed_MoveNext_m1A0F587F4E5C48CFBB69476DC6FF0E8D71A8C89E_AdjustorThunk },
+	{ 0x06000187, U3CU3CInitializeServicesAsyncU3Eg__InitializePackagesAsyncU7C1U3Ed_SetStateMachine_mAAD9750957C9D2A753833C40E201F4141C56143D_AdjustorThunk },
+	{ 0x06000188, U3CInitializeServicesAsyncU3Ed__22_MoveNext_m8CBE33D50A5251F774381D3A21B3B78F1F3B439B_AdjustorThunk },
+	{ 0x06000189, U3CInitializeServicesAsyncU3Ed__22_SetStateMachine_mFC5FA0E2CD3782B01DA1B4624BD5E80D966BFF33_AdjustorThunk },
+	{ 0x0600018A, U3CEnableInitializationAsyncU3Ed__24_MoveNext_m248BD737D6BA2E63C2EF30305A5A4323F7AF3612_AdjustorThunk },
+	{ 0x0600018B, U3CEnableInitializationAsyncU3Ed__24_SetStateMachine_m3D96F983B264B355592C3D4FFC2C36082AA39FA0_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[401] = 
+static const int32_t s_InvokerIndices[409] = 
 {
 	0,
 	0,
@@ -1194,52 +1212,52 @@ static const int32_t s_InvokerIndices[401] =
 	0,
 	0,
 	0,
-	4946,
-	942,
-	3561,
-	3561,
-	1829,
-	3561,
-	3561,
-	3556,
-	3558,
-	3558,
-	7018,
-	7018,
-	7018,
-	7018,
-	7018,
-	7018,
-	7018,
-	7018,
-	7018,
-	3561,
-	3564,
-	1829,
-	3561,
-	3561,
-	3559,
-	3561,
-	3546,
-	3546,
-	4946,
+	4898,
+	928,
+	3528,
+	3528,
+	1806,
+	3528,
+	3528,
+	3523,
+	3525,
+	3525,
+	6957,
+	6957,
+	6957,
+	6957,
+	6957,
+	6957,
+	6957,
+	6957,
+	6957,
+	3528,
+	3531,
+	1806,
+	3528,
+	3528,
+	3526,
+	3528,
+	3513,
+	3513,
+	4898,
 	0,
 	0,
 	0,
 	0,
-	4009,
-	4830,
-	4830,
-	4830,
-	4830,
-	4009,
-	4850,
-	4830,
-	4830,
-	4806,
-	4830,
-	4755,
-	4755,
+	3975,
+	4782,
+	4782,
+	4782,
+	4782,
+	3975,
+	4802,
+	4782,
+	4782,
+	4758,
+	4782,
+	4707,
+	4707,
 	0,
 	0,
 	0,
@@ -1250,24 +1268,24 @@ static const int32_t s_InvokerIndices[401] =
 	0,
 	0,
 	0,
-	4755,
-	3933,
-	4805,
-	3987,
-	4009,
-	4009,
-	4830,
-	4009,
-	4946,
-	4946,
-	4009,
-	4946,
-	4755,
-	4946,
-	4830,
-	4946,
 	0,
 	0,
+	4707,
+	3899,
+	4757,
+	3953,
+	3975,
+	3975,
+	4782,
+	3975,
+	4898,
+	4898,
+	3975,
+	4898,
+	4707,
+	4898,
+	4782,
+	4898,
 	0,
 	0,
 	0,
@@ -1284,17 +1302,17 @@ static const int32_t s_InvokerIndices[401] =
 	0,
 	0,
 	0,
-	4009,
-	4009,
-	4009,
-	4755,
-	4946,
-	4946,
-	4009,
-	4946,
-	4009,
 	0,
 	0,
+	3975,
+	3975,
+	3975,
+	4707,
+	4898,
+	4898,
+	3975,
+	4898,
+	3975,
 	0,
 	0,
 	0,
@@ -1302,22 +1320,22 @@ static const int32_t s_InvokerIndices[401] =
 	0,
 	0,
 	0,
-	4755,
 	0,
-	4755,
 	0,
+	4707,
 	0,
+	4707,
 	0,
 	0,
-	4009,
-	4009,
-	4946,
-	4009,
-	4946,
-	4946,
-	4009,
 	0,
 	0,
+	3975,
+	3975,
+	4898,
+	3975,
+	4898,
+	4898,
+	3975,
 	0,
 	0,
 	0,
@@ -1331,14 +1349,14 @@ static const int32_t s_InvokerIndices[401] =
 	0,
 	0,
 	0,
-	6803,
-	7018,
 	0,
 	0,
-	4946,
-	4009,
+	6745,
+	6957,
 	0,
 	0,
+	4898,
+	3975,
 	0,
 	0,
 	0,
@@ -1354,19 +1372,19 @@ static const int32_t s_InvokerIndices[401] =
 	0,
 	0,
 	0,
-	4755,
-	4805,
-	4830,
-	4946,
-	4830,
-	4009,
-	7018,
-	7379,
-	7379,
-	4946,
-	2293,
 	0,
 	0,
+	4707,
+	4757,
+	4782,
+	4898,
+	4782,
+	3975,
+	6957,
+	7314,
+	7314,
+	4898,
+	2266,
 	0,
 	0,
 	0,
@@ -1376,210 +1394,220 @@ static const int32_t s_InvokerIndices[401] =
 	0,
 	0,
 	0,
-	7242,
-	7242,
-	7242,
-	7242,
-	7242,
-	7242,
-	7242,
-	4946,
-	4009,
-	4830,
-	4009,
 	0,
 	0,
-	2846,
-	4009,
+	7179,
+	7179,
+	7179,
+	7179,
+	7179,
+	7179,
+	7179,
+	4898,
+	3975,
+	4782,
+	3975,
 	0,
 	0,
+	2820,
+	3975,
 	0,
-	4830,
-	4009,
 	0,
 	0,
-	4009,
-	2289,
+	4782,
+	3975,
 	0,
 	0,
+	3975,
+	2262,
 	0,
-	7350,
-	7242,
-	4830,
-	4009,
-	4830,
-	4009,
-	4946,
-	2293,
 	0,
 	0,
+	7285,
+	7179,
+	4782,
+	3975,
+	4782,
+	3975,
+	4898,
+	2266,
 	0,
-	4946,
-	4946,
-	2293,
-	4830,
-	4946,
-	3561,
-	3558,
-	4946,
-	4946,
-	4009,
-	4946,
-	4009,
-	4946,
-	942,
-	2293,
-	1295,
-	6034,
-	6485,
-	6298,
-	6298,
-	6481,
-	6481,
-	7018,
-	2293,
-	4946,
-	4946,
-	4009,
-	3987,
-	4009,
-	2093,
-	4830,
-	3326,
-	3558,
-	4805,
-	3987,
-	2114,
-	1241,
-	3987,
-	2114,
-	1241,
-	3987,
-	2114,
-	1241,
 	0,
-	4830,
-	4009,
-	4946,
 	0,
+	4898,
+	4898,
+	2266,
+	4782,
+	4898,
+	3528,
+	3525,
+	4898,
+	4898,
+	3975,
+	4898,
+	3975,
+	4898,
+	928,
+	2266,
+	1281,
+	5977,
+	6429,
+	6241,
+	6241,
+	6425,
+	6425,
+	6957,
+	2266,
+	4898,
+	4898,
+	3975,
+	3953,
+	3975,
+	2068,
+	4782,
+	3297,
+	3525,
+	4757,
+	3953,
+	2089,
+	1227,
+	3953,
+	2089,
+	1227,
+	3953,
+	2089,
+	1227,
 	0,
+	4782,
+	3975,
+	4898,
 	0,
 	0,
 	0,
 	0,
-	4830,
-	4009,
-	4830,
-	4009,
 	0,
 	0,
+	4782,
+	3975,
+	4782,
+	3975,
 	0,
 	0,
-	4830,
-	4009,
-	4009,
 	0,
 	0,
+	4782,
+	3975,
+	3975,
 	0,
 	0,
-	2093,
-	7350,
-	7242,
-	4830,
-	4830,
-	4009,
-	4830,
-	4009,
-	4009,
-	4009,
-	4009,
-	4009,
-	1829,
-	7242,
-	4830,
-	4946,
-	4946,
-	4009,
-	4946,
-	4009,
-	7350,
-	7242,
-	4830,
-	4009,
-	4830,
-	4946,
-	3958,
-	2287,
-	1295,
-	2293,
-	4946,
-	7379,
-	7379,
-	4946,
-	4009,
-	4805,
-	3987,
-	4830,
-	4009,
-	4830,
-	4830,
-	4830,
-	1295,
-	3561,
-	4755,
-	4830,
-	4009,
-	4830,
-	4755,
-	4946,
-	4009,
-	4946,
-	4946,
-	4830,
-	4009,
-	4946,
-	4946,
-	4009,
-	4946,
-	4009,
-	4946,
-	4009,
 	0,
 	0,
+	2068,
+	7285,
+	7179,
+	4782,
+	4782,
+	3975,
+	4782,
+	3975,
+	3975,
+	3975,
+	3975,
+	3975,
+	1806,
+	7179,
+	4782,
+	4898,
+	4898,
+	3975,
+	4898,
+	3975,
+	7285,
+	7179,
+	4782,
+	3975,
+	4782,
+	4898,
+	3924,
+	2260,
+	1281,
+	2266,
+	4898,
+	7314,
+	7314,
+	4898,
+	3975,
+	4757,
+	3953,
+	4782,
+	3975,
+	4782,
+	4782,
+	4782,
+	1281,
+	3528,
+	4707,
+	4782,
+	3975,
+	4782,
+	4707,
+	4898,
+	3975,
+	4898,
+	4898,
+	4782,
+	3975,
+	4898,
+	4898,
+	3975,
+	4898,
+	3975,
+	4898,
+	3975,
 	0,
 	0,
-	6827,
-	7018,
-	4946,
-	4009,
+	0,
+	0,
+	6769,
+	6957,
+	4898,
+	3975,
+	0,
+	0,
+	3975,
+	3975,
+	0,
+	0,
 };
-static const Il2CppTokenRangePair s_rgctxIndices[25] = 
+static const Il2CppTokenRangePair s_rgctxIndices[27] = 
 {
-	{ 0x02000022, { 0, 7 } },
-	{ 0x02000026, { 7, 14 } },
-	{ 0x0200002B, { 21, 10 } },
-	{ 0x0200002F, { 44, 8 } },
-	{ 0x02000037, { 52, 14 } },
-	{ 0x02000038, { 66, 6 } },
-	{ 0x060000B7, { 31, 2 } },
-	{ 0x060000B8, { 33, 11 } },
-	{ 0x060000ED, { 72, 3 } },
-	{ 0x060000EE, { 75, 2 } },
-	{ 0x060000F7, { 77, 1 } },
-	{ 0x060000FA, { 78, 1 } },
-	{ 0x060000FB, { 79, 1 } },
-	{ 0x060000FC, { 80, 1 } },
-	{ 0x06000105, { 81, 1 } },
-	{ 0x06000106, { 82, 1 } },
-	{ 0x06000107, { 83, 1 } },
-	{ 0x06000148, { 84, 2 } },
-	{ 0x06000149, { 86, 1 } },
-	{ 0x0600014A, { 87, 1 } },
-	{ 0x0600014B, { 88, 1 } },
-	{ 0x0600018A, { 89, 10 } },
-	{ 0x0600018B, { 99, 9 } },
-	{ 0x0600018C, { 108, 3 } },
-	{ 0x0600018D, { 111, 13 } },
+	{ 0x02000024, { 0, 7 } },
+	{ 0x02000028, { 7, 14 } },
+	{ 0x0200002D, { 21, 10 } },
+	{ 0x02000031, { 44, 8 } },
+	{ 0x02000039, { 52, 14 } },
+	{ 0x0200003A, { 66, 6 } },
+	{ 0x060000B9, { 31, 2 } },
+	{ 0x060000BA, { 33, 11 } },
+	{ 0x060000EF, { 72, 3 } },
+	{ 0x060000F0, { 75, 2 } },
+	{ 0x060000F9, { 77, 1 } },
+	{ 0x060000FC, { 78, 1 } },
+	{ 0x060000FD, { 79, 1 } },
+	{ 0x060000FE, { 80, 1 } },
+	{ 0x06000107, { 81, 1 } },
+	{ 0x06000108, { 82, 1 } },
+	{ 0x06000109, { 83, 1 } },
+	{ 0x0600014A, { 84, 2 } },
+	{ 0x0600014B, { 86, 1 } },
+	{ 0x0600014C, { 87, 1 } },
+	{ 0x0600014D, { 88, 1 } },
+	{ 0x0600018C, { 89, 10 } },
+	{ 0x0600018D, { 99, 9 } },
+	{ 0x0600018E, { 108, 3 } },
+	{ 0x0600018F, { 111, 13 } },
+	{ 0x06000198, { 124, 2 } },
+	{ 0x06000199, { 126, 2 } },
 };
 extern const uint32_t g_rgctx_AsyncOperation_1_get_IsDone_m9B20F0ED4D9A15E2F4E744560719E0268F85A713;
 extern const uint32_t g_rgctx_Action_1_t0DE7600CDD479DAF44902E797130D2231F4E6FE8;
@@ -1705,7 +1733,11 @@ extern const uint32_t g_rgctx_KeyValuePair_2_get_Value_m252C3B5B863E19A3A4D80B12
 extern const uint32_t g_rgctx_TComparer_t37AE823B42E889BD9778EDC5EC070CFC6076773B;
 extern const uint32_t g_rgctx_IEqualityComparer_1_tD30141587EFB392D4D6E72E7DABE192E2E12570D;
 extern const Il2CppRGCTXConstrainedData g_rgctx_TComparer_t37AE823B42E889BD9778EDC5EC070CFC6076773B_IEqualityComparer_1_Equals_m7030F970691161B6AA17EA1ED96D96361311E07B;
-static const Il2CppRGCTXDefinition s_rgctxValues[124] = 
+extern const uint32_t g_rgctx_T_t9810D239A31B3FCB8478D86DFCD475F3575412D9;
+extern const uint32_t g_rgctx_T_t9810D239A31B3FCB8478D86DFCD475F3575412D9;
+extern const uint32_t g_rgctx_T_tBDB8A6248728F08906FC932161F22916F6D0F4AA;
+extern const uint32_t g_rgctx_T_tBDB8A6248728F08906FC932161F22916F6D0F4AA;
+static const Il2CppRGCTXDefinition s_rgctxValues[128] = 
 {
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncOperation_1_get_IsDone_m9B20F0ED4D9A15E2F4E744560719E0268F85A713 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Action_1_t0DE7600CDD479DAF44902E797130D2231F4E6FE8 },
@@ -1831,21 +1863,25 @@ static const Il2CppRGCTXDefinition s_rgctxValues[124] =
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TComparer_t37AE823B42E889BD9778EDC5EC070CFC6076773B },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_IEqualityComparer_1_tD30141587EFB392D4D6E72E7DABE192E2E12570D },
 	{ (Il2CppRGCTXDataType)5, (const void *)&g_rgctx_TComparer_t37AE823B42E889BD9778EDC5EC070CFC6076773B_IEqualityComparer_1_Equals_m7030F970691161B6AA17EA1ED96D96361311E07B },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_t9810D239A31B3FCB8478D86DFCD475F3575412D9 },
+	{ (Il2CppRGCTXDataType)1, (const void *)&g_rgctx_T_t9810D239A31B3FCB8478D86DFCD475F3575412D9 },
+	{ (Il2CppRGCTXDataType)1, (const void *)&g_rgctx_T_tBDB8A6248728F08906FC932161F22916F6D0F4AA },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_tBDB8A6248728F08906FC932161F22916F6D0F4AA },
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_Services_Core_Internal_CodeGenModule;
 const Il2CppCodeGenModule g_Unity_Services_Core_Internal_CodeGenModule = 
 {
 	"Unity.Services.Core.Internal.dll",
-	401,
+	409,
 	s_methodPointers,
 	47,
 	s_adjustorThunks,
 	s_InvokerIndices,
 	0,
 	NULL,
-	25,
+	27,
 	s_rgctxIndices,
-	124,
+	128,
 	s_rgctxValues,
 	NULL,
 	NULL, // module initializer,

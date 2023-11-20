@@ -223,7 +223,7 @@ public class Eventos : MonoBehaviour {
 
     public void ClearEvent()
     {
-        eventNumber = Random.Range(0, 65);
+        eventNumber = 24;
         PlayerPrefs.SetInt("eventNumber", eventNumber);
         opcion1Container.SetActive(true);
         opcion2Button.interactable = true;
